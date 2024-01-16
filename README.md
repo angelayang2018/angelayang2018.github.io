@@ -25,6 +25,7 @@ HTML is the backbone of the website, providing the structure for content present
 CSS is used for styling and layout. I've employed modern CSS features and best practices to create a visually appealing and responsive design.
 
 ## Process and Challenges of Creating Website
+Here I go through the conceptualization, design, development, and testing of my website. 
 
 https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing
 
