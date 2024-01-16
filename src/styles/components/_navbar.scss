@@ -1,0 +1,19 @@
+@import "../Variables/Variables.scss";
+
+@font-face{
+    font-family:"Nostrav";
+    src: url(Nostrav.ttf);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nostrav";
+
+    a{
+        color:inherit;
+        text-decoration:none;
+    }
+}
+
+

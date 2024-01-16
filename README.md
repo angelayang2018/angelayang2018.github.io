@@ -24,6 +24,9 @@ HTML is the backbone of the website, providing the structure for content present
 4. CSS (Cascading Style Sheets):
 CSS is used for styling and layout. I've employed modern CSS features and best practices to create a visually appealing and responsive design.
 
+5. SASS (Syntactically Awesome Style Sheets)
+I utilized SASS to write more concise and readable CSS. 
+
 ## Process and Challenges of Creating Website
 Here I go through the conceptualization, design, development, and testing of my website. 
 
