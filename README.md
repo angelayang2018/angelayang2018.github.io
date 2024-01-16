@@ -24,6 +24,10 @@ HTML is the backbone of the website, providing the structure for content present
 4. CSS (Cascading Style Sheets):
 CSS is used for styling and layout. I've employed modern CSS features and best practices to create a visually appealing and responsive design.
 
+## Process and Challenges of Creating Website
+
+https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing
+
 ## Future Goals
 
 I am committed to keeping my portfolio website dynamic and reflective of my evolving skills and experiences. I also value feedback from visitors. Based on your input and suggestions, I'll make improvements to enhance the overall usability and content presentation. Thank you for visiting, and I look forward to sharing my ongoing journey with you!
