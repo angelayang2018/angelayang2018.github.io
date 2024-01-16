@@ -1,29 +1,70 @@
-# Angela Yang's Portfolio Website
+# Getting Started with Create React App
 
-Welcome to my personal portfolio website! This project serves as a showcase of my skills and projects in the field of front-end development. My primary goal is to create an interactive and visually appealing platform that reflects my technical capabilities. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## What to Expect
+## Available Scripts
 
-**Projects Showcase**: Explore a selection of projects I've worked on. Each project comes with a description, technologies used, and links to live demos or GitHub repositories.  
+In the project directory, you can run:
 
-**Skills Section**: Learn about my proficiency in frontend technologies, design principles, and any additional skills that contribute to my development toolkit.  
+### `npm start`
 
-**About Me**: Get to know me better! This section provides a brief overview of my background, interests, and what drives me to excel in the world of software development.  
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Technologies Used
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1. GSAP (GreenSock Animation Platform):
-Leveraged GSAP to create smooth and engaging animations throughout the website. GSAP adds a layer of interactivity that enhances the overall user experience.
+### `npm test`
 
-2. React:
-The frontend of my portfolio is built using React, a powerful JavaScript library for building user interfaces. React's component-based architecture allows for a modular and maintainable codebase.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-3. HTML (HyperText Markup Language):
-HTML is the backbone of the website, providing the structure for content presentation. Semantically structured HTML ensures accessibility and search engine optimization.
+### `npm run build`
 
-4. CSS (Cascading Style Sheets):
-CSS is used for styling and layout. I've employed modern CSS features and best practices to create a visually appealing and responsive design.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Future Goals
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-I am committed to keeping my portfolio website dynamic and reflective of my evolving skills and experiences. I also value feedback from visitors. Based on your input and suggestions, I'll make improvements to enhance the overall usability and content presentation. Thank you for visiting, and I look forward to sharing my ongoing journey with you!
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
