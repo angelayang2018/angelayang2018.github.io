@@ -4,9 +4,11 @@ Welcome to my personal portfolio website! This project serves as a showcase of m
 
 ## What to Expect
 
-Projects Showcase: Explore a selection of projects I've worked on. Each project comes with a description, technologies used, and links to live demos or GitHub repositories.
-Skills Section: Learn about my proficiency in frontend technologies, design principles, and any additional skills that contribute to my development toolkit.
-About Me: Get to know me better! This section provides a brief overview of my background, interests, and what drives me to excel in the world of software development.
+**Projects Showcase**: Explore a selection of projects I've worked on. Each project comes with a description, technologies used, and links to live demos or GitHub repositories.  
+
+**Skills Section**: Learn about my proficiency in frontend technologies, design principles, and any additional skills that contribute to my development toolkit.  
+
+**About Me**: Get to know me better! This section provides a brief overview of my background, interests, and what drives me to excel in the world of software development.  
 
 ## Technologies Used
 
