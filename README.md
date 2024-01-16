@@ -31,4 +31,4 @@ https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/
 
 ## Future Goals
 
-I am committed to keeping my portfolio website dynamic and reflective of my evolving skills and experiences. I also value feedback from visitors. Based on your input and suggestions, I'll make improvements to enhance the overall usability and content presentation. Thank you for visiting, and I look forward to sharing my ongoing journey with you!
+I am committed to keeping my portfolio website dynamic and reflective of my evolving skills and experiences. I also value feedback from visitors. Based on your input and suggestions, I'll make improvements to enhance the overall usability and content presentation. Send me a message through LinkedIn (https://www.linkedin.com/in/angela-yangg/) or email (angela.yang146@gmail.com)!
