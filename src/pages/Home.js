@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -12,11 +11,11 @@ export default function Home() {
           <p>Passionate about Beans</p>
           <p>Currently looking for job 2024</p>
         </div>
-        <div>
-          <Link to="/about">
-            <Button>ABOUT</Button>
+        <div className = "aboutButtons">
+          <Link className = "buttonS" to="/about">
+            <p>ABOUT</p>
           </Link>
-          <Button>RESUME</Button>
+          <a className = "buttonS" href = "./">RESUME</a>
         </div>
       </div>
 
@@ -35,6 +34,8 @@ export default function Home() {
           </div>
         </div>
 
+        <hr />
+
         <div className="frameworks">
           <div>
             <h3>Frameworks/Libraries</h3>
@@ -47,6 +48,8 @@ export default function Home() {
             </ul>
           </div>
         </div>
+
+        <hr />
 
         <div className="tools">
           <div>
@@ -63,13 +66,21 @@ export default function Home() {
 
       <div>
         <h2>PROJECTS</h2>
-        <button>Explore All Projects</button>
+        <Link to = "/project" className = "buttonM">
+        <p>Explore All Projects</p>
+        </Link>
       </div>
 
-      <div className = "contact">
-      <a className = "button" href = "mailto:angela.yang146@gmail.com">EMAIL</a>
-      <a className = "button" href = "https://www.linkedin.com/in/angela-yangg/">LINKEDIN</a>
-      <a className = "button" href = "https://github.com/angelayang2018">GITHUB</a>
+      <div className="contact">
+        <a className="buttonS" href="mailto:angela.yang146@gmail.com">
+          EMAIL
+        </a>
+        <a className="buttonS" href="https://www.linkedin.com/in/angela-yangg/">
+          LINKEDIN
+        </a>
+        <a className="buttonS" href="https://github.com/angelayang2018">
+          GITHUB
+        </a>
       </div>
     </div>
   );

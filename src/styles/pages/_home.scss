@@ -1,3 +1,10 @@
-.contact{
+@use "../abstracts/" as *;
+
+
+.aboutButtons{
     display: flex;
 }
+.contact{
+    @include flexEvenly;
+}
+

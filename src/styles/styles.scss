@@ -4,6 +4,11 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #FAF7EF;
+    background-color: abstracts.$sandColor;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
   }
   
