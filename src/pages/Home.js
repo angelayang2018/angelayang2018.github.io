@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -13,9 +14,9 @@ export default function Home() {
         </div>
         <div>
           <Link to="/about">
-            <button>ABOUT</button>
+            <Button>ABOUT</Button>
           </Link>
-          <button>RESUME</button>
+          <Button>RESUME</Button>
         </div>
       </div>
 
@@ -65,10 +66,10 @@ export default function Home() {
         <button>Explore All Projects</button>
       </div>
 
-      <div>
-        <button>EMAIL</button>
-        <button>LINKEDIN</button>
-        <button>GITHUB</button>
+      <div className = "contact">
+      <a className = "button" href = "mailto:angela.yang146@gmail.com">EMAIL</a>
+      <a className = "button" href = "https://www.linkedin.com/in/angela-yangg/">LINKEDIN</a>
+      <a className = "button" href = "https://github.com/angelayang2018">GITHUB</a>
       </div>
     </div>
   );

@@ -1,0 +1,34 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: solid gray 0.5px;
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Nostrav";
+  src: url(Nostrav.ttf);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nostrav";
+}
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FAF7EF;
+}/*# sourceMappingURL=styles.css.map */
