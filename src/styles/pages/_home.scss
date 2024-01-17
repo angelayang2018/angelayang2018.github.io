@@ -4,7 +4,23 @@
 .aboutButtons{
     display: flex;
 }
+
+.skillContainer{
+    @include flexEvenly;
+    text-align: left;
+}
+
+.skillInfo{
+    width: 50%;
+    
+}
+
 .contact{
     @include flexEvenly;
+    padding: 50px 0px;
+}
+
+.movingText{
+    @include flexCenter;
 }
 

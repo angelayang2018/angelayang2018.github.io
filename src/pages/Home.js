@@ -21,8 +21,9 @@ export default function Home() {
 
       <div className="skills">
         <h2>SKILLS</h2>
-        <div className="languages">
-          <div>
+        <div className="skillContainer">
+            <div className="skillInfo">Animation</div>
+          <div className="skillInfo">
             <h3>Languages</h3>
             <ul>
               <li>Java</li>
@@ -36,9 +37,10 @@ export default function Home() {
 
         <hr />
 
-        <div className="frameworks">
-          <div>
-            <h3>Frameworks/Libraries</h3>
+        <div className="skillContainer">
+        <div className="skillInfo">Animation</div>
+          <div className="skillInfo">
+            <h3>Frameworks/ Libraries</h3>
             <ul>
               <li>React</li>
               <li>Tailwind</li>
@@ -51,8 +53,9 @@ export default function Home() {
 
         <hr />
 
-        <div className="tools">
-          <div>
+        <div className="skillContainer">
+        <div className="skillInfo">Animation</div>
+          <div className="skillInfo">
             <h3>Additional Tools</h3>
             <ul>
               <li>Docker</li>
@@ -71,6 +74,7 @@ export default function Home() {
         </Link>
       </div>
 
+        <div className = "movingText"><h2>Let's Connect!</h2></div>
       <div className="contact">
         <a className="buttonS" href="mailto:angela.yang146@gmail.com">
           EMAIL

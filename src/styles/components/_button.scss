@@ -19,3 +19,9 @@
     height: 50px;
     cursor: pointer;
 }
+
+.buttonS:hover, .buttonM:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
