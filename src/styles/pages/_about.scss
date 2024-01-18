@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+.about{
+    @include flexCenter;
+}
+
+.aboutInfo{
+    width: 50%;
+    
+    h2, p{
+        padding-right: 60px;
+    }
+}
+
+.aboutImage{
+    @include flexCenter;
+    width:50%;
+    background-color: aquamarine;
+    height: 500px;
+}

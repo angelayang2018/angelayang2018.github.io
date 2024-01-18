@@ -27,7 +27,7 @@ CSS is used for styling and layout. I've employed modern CSS features and best p
 5. SASS (Syntactically Awesome Style Sheets)
 I utilized SASS to write more concise and readable CSS. 
 
-## Process and Challenges of Creating Website
+## Process and Challenges of Creating the Website
 Here I go through the conceptualization, design, development, and testing of my website. 
 
 https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing

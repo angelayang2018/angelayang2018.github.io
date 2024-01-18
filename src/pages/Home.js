@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div>
-      <div>
+      <div className = "intro">
         <div>
           <p>Frontend Developer | Software Engineer</p>
           <p>SJSU Computer Science Graduate</p>

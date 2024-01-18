@@ -84,8 +84,16 @@ h1 {
   font-family: "Nostrav";
 }
 
+.intro {
+  padding: 20px 0;
+}
+
 .aboutButtons {
   display: flex;
+}
+
+.skills {
+  padding: 20px 0px;
 }
 
 .skillContainer {
@@ -110,16 +118,19 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px 0 70px 0;
 }
 
 .projectDetails {
   width: 50%;
+  padding: 20px 0;
 }
 
 .projectItem1 {
   width: 500px;
   height: 300px;
   background-color: rgb(228, 136, 136);
+  border-radius: 15px;
 }
 
 .projectTools {
@@ -150,6 +161,30 @@ h1 {
 }
 .movingText h2 {
   font-family: "Nostrav";
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutInfo {
+  width: 50%;
+}
+.aboutInfo h2, .aboutInfo p {
+  padding-right: 60px;
+}
+
+.aboutImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: aquamarine;
+  height: 500px;
 }
 
 body {
