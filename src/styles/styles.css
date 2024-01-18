@@ -1,5 +1,29 @@
+@font-face {
+  font-family: "Nostrav";
+  src: url(Nostrav.ttf);
+}
+@font-face {
+  font-family: "Mori";
+  font-weight: 200;
+  src: url(PPMori-Extralight.otf);
+}
+@font-face {
+  font-family: "Mori";
+  font-weight: 400;
+  src: url(PPMori-Regular.otf);
+}
+@font-face {
+  font-family: "Mori";
+  font-weight: 600;
+  src: url(PPMori-SemiBold.otf);
+}
+h1 {
+  font-size: 30px;
+}
+
 .buttonS {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -8,10 +32,17 @@
   width: 150px;
   height: 50px;
   cursor: pointer;
+  margin-right: 10px;
+}
+.buttonS:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
 }
 
 .buttonM {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -21,17 +52,31 @@
   height: 50px;
   cursor: pointer;
 }
-
-.buttonS:hover, .buttonM:hover {
+.buttonM:hover {
   background-color: black;
   color: white;
   border-color: black;
 }
 
-@font-face {
-  font-family: "Nostrav";
-  src: url(Nostrav.ttf);
+.buttonC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: solid gray 0.5px;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0px 10px;
 }
+.buttonC:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -53,6 +98,42 @@
 .skillInfo {
   width: 50%;
 }
+.skillInfo ul {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectDetails {
+  width: 50%;
+}
+
+.projectItem1 {
+  width: 500px;
+  height: 300px;
+  background-color: rgb(228, 136, 136);
+}
+
+.projectTools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 .contact {
   display: flex;
@@ -63,12 +144,16 @@
 
 .movingText {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+.movingText h2 {
+  font-family: "Nostrav";
+}
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Mori";
   background-color: #FAF7EF;
   padding: 0px 30px;
 }

@@ -12,7 +12,34 @@
 
 .skillInfo{
     width: 50%;
+
+    ul{
+        column-count: 2;
+        column-gap: 20px;
+    }
     
+}
+
+.projects{
+    @include flexCenter(column);
+}
+
+.projectDetails{
+    width: 50%;
+}
+
+.projectItem1{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(228, 136, 136);
+}
+
+.projectTools{
+    @include flexSBetween;
+}
+
+.projectControls{
+    @include flexCenter;
 }
 
 .contact{
@@ -22,5 +49,10 @@
 
 .movingText{
     @include flexCenter;
+    
+    h2{
+       
+        font-family:"Nostrav";
+    }
 }
 

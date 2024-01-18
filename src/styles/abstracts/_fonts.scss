@@ -1,0 +1,26 @@
+@font-face{
+    font-family:"Nostrav";
+    src: url(Nostrav.ttf);
+}
+
+@font-face{
+    font-family:"Mori";
+    font-weight: 200;
+    src: url(PPMori-Extralight.otf);
+}
+
+@font-face{
+    font-family:"Mori";
+    font-weight: 400;
+    src: url(PPMori-Regular.otf);
+}
+
+@font-face{
+    font-family:"Mori";
+    font-weight: 600;
+    src: url(PPMori-SemiBold.otf);
+}
+
+h1{
+    font-size: 30px
+}

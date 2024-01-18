@@ -1,5 +1,6 @@
-@mixin flexCenter{
+@mixin flexCenter($flexDirection: row){
     display: flex;
+    flex-direction: $flexDirection;
     justify-content: center;
     align-items: center;
 }
@@ -14,5 +15,22 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@mixin buttonStyle($width){
+    @include flexCenter;
+    background-color: transparent;
+    border: solid gray 0.5px;
+    border-radius: 25px;
+    width: $width;
+    height: 50px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: black;
+        color: white;
+        border-color: black; 
+    }
+    
 }
 
