@@ -10,7 +10,7 @@ export default function Home() {
   });
 
   return (
-    <div>
+    <div className = "home">
       <div className = "intro">
         <div>
           <p>Frontend Developer | Software Engineer</p>

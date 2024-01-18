@@ -2,7 +2,13 @@
 
 .navbar{
     @include flexSBetween;
+    box-sizing: border-box;
     font-family: "Nostrav";
+    position: fixed;
+    width: 100%;
+    background-color: $sandColor;
+    left:0;
+    padding: 0 20px;
 }
 
 

@@ -18,7 +18,7 @@
   src: url(PPMori-SemiBold.otf);
 }
 h1 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .buttonS {
@@ -81,11 +81,18 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
   font-family: "Nostrav";
+  position: fixed;
+  width: 100%;
+  background-color: #FAF7EF;
+  left: 0;
+  padding: 0 20px;
 }
 
 .intro {
   padding: 20px 0;
+  padding-top: 70px;
 }
 
 .aboutButtons {
@@ -191,6 +198,7 @@ body {
   font-family: "Mori";
   background-color: #FAF7EF;
   padding: 0px 30px;
+  margin: 0;
 }
 
 a {
