@@ -2,6 +2,7 @@
 
 .about{
     @include flexCenter;
+    padding-top: 70px;
 }
 
 .aboutInfo{
@@ -16,5 +17,5 @@
     @include flexCenter;
     width:50%;
     background-color: aquamarine;
-    height: 500px;
+    height: 400px;
 }

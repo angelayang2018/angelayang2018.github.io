@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .buttonS{
-    @include buttonStyle(150px);  
+    @include buttonStyle(150px);
     margin-right:10px;
 }
 
