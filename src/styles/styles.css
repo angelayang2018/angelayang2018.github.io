@@ -153,21 +153,18 @@ h2 {
 }
 
 .projectItem1 {
-  width: 500px;
   height: 300px;
   background-color: rgb(228, 136, 136);
   border-radius: 15px;
 }
 
 .projectItem2 {
-  width: 500px;
   height: 300px;
   background-color: rgb(69, 116, 226);
   border-radius: 15px;
 }
 
 .projectItem3 {
-  width: 500px;
   height: 300px;
   background-color: rgb(226, 184, 69);
   border-radius: 15px;
@@ -186,9 +183,37 @@ h2 {
   align-items: center;
 }
 
-.myswiper {
+.swiper {
   width: 100%;
   height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  position: relative;
+  width: var(--swiper-width);
+  opacity: 0.5;
+  transform: scale(0.84);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  transform: scale(0.84) translateZ(0);
+}
+
+.swiper-slide.swiper-slide-active {
+  transform: scaleX(1) !important;
+  opacity: 1 !important;
 }
 
 .contact {

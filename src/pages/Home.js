@@ -112,21 +112,25 @@ export default function Home() {
       <h2>PROJECTS</h2>
       <div className="projects">
         
-        <Swiper className="myswiper"
+        <Swiper
         modules = {[Navigation]}
-        spaceBetween={40}
-          slidesPerView={3}
+        loop = 'true'
+        centeredSlides={true}
+        slidesPerView={3}
+        spaceBetween={100}
           navigation={{
             prevEl: ".buttonPrev",
             nextEl: ".buttonNext",
           }}
+          
         >
-          <SwiperSlide className = "projectItem1">1</SwiperSlide>
-          <SwiperSlide className = "projectItem2">2</SwiperSlide>
-          <SwiperSlide className = "projectItem3">3</SwiperSlide>
-          <SwiperSlide className = "projectItem1">4</SwiperSlide>
-          <SwiperSlide className = "projectItem2">5</SwiperSlide>
-          <SwiperSlide className = "projectItem3">6</SwiperSlide>
+          <SwiperSlide><img src="https://i.ibb.co/dW1BJty/Hack-Davis.png" alt="Hack-Davis" /></SwiperSlide>
+          <SwiperSlide><img src="https://i.ibb.co/PrkYCPL/MathShip.png" alt="MathShip" /></SwiperSlide>
+          <SwiperSlide><img src="https://i.ibb.co/Q9nw9st/Udemy.png" alt="Udemy" /></SwiperSlide>
+          <SwiperSlide><img src="https://i.ibb.co/dW1BJty/Hack-Davis.png" alt="Hack-Davis" /></SwiperSlide>
+          <SwiperSlide><img src="https://i.ibb.co/PrkYCPL/MathShip.png" alt="MathShip" /></SwiperSlide>
+          <SwiperSlide><img src="https://i.ibb.co/Q9nw9st/Udemy.png" alt="Udemy" /></SwiperSlide>
+          
           
         </Swiper>
         
