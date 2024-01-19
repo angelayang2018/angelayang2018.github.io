@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+
+.projectPage{
+    padding-top: 70px;
+}
+
+.projectContainer{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+        padding: 10px;
+        border-radius: 15px;
+    }
+}

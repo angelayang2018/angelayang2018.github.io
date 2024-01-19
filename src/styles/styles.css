@@ -26,6 +26,10 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 25px;
+}
+
 .buttonS {
   display: flex;
   flex-direction: row;
@@ -152,24 +156,6 @@ h2 {
   padding: 20px 0;
 }
 
-.projectItem1 {
-  height: 300px;
-  background-color: rgb(228, 136, 136);
-  border-radius: 15px;
-}
-
-.projectItem2 {
-  height: 300px;
-  background-color: rgb(69, 116, 226);
-  border-radius: 15px;
-}
-
-.projectItem3 {
-  height: 300px;
-  background-color: rgb(226, 184, 69);
-  border-radius: 15px;
-}
-
 .projectTools {
   display: flex;
   justify-content: space-between;
@@ -189,16 +175,10 @@ h2 {
 }
 
 .swiper-slide {
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.swiper-slide {
   position: relative;
   width: var(--swiper-width);
   opacity: 0.5;
@@ -212,8 +192,8 @@ h2 {
 }
 
 .swiper-slide.swiper-slide-active {
-  transform: scaleX(1) !important;
-  opacity: 1 !important;
+  transform: scale(1.5);
+  opacity: 1;
 }
 
 .contact {
@@ -250,12 +230,26 @@ h2 {
 
 .aboutImage {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   width: 50%;
-  background-color: aquamarine;
-  height: 400px;
+}
+.aboutImage img {
+  border-radius: 15px;
+  width: 65%;
+}
+
+.projectPage {
+  padding-top: 70px;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projectContainer img {
+  padding: 10px;
+  border-radius: 15px;
 }
 
 body {

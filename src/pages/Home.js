@@ -1,11 +1,9 @@
 import React from "react";
-import { Navigation} from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
-import 'swiper/css';
-import 'swiper/css/navigation';
-
-
+import "swiper/css";
+import "swiper/css/navigation";
 
 export default function Home() {
   return (
@@ -111,29 +109,40 @@ export default function Home() {
 
       <h2>PROJECTS</h2>
       <div className="projects">
-        
         <Swiper
-        modules = {[Navigation]}
-        loop = 'true'
-        centeredSlides={true}
-        slidesPerView={3}
-        spaceBetween={100}
+          modules={[Navigation]}
+          loop="true"
+          centeredSlides={true}
+          slidesPerView={3}
+          spaceBetween={100}
           navigation={{
             prevEl: ".buttonPrev",
             nextEl: ".buttonNext",
           }}
-          
         >
-          <SwiperSlide><img src="https://i.ibb.co/dW1BJty/Hack-Davis.png" alt="Hack-Davis" /></SwiperSlide>
-          <SwiperSlide><img src="https://i.ibb.co/PrkYCPL/MathShip.png" alt="MathShip" /></SwiperSlide>
-          <SwiperSlide><img src="https://i.ibb.co/Q9nw9st/Udemy.png" alt="Udemy" /></SwiperSlide>
-          <SwiperSlide><img src="https://i.ibb.co/dW1BJty/Hack-Davis.png" alt="Hack-Davis" /></SwiperSlide>
-          <SwiperSlide><img src="https://i.ibb.co/PrkYCPL/MathShip.png" alt="MathShip" /></SwiperSlide>
-          <SwiperSlide><img src="https://i.ibb.co/Q9nw9st/Udemy.png" alt="Udemy" /></SwiperSlide>
-          
-          
+           
+           <SwiperSlide>
+           <img src="https://i.ibb.co/FbwkY1Y/pantry-1.png" alt="pantry-1"/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://i.ibb.co/dW1BJty/Hack-Davis.png"
+              alt="Hack-Davis"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://i.ibb.co/PrkYCPL/MathShip.png" alt="MathShip" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://i.ibb.co/Q9nw9st/Udemy.png" alt="Udemy" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://i.ibb.co/MkZPWhf/maui.png" alt="maui" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://i.ibb.co/MBK07NP/portfolio.png" alt="portfolio" />
+          </SwiperSlide>
         </Swiper>
-        
 
         <div className="projectDetails">
           <div>

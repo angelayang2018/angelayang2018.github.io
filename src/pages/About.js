@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="about">
       <div className="aboutInfo">
-        <h2>About me</h2>
+        <h2>🙆🏻‍♀️ is for Angela</h2>
         <p>
           Hi! I'm Angela Yang, a results-driven frontend software developer and
           recent graduate of San Jose State University with a degree in Computer
@@ -22,7 +22,7 @@ export default function About() {
           frameworks or adopting modern design patterns, I am dedicated to
           continuous learning and improvement.</p>
       </div>
-      <div className="aboutImage">Image</div>
+      <div className="aboutImage"><img src="https://i.ibb.co/vLCcKPj/IMG-0659.jpg" alt="angie:)" border="0" /></div>
     </div>
   );
 }

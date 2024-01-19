@@ -14,8 +14,12 @@
 }
 
 .aboutImage{
-    @include flexCenter;
+    display: flex;
+    justify-content: flex-end;
     width:50%;
-    background-color: aquamarine;
-    height: 400px;
+    
+    img{
+        border-radius: 15px;
+        width:65%;
+    }
 }

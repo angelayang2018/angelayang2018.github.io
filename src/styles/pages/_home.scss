@@ -46,29 +46,11 @@
     
 }
 
-
-
 .projectDetails{
     width: 50%;
     padding: 20px 0;
 }
 
-.projectItem1{
-    height: 300px;
-    background-color: rgb(228, 136, 136);
-    border-radius: 15px;
-}
-.projectItem2{
-    height: 300px;
-
-    background-color: rgb(69, 116, 226);
-    border-radius: 15px;
-}
-.projectItem3{
-    height: 300px;
-    background-color: rgb(226, 184, 69);
-    border-radius: 15px;
-}
 
 .projectTools{
     @include flexSBetween;
@@ -83,15 +65,8 @@
     height: 100%;  
 }
 
-.swiper-slide{
-    text-align: center;
-    @include flexCenter;
-    position:relative;
-    overflow:hidden;
-}
-
-
 .swiper-slide {
+    @include flexCenter;
     position: relative;
     width: var(--swiper-width);
     opacity: .5;
@@ -105,8 +80,8 @@
   }
           
   .swiper-slide.swiper-slide-active {   
-    transform: scaleX(1) !important;
-    opacity: 1 !important;
+    transform: scale(1.5);
+    opacity: 1;
   }
 
 
