@@ -63,6 +63,7 @@
 .swiper{
     width: 100%;
     height: 100%;  
+    
 }
 
 .swiper-slide {
@@ -77,9 +78,10 @@
   
   .swiper-backface-hidden .swiper-slide {
     transform: scale(.84) translateZ(0);
+    border-radius: 15px;
   }
           
-  .swiper-slide.swiper-slide-active {   
+  .swiper-slide.swiper-slide-active {  
     transform: scale(1.5);
     opacity: 1;
   }

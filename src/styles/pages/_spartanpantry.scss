@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.spartanpantry{
+    padding-top: 70px;
+}
+
+.features{
+    @include flexEvenly;
+}

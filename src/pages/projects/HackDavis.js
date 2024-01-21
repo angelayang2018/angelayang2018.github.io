@@ -1,5 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export default function HackDavis(){
-    return(<div>Hack Davis</div>);
+export default function HackDavis() {
+  return (
+    <div className = "hackdavis">
+      <h2>Hack Davis</h2>
+    </div>
+  );
 }

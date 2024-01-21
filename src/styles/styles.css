@@ -17,6 +17,10 @@
   font-weight: 600;
   src: url(PPMori-SemiBold.otf);
 }
+.navbar h1 {
+  font-size: 35px;
+}
+
 h1 {
   font-size: 25px;
 }
@@ -189,6 +193,7 @@ h3 {
 
 .swiper-backface-hidden .swiper-slide {
   transform: scale(0.84) translateZ(0);
+  border-radius: 15px;
 }
 
 .swiper-slide.swiper-slide-active {
@@ -218,7 +223,7 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .aboutInfo {
@@ -250,6 +255,20 @@ h3 {
 .projectContainer img {
   padding: 10px;
   border-radius: 15px;
+}
+
+.spartanpantry {
+  padding-top: 70px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hackdavis {
+  padding-top: 70px;
 }
 
 body {
