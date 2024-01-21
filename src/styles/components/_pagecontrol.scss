@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+.pageControl{
+    @include flexSBetween;
+    margin: 10px 0px;
+}
