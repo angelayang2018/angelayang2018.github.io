@@ -45,10 +45,11 @@ export default function Maui() {
         <h4>Theme</h4>
         <h4>Colors</h4>
         <div className="colorsContainer">
-          <p className = "blackColor">#000000</p>
-          <p className="colors redColor">#DC4747</p>
-          <p className="colors orangeColor">#EA8118</p>
-          <p className="colors yellowColor">#E6D041</p>
+          <p className="colors mauiTurq">#11DFF0</p>
+          <p className="colors mauiGray">#F1F0F0</p>
+          <p className="colors mauiTan">#CF9E3E</p>
+          <p className="colors mauiPink">#F0B099</p>
+          <p className="colors mauiBlue">#5B668B</p>
         </div>
         
       </div>

@@ -3,24 +3,27 @@ import { Link } from "react-router-dom";
 import PageControl from "../../components/PageControl";
 export default function PyDoku() {
   return (
-    <div className = "pydoku">
+    <div className="pydoku">
       <Link to="/project">
         <p>← Back to Projects</p>
       </Link>
       <h2>PyDoku</h2>
 
       <div className="projectOverview">
-        <p>
-          My portfolio website showcases my journey as a software developer. It
-          features a collection of projects, skills, and experiences that define
-          my passion for creating.
-        </p>
+        <p>Simple app that solves sudoku puzzles using backtracking.</p>
       </div>
       <div className="projectTech">
-        <p>Team: Angela Yang, Shivam Amin, Christian Hernandex, Felix Ohlgart</p>
         <p>
-          Technologies Used: Python, PyGames
+          Team: Angela Yang,{" "}
+          <a href="https://www.linkedin.com/in/amin-shivam/"> Shivam Amin, </a>{" "}
+          <a href="https://www.linkedin.com/in/c-a-hernandez/">
+            Christian Hernandex,{" "}
+          </a>{" "}
+          <a href="https://www.linkedin.com/in/felix-ohlgart-926301203/">
+            Felix Ohlgart
+          </a>
         </p>
+        <p>Technologies Used: Python, PyGames</p>
         <p>Timeline: April - May 2023</p>
         <p>
           <a
@@ -31,7 +34,8 @@ export default function PyDoku() {
           </a>
         </p>
       </div>
-      <PageControl to = "spartanpantry" from ="maui"></PageControl>
+      <div className="tempImage"></div>
+      <PageControl to="spartanpantry" from="maui"></PageControl>
     </div>
   );
 }
