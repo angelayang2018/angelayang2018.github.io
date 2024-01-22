@@ -73,6 +73,8 @@ export default function Portfolio() {
         <div className="tempImage"></div>
       </div>
 
+      <p>Extra</p>
+
       <PageControl></PageControl>
     </div>
   );
