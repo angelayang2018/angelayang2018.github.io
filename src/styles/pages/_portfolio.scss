@@ -3,3 +3,58 @@
 .portfolio{
     padding-top: 90px;
 }
+
+.colorsContainer{
+    position: relative;
+    background-color: black;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.colors{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sandColor{
+    background-color: $sandColor;
+}
+
+.orangeColor{
+    background-color: $orangeColor;
+}
+
+.blueColor{
+    background-color: $blueColor;
+}
+
+.greenColor{
+    background-color: $greenColor;
+}
+
+.pinkColor{
+    background-color: $pinkColor;
+}
+
+.whiteColor{
+    background-color: $whiteColor;
+}
+
+.redColor{
+    background-color: $redColor;
+}
+
+.yellowColor{
+    background-color: $yellowColor;
+}
+
+
+.blackColor{
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    top: 0px;
+    left: 10px;
+}

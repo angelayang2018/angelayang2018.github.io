@@ -34,6 +34,10 @@ h3 {
   font-size: 25px;
 }
 
+.nostrav {
+  font-family: "Nostrav";
+}
+
 .buttonS {
   display: flex;
   flex-direction: row;
@@ -142,15 +146,15 @@ h3 {
 }
 
 .languages {
-  color: rgb(234, 129, 24);
+  color: #EA8118;
 }
 
 .frameworks {
-  color: rgb(64, 162, 81);
+  color: #40A250;
 }
 
 .tools {
-  color: rgb(46, 117, 188);
+  color: #2E75BC;
 }
 
 .projects {
@@ -308,6 +312,60 @@ h3 {
 
 .portfolio {
   padding-top: 90px;
+}
+
+.colorsContainer {
+  position: relative;
+  background-color: black;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.colors {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sandColor {
+  background-color: #FAF7EF;
+}
+
+.orangeColor {
+  background-color: #EA8118;
+}
+
+.blueColor {
+  background-color: #2E75BC;
+}
+
+.greenColor {
+  background-color: #40A250;
+}
+
+.pinkColor {
+  background-color: #E5A1EA;
+}
+
+.whiteColor {
+  background-color: #FFFFFF;
+}
+
+.redColor {
+  background-color: #DC4747;
+}
+
+.yellowColor {
+  background-color: #E6D041;
+}
+
+.blackColor {
+  color: white;
+  position: absolute;
+  font-size: 10px;
+  top: 0px;
+  left: 10px;
 }
 
 .udemy {
