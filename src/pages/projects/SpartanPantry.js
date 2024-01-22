@@ -80,7 +80,7 @@ export default function SpartanPantry() {
         <div className="tempImage"></div>
         <div className="tempImage"></div>
       </div>
-      <PageControl></PageControl>
+      <PageControl to ="mathship" from = "pydoku" ></PageControl>
     </div>
   );
 }

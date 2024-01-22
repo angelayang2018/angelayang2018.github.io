@@ -17,7 +17,7 @@ export default function Maui() {
         </p>
       </div>
       <div className="projectTech">
-        <p>Team: Angela Yang</p>
+        <p>Team: Angela Yang (freelancer)</p>
         <p>
           Technologies Used: React, HTML, CSS, Javascript, Figma
         </p>
@@ -53,7 +53,7 @@ export default function Maui() {
         
       </div>
 
-      <PageControl></PageControl>
+      <PageControl to="pydoku" from ="portfolio"></PageControl>
     </div>
   );
 }

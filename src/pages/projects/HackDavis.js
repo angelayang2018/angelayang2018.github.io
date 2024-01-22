@@ -46,7 +46,7 @@ export default function HackDavis() {
       <div>
         <div className="tempImage"></div>
       </div>
-      <PageControl></PageControl>
+      <PageControl to = "portfolio" from = "mathship"></PageControl>
     </div>
   );
 }

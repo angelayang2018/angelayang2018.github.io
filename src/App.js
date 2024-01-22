@@ -9,7 +9,7 @@ import Portfolio from "./pages/projects/Portfolio";
 import SpartanPantry from "./pages/projects/SpartanPantry";
 import HackDavis from "./pages/projects/HackDavis";
 import MathShip from "./pages/projects/MathShip";
-import Udemy from "./pages/projects/Udemy";
+import PyDoku from "./pages/projects/Pydoku";
 import Maui from "./pages/projects/Maui";
 
 
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/project/portfolio" element={<Portfolio />} />
           <Route path="/project/spartanpantry" element={<SpartanPantry/>} />
-          <Route path="/project/udemy" element={<Udemy />} />
+          <Route path="/project/pydoku" element={<PyDoku />} />
           <Route path="/project/mathship" element={<MathShip />} />
           <Route path="/project/maui" element={<Maui />} />
           <Route path="/project/hackdavis" element={<HackDavis />} />

@@ -67,7 +67,7 @@ export default function MathShip() {
         <h4>Typography</h4>
       </div>
 
-      <PageControl></PageControl>
+      <PageControl to = "hackdavis" from = "spartanpantry"></PageControl>
     </div>
   );
 }

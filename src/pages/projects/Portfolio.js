@@ -33,7 +33,9 @@ export default function Portfolio() {
       </div>
 
       <div>
-        <a href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing">Full Report</a>
+        <a href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing">
+          Full Report
+        </a>
       </div>
       <div>
         <div className="tempImage"></div>
@@ -45,7 +47,7 @@ export default function Portfolio() {
         <h4>Theme</h4>
         <h4>Colors</h4>
         <div className="colorsContainer">
-          <p className = "blackColor">#000000</p>
+          <p className="blackColor">#000000</p>
           <p className="colors redColor">#DC4747</p>
           <p className="colors orangeColor">#EA8118</p>
           <p className="colors yellowColor">#E6D041</p>
@@ -54,15 +56,10 @@ export default function Portfolio() {
           <p className="colors pinkColor">#E5A1EA</p>
           <p className="colors sandColor">#FAF7EF</p>
           <p className="colors whiteColor">#FFFFFF</p>
-          
-          
-          
-
         </div>
         <h4>Typography</h4>
         <p>Mori</p>
         <p className="nostrav">Nostrav</p>
-        
       </div>
 
       <div>
@@ -73,7 +70,7 @@ export default function Portfolio() {
         <div className="tempImage"></div>
       </div>
 
-      <PageControl></PageControl>
+      <PageControl to = "maui" from = "hackdavis"></PageControl>
     </div>
   );
 }
