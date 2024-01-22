@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This project serves as a showcase of my skills and projects in the field of front-end development. My primary goal is to create an interactive and visually appealing platform that reflects my technical capabilities. 
 
+View my website here: https://angelayang2018.github.io/
+
 ## What to Expect
 
 **Projects Showcase**: Explore a selection of projects I've worked on. Each project comes with a description, technologies used, and links to live demos or GitHub repositories.  
