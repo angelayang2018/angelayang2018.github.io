@@ -17,6 +17,10 @@
   font-weight: 600;
   src: url(PPMori-SemiBold.otf);
 }
+@font-face {
+  font-family: "Galactica";
+  src: url(Galacticagrid-8Mr7J.ttf);
+}
 .navbar h1 {
   font-size: 35px;
 }
@@ -36,6 +40,10 @@ h3 {
 
 .nostrav {
   font-family: "Nostrav";
+}
+
+.galactica {
+  font-family: "Galactica";
 }
 
 .buttonS {
@@ -376,8 +384,47 @@ h3 {
   padding-top: 90px;
 }
 
+.mathshipImgCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mathshipHome {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.mathshipImg {
+  border-radius: 15px;
+}
+
+.featuresCont {
+  display: flex;
+}
+
+.featureCard {
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.featureCard p {
+  min-height: 50px;
+}
+.featureCard img {
+  width: 100%;
+  border-radius: 15px;
+}
+
 .maui {
   padding-top: 90px;
+}
+
+.projectImg {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: none !important;
 }
 
 .mauiTurq {

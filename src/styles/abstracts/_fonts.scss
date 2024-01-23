@@ -20,6 +20,11 @@
     font-weight: 600;
     src: url(PPMori-SemiBold.otf);
 }
+
+@font-face{
+    font-family:"Galactica";
+    src: url(Galacticagrid-8Mr7J.ttf);
+}
 .navbar{
     h1{
         font-size: 35px;
@@ -39,4 +44,8 @@ h3{font-size: 25px;}
 
 .nostrav{
     font-family: "Nostrav"
+}
+
+.galactica{
+    font-family: "Galactica";
 }

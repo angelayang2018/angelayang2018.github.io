@@ -31,6 +31,7 @@ export default function HackDavis() {
         <p>
           <a
             href="https://github.com/angelayang2018/Healthy-Foods"
+            target = "_blank"
             className="buttonS"
           >
             Github
@@ -43,9 +44,7 @@ export default function HackDavis() {
           DevPost
         </a>
       </div>
-      <div>
-        <div className="tempImage"></div>
-      </div>
+      <img className = "projectImg" src="https://i.ibb.co/68LWpC4/healthyfoods.png" alt="healthyfoods" />
       <PageControl to = "portfolio" from = "mathship"></PageControl>
     </div>
   );

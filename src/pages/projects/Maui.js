@@ -8,7 +8,7 @@ export default function Maui() {
       <Link to="/project">
         <p>← Back to Projects</p>
       </Link>
-      <h2>Maui</h2>
+      <h2>Maui Condos</h2>
       <div className="projectOverview">
         <p>
           My portfolio website showcases my journey as a software developer. It
@@ -18,10 +18,8 @@ export default function Maui() {
       </div>
       <div className="projectTech">
         <p>Team: Angela Yang (freelancer)</p>
-        <p>
-          Technologies Used: React, HTML, CSS, Javascript, Figma
-        </p>
-        <p>Timeline: August 2023 - January 2024</p>
+        <p>Technologies Used: React, HTML, CSS, Javascript, Figma</p>
+        <p>Timeline: October 2023 - January 2024</p>
         <p>
           <a
             href="https://github.com/angelayang2018/portfolio_website"
@@ -33,12 +31,11 @@ export default function Maui() {
       </div>
 
       <div>
-        <a href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing">Full Report</a>
+        <a href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing">
+          Full Report
+        </a>
       </div>
-      <div>
-        <div className="tempImage"></div>
-      </div>
-
+      <img className = "projectImg" src="https://i.ibb.co/cXCxpjK/Screen-Shot-2024-01-21-at-9-19-08-PM.png" alt="Screen-Shot-2024-01-21-at-9-19-08-PM" />
       <div>
         <h3>Design</h3>
         <p>↓</p>
@@ -51,10 +48,13 @@ export default function Maui() {
           <p className="colors mauiPink">#F0B099</p>
           <p className="colors mauiBlue">#5B668B</p>
         </div>
-        
+        <h4>Typography</h4>
+        <p>Montserrat</p>
+        <p>Cinzel</p>
+        <p></p>
       </div>
 
-      <PageControl to="pydoku" from ="portfolio"></PageControl>
+      <PageControl to="pydoku" from="portfolio"></PageControl>
     </div>
   );
 }
