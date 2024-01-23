@@ -1,74 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageControl from "../../components/PageControl";
 import Features from "../../components/Features";
+import ProjectDetails from "../../components/ProjectDetails";
 
 export default function SpartanPantry() {
-  const featuresData = [
-    {
-      title: "Browse Inventory",
-      description: "Browse through pantry product inventory in real time",
-      source: "https://i.ibb.co/GJwDFyZ/pantrylogin.png",
-      alt: "Pantry Inventory Page",
-    },
-    {
-      title: "Profile",
-      description: "Show last visted date, and recent purchases",
-      source: "https://i.ibb.co/m4gNp6W/pantryprofile.png",
-      alt: "Pantry Profile Pge",
-    },
-    {
-      title: "Shopping Cart",
-      description: "Add, delete items and place orders",
-      source: "https://i.ibb.co/tLPrLm4/pantrycart.png",
-      alt: "Pantry Shopping Cart",
-    },
-  ];
   return (
     <div className="spartanpantry">
-      <Link to="/project">
-        <p>← Back to Projects</p>
-      </Link>
-      <h2>Spartan Pantry</h2>
-      <div className="projectOverview">
-        <p>
-          The Spartan Pantry Website is designed to streamline and enhance the
-          user experience for ordering essential items from the Spartan Pantry.
-          It aims to provide an efficient and user-friendly platform for the San
-          Jose State University community to access pantry resources
-          conveniently.
-        </p>
-      </div>
-      <div className="features"></div>
-
-      <div className="projectTech">
-        <p>
-          Team: Angela Yang and{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="credit"
-            href="https://www.linkedin.com/in/barnabas-yuen-cs/"
-          >
-            Barnabas Yuen
-          </a>
-        </p>
-        <p>
-          Technologies Used: React, Javascript, HTML, CSS, Docker, Redis, Node,
-          Express, Figma
-        </p>
-        <p>Timeline: March - May 2023</p>
-        <p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/angelayang2018/CS157C-team5"
-            className="buttonS"
-          >
-            Github
-          </a>
-        </p>
-      </div>
+      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
 
       <div>
         <a
@@ -127,9 +65,45 @@ export default function SpartanPantry() {
           <p className="colors pantryYellow">#D99800</p>
         </div>
         <h4>Typography</h4>
-        <p>Arial</p>
+        <p className="arial">Arial</p>
       </div>
       <PageControl to="mathship" from="pydoku"></PageControl>
     </div>
   );
 }
+
+const featuresData = [
+  {
+    title: "Browse Inventory",
+    description: "Browse through pantry product inventory in real time",
+    source: "https://i.ibb.co/GJwDFyZ/pantrylogin.png",
+    alt: "Pantry Inventory Page",
+  },
+  {
+    title: "Profile",
+    description: "Show last visted date, and recent purchases",
+    source: "https://i.ibb.co/m4gNp6W/pantryprofile.png",
+    alt: "Pantry Profile Pge",
+  },
+  {
+    title: "Shopping Cart",
+    description: "Add, delete items and place orders",
+    source: "https://i.ibb.co/tLPrLm4/pantrycart.png",
+    alt: "Pantry Shopping Cart",
+  },
+];
+
+const projectInfo = {
+  title: "Spartan Pantry",
+  overview:
+    " The Spartan Pantry Website is designed to streamline and enhance the user experience for ordering essential items from the Spartan Pantry. It aims to provide an efficient and user-friendly platform for the San Jose State University community to access pantry resources conveniently.",
+  team: [
+    {
+      name: "Barnabas Yuen",
+      linkedin: "https://www.linkedin.com/in/barnabas-yuen-cs/",
+    },
+  ],
+  tech: "React, Javascript, HTML, CSS, Docker, Redis, Node, Express, Figma",
+  timeline: "March - May 2023",
+  github: "https://github.com/angelayang2018/CS157C-team5",
+};

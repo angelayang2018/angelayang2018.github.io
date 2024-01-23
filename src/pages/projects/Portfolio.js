@@ -1,38 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageControl from "../../components/PageControl";
+import ProjectDetails from "../../components/ProjectDetails";
 
 export default function Portfolio() {
   return (
     <div className="portfolio">
-      <Link to="/project">
-        <p>← Back to Projects</p>
-      </Link>
-      <h2>Portfolio</h2>
-      <div className="projectOverview">
-        <p>
-          My portfolio website showcases my journey as a software developer. It
-          features a collection of projects, skills, and experiences that define
-          my passion for creating.
-        </p>
-      </div>
-      <div className="projectTech">
-        <p>Team: Angela Yang</p>
-        <p>
-          Technologies Used: React, GSAP, HTML, CSS, Javascript, Swiper, Figma
-        </p>
-        <p>Timeline: January 2024</p>
-        <p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/angelayang2018/portfolio_website"
-            className="buttonS"
-          >
-            Github
-          </a>
-        </p>
-      </div>
+      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
 
       <div>
         <a
@@ -79,3 +52,13 @@ export default function Portfolio() {
     </div>
   );
 }
+
+const projectInfo = {
+  title: "Portfolio",
+  overview:
+    "My portfolio website showcases my journey as a software developer. It features a collection of projects, skills, and experiences that define my passion for creating.",
+  team: [],
+  tech: "React, GSAP, HTML, CSS, Javascript, Swiper, Figma",
+  timeline: "January 2024",
+  github: "https://github.com/angelayang2018/portfolio_website",
+};

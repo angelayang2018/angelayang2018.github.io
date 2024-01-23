@@ -1,50 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageControl from "../../components/PageControl";
+import ProjectDetails from "../../components/ProjectDetails";
 
 export default function HackDavis() {
   return (
     <div className="hackdavis">
-      <Link to="/project">
-        <p>← Back to Projects</p>
-      </Link>
-      <h2>Heatlhy Foods Website (HackDavis 2021)</h2>
-
-      <div className="projectOverview">
-        <p>
-          Hackathon project for a healthy food recipe app. Users can take in an
-          ingredient or a food they really enjoy as well as their location Zip
-          code, and we display healthier alternatives and choices and encourage
-          users to visit nearby farmers markets to shop for their produce.
-        </p>
-      </div>
-
-      <div className="projectTech">
-        <p>
-          Team: Angela Yang and{" "}
-          <a
-            className="credit"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/alvin-agana/"
-          >
-            Alvin Agana
-          </a>
-        </p>
-        <p>Technologies Used: Python, Flask, HTML, CSS, Javascript</p>
-        <p>Timeline: January 2021</p>
-        <p>
-          <a
-            href="https://github.com/angelayang2018/Healthy-Foods"
-            target="_blank"
-            rel="noreferrer"
-            className="buttonS"
-          >
-            Github
-          </a>
-        </p>
-      </div>
-
+      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
       <div>
         <a
           target="_blank"
@@ -63,3 +24,18 @@ export default function HackDavis() {
     </div>
   );
 }
+
+const projectInfo = {
+  title: "Heatlhy Foods Website (HackDavis 2021)",
+  overview:
+    "Hackathon project for a healthy food recipe app. Users can take in an ingredient or a food they really enjoy as well as their location Zip code, and we display healthier alternatives and choices and encourage users to visit nearby farmers markets to shop for their produce.",
+  team: [
+    {
+      name: "Alvin Agana",
+      linkedin: "https://www.linkedin.com/in/alvin-agana/",
+    },
+  ],
+  tech: "Python, Flask, HTML, CSS, Javascript",
+  timeline: "January 2021",
+  github: "https://github.com/angelayang2018/Healthy-Foods",
+};

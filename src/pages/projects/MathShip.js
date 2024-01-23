@@ -1,77 +1,12 @@
 import React from "react";
 import PageControl from "../../components/PageControl";
-import { Link } from "react-router-dom";
 import Features from "../../components/Features";
+import ProjectDetails from "../../components/ProjectDetails";
 
 export default function MathShip() {
-  const featuresData = [
-    {
-      title: "Login/Signup",
-      description: "Create accounts and login",
-      source: "https://i.ibb.co/mCkB2Xt/mathshiplogin.png",
-      alt: "Math Ship Login Page",
-    },
-    {
-      title: "Play",
-      description: "Users solve math problems to progress through the game",
-      source: "https://i.ibb.co/y40gjcY/mathshipplay.png",
-      alt: "Math Ship Select Ship Page",
-    },
-    {
-      title: "High Score",
-      description: "Display the top 10 highest scores",
-      source: "https://i.ibb.co/WgSHFFZ/mathshipscore.png",
-      alt: "Math Ship High Score Table",
-    },
-  ];
-
   return (
     <div className="mathship">
-      <Link to="/project">
-        <p>← Back to Projects</p>
-      </Link>
-      <h2>Math Ship</h2>
-      <div className="projectOverview">
-        <p>
-          MathShip is a straightforward and enjoyable math game inspired by
-          Galaga. The game focuses on basic arithmetic operations and provides a
-          fun way for players to practice while playing.
-        </p>
-      </div>
-      <div className="projectTech">
-        <p>
-          Team: Angela Yang,{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="credit"
-            href="https://www.linkedin.com/in/jyee1001/"
-          >
-            Joshua Yee{" "}
-          </a>
-          and{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="credit"
-            href="https://www.linkedin.com/in/haroon-razzack-999472a1/"
-          >
-            Haroon Razzack
-          </a>
-        </p>
-        <p>Technologies Used: JavaFX, Java, Scenebuilder, CSS, Eclipse, SQL</p>
-        <p>Timeline: September - December 2021</p>
-        <p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/angelayang2018/CS_151_Math_Ship_Term_Project"
-            className="buttonS"
-          >
-            Github
-          </a>
-        </p>
-      </div>
+      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
       <div className="mathshipImgCont">
         <img
           className="mathshipHome"
@@ -100,3 +35,43 @@ export default function MathShip() {
     </div>
   );
 }
+
+const featuresData = [
+  {
+    title: "Login/Signup",
+    description: "Create accounts and login",
+    source: "https://i.ibb.co/mCkB2Xt/mathshiplogin.png",
+    alt: "Math Ship Login Page",
+  },
+  {
+    title: "Play",
+    description: "Users solve math problems to progress through the game",
+    source: "https://i.ibb.co/y40gjcY/mathshipplay.png",
+    alt: "Math Ship Select Ship Page",
+  },
+  {
+    title: "High Score",
+    description: "Display the top 10 highest scores",
+    source: "https://i.ibb.co/WgSHFFZ/mathshipscore.png",
+    alt: "Math Ship High Score Table",
+  },
+];
+
+const projectInfo = {
+  title: "Math Ship",
+  overview:
+    "MathShip is a straightforward and enjoyable math game inspired by Galaga. The game focuses on basic arithmetic operations and provides a fun way for players to practice while playing.",
+  team: [
+    {
+      name: "Joshua Yee",
+      linkedin: "https://www.linkedin.com/in/jyee1001/",
+    },
+    {
+      name: "Haroon Razzack",
+      linkedin: "https://www.linkedin.com/in/haroon-razzack-999472a1/",
+    },
+  ],
+  tech: "JavaFX, Java, Scenebuilder, CSS, Eclipse, SQL",
+  timeline: "September - December 2021",
+  github: "https://github.com/angelayang2018/CS_151_Math_Ship_Term_Project",
+};

@@ -1,37 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageControl from "../../components/PageControl";
+import ProjectDetails from "../../components/ProjectDetails";
 
 export default function Maui() {
   return (
     <div className="maui">
-      <Link to="/project">
-        <p>← Back to Projects</p>
-      </Link>
-      <h2>Maui Condos</h2>
-      <div className="projectOverview">
-        <p>
-          My portfolio website showcases my journey as a software developer. It
-          features a collection of projects, skills, and experiences that define
-          my passion for creating.
-        </p>
-      </div>
-      <div className="projectTech">
-        <p>Team: Angela Yang (freelancer)</p>
-        <p>Technologies Used: React, HTML, CSS, Javascript, Figma</p>
-        <p>Timeline: October 2023 - January 2024</p>
-        <p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/angelayang2018/portfolio_website"
-            className="buttonS"
-          >
-            Github
-          </a>
-        </p>
-      </div>
-
+      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
       <div>
         <a
           target="_blank"
@@ -68,3 +42,13 @@ export default function Maui() {
     </div>
   );
 }
+
+const projectInfo = {
+  title: "Maui Condos",
+  overview:
+    "My portfolio website showcases my journey as a software developer. It features a collection of projects, skills, and experiences that define my passion for creating.",
+  team: [],
+  tech: "React, HTML, CSS, Javascript, Figma",
+  timeline: "October 2023 - January 2024",
+  github: "https://github.com/angelayang2018/portfolio_website",
+};
