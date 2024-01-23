@@ -4,22 +4,6 @@
     padding-top: 90px;
 }
 
-.projectOverview{
-    width: 50%;
-}
-
-.features{
-    @include flexEvenly;
-}
-
-.featureItem{
-    
-    @include flexCenter(column);
-    width: 33.3%;
-    height: 100%;
-    padding: 0 10px;
-}
-
 .pantryhome{
     width: 100%;
     border-radius: 15px;

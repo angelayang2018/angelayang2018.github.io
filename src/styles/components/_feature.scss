@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+
+.featuresCont{
+    display: flex;
+}
+
+.featureCard{
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 0 10px;
+
+    p{
+        min-height: 50px;
+    }
+
+    img{
+        width: 100%;
+        border-radius: 15px;
+    }
+}
