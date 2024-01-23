@@ -35,6 +35,10 @@
     border-radius: 15px;
 }
 
+.modelInfo{
+    width: 40%;
+}
+
 .modelImgCont{
     @include flexCenter;
     background-color: white;
@@ -42,8 +46,16 @@
     padding-top: 70px; 
 }
 
-
 .modelImg{
     width: 75%;
 }
 
+
+.pantryBlue{
+    background-color: #0067A7;
+    color: white;
+}
+
+.pantryYellow{
+    background-color: #D99800;
+}

@@ -102,13 +102,32 @@ export default function SpartanPantry() {
         <h3>Redis Database</h3>
         <p>↓</p>
         <h4>Data Model</h4>
-        <div className = "modelImgCont">
+        <p className="modelInfo">
+          User, product and order information were modeled using hashes in
+          Redis. The key for the hashes were the username, product id, and order
+          id, respectively. Each hash had a corresponding set, which would keep
+          track of each unique entry. A sorted set was created to keep track of
+          popular items.
+        </p>
+        <div className="modelImgCont">
           <img
             className="modelImg"
-            src="https://i.ibb.co/x38fC1B/pantry-Model-1.png"
+            src="https://i.ibb.co/zbpfGft/pantry-Model-3.png"
             alt="pantry-Model"
           />
         </div>
+      </div>
+
+      <div>
+        <h3>Design</h3>
+        <p>↓</p>
+        <h4>Colors</h4>
+        <div className="colorsContainer">
+          <p className="colors pantryBlue">#0067A7</p>
+          <p className="colors pantryYellow">#D99800</p>
+        </div>
+        <h4>Typography</h4>
+        <p>Arial</p>
       </div>
       <PageControl to="mathship" from="pydoku"></PageControl>
     </div>

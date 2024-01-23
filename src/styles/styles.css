@@ -321,6 +321,10 @@ h3 {
   border-radius: 15px;
 }
 
+.modelInfo {
+  width: 40%;
+}
+
 .modelImgCont {
   display: flex;
   flex-direction: row;
@@ -333,6 +337,15 @@ h3 {
 
 .modelImg {
   width: 75%;
+}
+
+.pantryBlue {
+  background-color: #0067A7;
+  color: white;
+}
+
+.pantryYellow {
+  background-color: #D99800;
 }
 
 .hackdavis {

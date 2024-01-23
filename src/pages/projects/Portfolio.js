@@ -61,7 +61,6 @@ export default function Portfolio() {
           <p className="colors blueColor">#2E75BC</p>
           <p className="colors pinkColor">#E5A1EA</p>
           <p className="colors sandColor">#FAF7EF</p>
-          <p className="colors whiteColor">#FFFFFF</p>
         </div>
         <h4>Typography</h4>
         <p>Mori</p>
