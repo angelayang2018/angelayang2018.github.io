@@ -275,6 +275,14 @@ h3 {
   border-radius: 15px;
 }
 
+.credit {
+  text-decoration: underline;
+}
+
+.credit:hover {
+  color: #DC4747;
+}
+
 .spartanpantry {
   padding-top: 90px;
 }

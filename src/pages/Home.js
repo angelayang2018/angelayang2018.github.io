@@ -19,7 +19,7 @@ export default function Home() {
           <Link className="buttonS" to="/about">
             <p>ABOUT</p>
           </Link>
-          <a className="buttonS" href="./">
+          <a target="_blank" rel="noreferrer" className="buttonS" href="./">
             RESUME
           </a>
         </div>
@@ -120,9 +120,8 @@ export default function Home() {
             nextEl: ".buttonNext",
           }}
         >
-           
-           <SwiperSlide>
-           <img src="https://i.ibb.co/FbwkY1Y/pantry-1.png" alt="pantry-1"/>
+          <SwiperSlide>
+            <img src="https://i.ibb.co/FbwkY1Y/pantry-1.png" alt="pantry-1" />
           </SwiperSlide>
           <SwiperSlide>
             <img
@@ -172,10 +171,20 @@ export default function Home() {
         <a className="buttonS" href="mailto:angela.yang146@gmail.com">
           EMAIL
         </a>
-        <a className="buttonS" href="https://www.linkedin.com/in/angela-yangg/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className="buttonS"
+          href="https://www.linkedin.com/in/angela-yangg/"
+        >
           LINKEDIN
         </a>
-        <a className="buttonS" href="https://github.com/angelayang2018">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className="buttonS"
+          href="https://github.com/angelayang2018"
+        >
           GITHUB
         </a>
       </div>

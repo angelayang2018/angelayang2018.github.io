@@ -24,6 +24,8 @@ export default function Portfolio() {
         <p>Timeline: January 2024</p>
         <p>
           <a
+            target="_blank"
+            rel="noreferrer"
             href="https://github.com/angelayang2018/portfolio_website"
             className="buttonS"
           >
@@ -33,7 +35,11 @@ export default function Portfolio() {
       </div>
 
       <div>
-        <a href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"
+        >
           Full Report
         </a>
       </div>
@@ -70,7 +76,7 @@ export default function Portfolio() {
         <div className="tempImage"></div>
       </div>
 
-      <PageControl to = "maui" from = "hackdavis"></PageControl>
+      <PageControl to="maui" from="hackdavis"></PageControl>
     </div>
   );
 }

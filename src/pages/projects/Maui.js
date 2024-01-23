@@ -22,6 +22,8 @@ export default function Maui() {
         <p>Timeline: October 2023 - January 2024</p>
         <p>
           <a
+            target="_blank"
+            rel="noreferrer"
             href="https://github.com/angelayang2018/portfolio_website"
             className="buttonS"
           >
@@ -31,11 +33,19 @@ export default function Maui() {
       </div>
 
       <div>
-        <a href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"
+        >
           Full Report
         </a>
       </div>
-      <img className = "projectImg" src="https://i.ibb.co/cXCxpjK/Screen-Shot-2024-01-21-at-9-19-08-PM.png" alt="Screen-Shot-2024-01-21-at-9-19-08-PM" />
+      <img
+        className="projectImg"
+        src="https://i.ibb.co/cXCxpjK/Screen-Shot-2024-01-21-at-9-19-08-PM.png"
+        alt="Screen-Shot-2024-01-21-at-9-19-08-PM"
+      />
       <div>
         <h3>Design</h3>
         <p>↓</p>

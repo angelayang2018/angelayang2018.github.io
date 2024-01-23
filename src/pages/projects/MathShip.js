@@ -9,16 +9,19 @@ export default function MathShip() {
       title: "Login/Signup",
       description: "Create accounts and login",
       source: "https://i.ibb.co/mCkB2Xt/mathshiplogin.png",
+      alt: "Math Ship Login Page",
     },
     {
       title: "Play",
       description: "Users solve math problems to progress through the game",
       source: "https://i.ibb.co/y40gjcY/mathshipplay.png",
+      alt: "Math Ship Select Ship Page",
     },
     {
       title: "High Score",
       description: "Display the top 10 highest scores",
       source: "https://i.ibb.co/WgSHFFZ/mathshipscore.png",
+      alt: "Math Ship High Score Table",
     },
   ];
 
@@ -38,9 +41,21 @@ export default function MathShip() {
       <div className="projectTech">
         <p>
           Team: Angela Yang,{" "}
-          <a href="https://www.linkedin.com/in/jyee1001/">Joshua Yee </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="credit"
+            href="https://www.linkedin.com/in/jyee1001/"
+          >
+            Joshua Yee{" "}
+          </a>
           and{" "}
-          <a href="https://www.linkedin.com/in/haroon-razzack-999472a1/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="credit"
+            href="https://www.linkedin.com/in/haroon-razzack-999472a1/"
+          >
             Haroon Razzack
           </a>
         </p>
@@ -48,6 +63,8 @@ export default function MathShip() {
         <p>Timeline: September - December 2021</p>
         <p>
           <a
+            target="_blank"
+            rel="noreferrer"
             href="https://github.com/angelayang2018/CS_151_Math_Ship_Term_Project"
             className="buttonS"
           >
@@ -62,7 +79,7 @@ export default function MathShip() {
           alt="mathshiphome"
         />
       </div>
-      <Features featuresData = {featuresData}></Features>
+      <Features featuresData={featuresData}></Features>
 
       <div>
         <h3>Design</h3>

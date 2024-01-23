@@ -9,7 +9,7 @@ export default function SpartanPantry() {
         <p>← Back to Projects</p>
       </Link>
       <h2>Spartan Pantry</h2>
-      <div className = "projectOverview">
+      <div className="projectOverview">
         <p>
           The Spartan Pantry Website is designed to streamline and enhance the
           user experience for ordering essential items from the Spartan Pantry.
@@ -23,7 +23,12 @@ export default function SpartanPantry() {
       <div className="projectTech">
         <p>
           Team: Angela Yang and{" "}
-          <a href="https://www.linkedin.com/in/barnabas-yuen-cs/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="credit"
+            href="https://www.linkedin.com/in/barnabas-yuen-cs/"
+          >
             Barnabas Yuen
           </a>
         </p>
@@ -33,19 +38,32 @@ export default function SpartanPantry() {
         </p>
         <p>Timeline: March - May 2023</p>
         <p>
-          <a href="https://github.com/ginilo/CS157C-team5" className="buttonS">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/ginilo/CS157C-team5"
+            className="buttonS"
+          >
             Github
           </a>
         </p>
       </div>
 
       <div>
-        <a href="https://docs.google.com/document/d/1wa41YxHJZWbbHBnAJoCgxomVUGHQ4he7Kbm-EgiVw9w/edit?usp=sharing">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1wa41YxHJZWbbHBnAJoCgxomVUGHQ4he7Kbm-EgiVw9w/edit?usp=sharing"
+        >
           Proof of Concept
         </a>
       </div>
       <div>
-        <a href="https://docs.google.com/document/d/1206R--RGbNKehLk_M9Qp8iX0ZOf2fxBecjUPAoDnnss/edit?usp=sharing">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1206R--RGbNKehLk_M9Qp8iX0ZOf2fxBecjUPAoDnnss/edit?usp=sharing"
+        >
           Final Report
         </a>
       </div>
@@ -78,9 +96,8 @@ export default function SpartanPantry() {
         <h4>Use Case Diagrams</h4>
         <h4>Data Model</h4>
         <div className="tempImage"></div>
-        <div className="tempImage"></div>
       </div>
-      <PageControl to ="mathship" from = "pydoku" ></PageControl>
+      <PageControl to="mathship" from="pydoku"></PageControl>
     </div>
   );
 }

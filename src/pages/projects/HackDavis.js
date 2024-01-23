@@ -22,7 +22,12 @@ export default function HackDavis() {
       <div className="projectTech">
         <p>
           Team: Angela Yang and{" "}
-          <a href="https://www.linkedin.com/in/alvin-agana/">
+          <a
+            className="credit"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/alvin-agana/"
+          >
             Alvin Agana
           </a>
         </p>
@@ -31,7 +36,8 @@ export default function HackDavis() {
         <p>
           <a
             href="https://github.com/angelayang2018/Healthy-Foods"
-            target = "_blank"
+            target="_blank"
+            rel="noreferrer"
             className="buttonS"
           >
             Github
@@ -40,12 +46,20 @@ export default function HackDavis() {
       </div>
 
       <div>
-        <a href="https://devpost.com/software/healthy-food-eoqnch">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://devpost.com/software/healthy-food-eoqnch"
+        >
           DevPost
         </a>
       </div>
-      <img className = "projectImg" src="https://i.ibb.co/68LWpC4/healthyfoods.png" alt="healthyfoods" />
-      <PageControl to = "portfolio" from = "mathship"></PageControl>
+      <img
+        className="projectImg"
+        src="https://i.ibb.co/68LWpC4/healthyfoods.png"
+        alt="healthyfoods"
+      />
+      <PageControl to="portfolio" from="mathship"></PageControl>
     </div>
   );
 }

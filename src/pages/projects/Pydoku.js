@@ -15,11 +15,28 @@ export default function PyDoku() {
       <div className="projectTech">
         <p>
           Team: Angela Yang,{" "}
-          <a href="https://www.linkedin.com/in/amin-shivam/"> Shivam Amin, </a>{" "}
-          <a href="https://www.linkedin.com/in/c-a-hernandez/">
-            Christian Hernandex,{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="credit"
+            href="https://www.linkedin.com/in/amin-shivam/"
+          >
+            Shivam Amin,
           </a>{" "}
-          <a href="https://www.linkedin.com/in/felix-ohlgart-926301203/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="credit"
+            href="https://www.linkedin.com/in/c-a-hernandez/"
+          >
+            Christian Hernandex,
+          </a>{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="credit"
+            href="https://www.linkedin.com/in/felix-ohlgart-926301203/"
+          >
             Felix Ohlgart
           </a>
         </p>
@@ -27,6 +44,8 @@ export default function PyDoku() {
         <p>Timeline: April - May 2023</p>
         <p>
           <a
+            target="_blank"
+            rel="noreferrer"
             href="https://github.com/angelayang2018/portfolio_website"
             className="buttonS"
           >
