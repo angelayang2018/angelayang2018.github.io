@@ -1,8 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PageControl from "../../components/PageControl";
+import Features from "../../components/Features";
 
 export default function SpartanPantry() {
+  const featuresData = [
+    {
+      title: "Browse Inventory",
+      description: "Browse through pantry product inventory in real time",
+      source: "https://i.ibb.co/GJwDFyZ/pantrylogin.png",
+      alt: "Pantry Inventory Page",
+    },
+    {
+      title: "Profile",
+      description: "Show last visted date, and recent purchases",
+      source: "https://i.ibb.co/m4gNp6W/pantryprofile.png",
+      alt: "Pantry Profile Pge",
+    },
+    {
+      title: "Shopping Cart",
+      description: "Add, delete items and place orders",
+      source: "https://i.ibb.co/tLPrLm4/pantrycart.png",
+      alt: "Pantry Shopping Cart",
+    },
+  ];
   return (
     <div className="spartanpantry">
       <Link to="/project">
@@ -41,7 +62,7 @@ export default function SpartanPantry() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/ginilo/CS157C-team5"
+            href="https://github.com/angelayang2018/CS157C-team5"
             className="buttonS"
           >
             Github
@@ -68,34 +89,26 @@ export default function SpartanPantry() {
         </a>
       </div>
       <div>
-        <div className="tempImage"></div>
-      </div>
-      <div>
-        <h3>Features</h3>
-        <div className="features">
-          <div className="featureItem">
-            <h4>Browse Inventory</h4>
-            <p>Browse through pantry product inventory in real time</p>
-            <div className="featureSample"></div>
-          </div>
-          <div className="featureItem">
-            <h4>Profile</h4>
-            <p>Show last visted date, and recent purchases</p>
-            <div className="featureSample"></div>
-          </div>
-          <div className="featureItem">
-            <h4>Shopping Cart</h4>
-            <p>Add, delete items and place orders </p>
-            <div className="featureSample"></div>
-          </div>
+        <div>
+          <img
+            className="pantryhome"
+            src="https://i.ibb.co/Mg3rPw7/pantryhome.png"
+            alt="pantryhome"
+          />
         </div>
       </div>
+      <Features featuresData={featuresData}></Features>
       <div>
         <h3>Redis Database</h3>
         <p>↓</p>
-        <h4>Use Case Diagrams</h4>
         <h4>Data Model</h4>
-        <div className="tempImage"></div>
+        <div className = "modelImgCont">
+          <img
+            className="modelImg"
+            src="https://i.ibb.co/x38fC1B/pantry-Model-1.png"
+            alt="pantry-Model"
+          />
+        </div>
       </div>
       <PageControl to="mathship" from="pydoku"></PageControl>
     </div>

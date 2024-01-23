@@ -46,14 +46,21 @@ export default function PyDoku() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/angelayang2018/portfolio_website"
+            href="https://github.com/angelochristian29/PyDoku"
             className="buttonS"
           >
             Github
           </a>
         </p>
       </div>
-      <div className="tempImage"></div>
+      <p>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1PPd_iDbzCjZ074TaUdBlIjcxKCC5xdwT/edit#heading=h.gjdgxs"
+        >Full Report</a>
+      </p>
+      <img className = "pydokuImg" src="https://i.ibb.co/syM7P4j/pydoku.png" alt="pydoku" />
       <PageControl to="spartanpantry" from="maui"></PageControl>
     </div>
   );

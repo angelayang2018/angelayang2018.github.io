@@ -43,8 +43,8 @@ export default function Maui() {
       </div>
       <img
         className="projectImg"
-        src="https://i.ibb.co/cXCxpjK/Screen-Shot-2024-01-21-at-9-19-08-PM.png"
-        alt="Screen-Shot-2024-01-21-at-9-19-08-PM"
+        src="https://i.ibb.co/tDW75yV/mauihome.png"
+        alt="Maui Home Page"
       />
       <div>
         <h3>Design</h3>

@@ -307,11 +307,10 @@ h3 {
   padding: 0 10px;
 }
 
-.featureSample {
+.pantryhome {
   width: 100%;
-  height: 300px;
-  background-color: white;
   border-radius: 15px;
+  margin: 10px 0;
 }
 
 .tempImage {
@@ -320,6 +319,20 @@ h3 {
   background-color: white;
   margin: 50px 0px;
   border-radius: 15px;
+}
+
+.modelImgCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 70px;
+}
+
+.modelImg {
+  width: 75%;
 }
 
 .hackdavis {
@@ -386,6 +399,11 @@ h3 {
 
 .pydoku {
   padding-top: 90px;
+}
+
+.pydokuImg {
+  width: 100%;
+  border-radius: 15px;
 }
 
 .mathship {
