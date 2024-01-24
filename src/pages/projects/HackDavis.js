@@ -20,6 +20,44 @@ export default function HackDavis() {
         src="https://i.ibb.co/68LWpC4/healthyfoods.png"
         alt="healthyfoods"
       />
+      <div>
+        <h3>Objective</h3>
+        <ul>
+          <li> Build a project that addresses a social good initiative</li>
+        </ul>
+        <h3>Schedule</h3>
+        <ul>
+          <li>Begin work on 9:00 AM PT on Saturday, January 16, 2021</li>
+          <li>Submit project before 7:30 PM PT on Sunday, January 17, 2021</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Design</h3>
+        <p>↓</p>
+        <h4>Colors</h4>
+        <div className="colorsContainer">
+          <p className="colors hackGreen">#69CF72</p>
+          <p className="colors hackPink">#E57575</p>
+        </div>
+        <h4>Typography</h4>
+        <p>Montserrat</p>
+        <p className = "lemonmilk">Lemon Milk</p>
+        <p className = "nicholia">Nicholia</p>
+        <p></p>
+      </div>
+
+      <div>
+        <h3>Challenges/Lessons Learned</h3>
+        <ul>
+          <li>First time Hackathon, we were unorganized and stressed</li>
+          <li>First time designing, never used any prototyping software</li>
+          <li>Underestimated the amount of work needed to build our app</li>
+          <li>Had to learn everything from scratch</li>
+          <li>Introduced to Sketch and then found Figma once my trial period ended</li>
+          
+        </ul>
+      </div>
+
       <PageControl to="portfolio" from="mathship"></PageControl>
     </div>
   );
@@ -36,6 +74,6 @@ const projectInfo = {
     },
   ],
   tech: "Python, Flask, HTML, CSS, Javascript",
-  timeline: "January 2021",
+  timeline: "January 16 - January 17, 2021",
   github: "https://github.com/angelayang2018/Healthy-Foods",
 };

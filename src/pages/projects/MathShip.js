@@ -14,11 +14,24 @@ export default function MathShip() {
           alt="mathshiphome"
         />
       </div>
+      <div>
+        <h3>Objective</h3>
+        <ul>
+          <li> Build a project that addresses a social good initiative</li>
+        </ul>
+      </div>
       <Features featuresData={featuresData}></Features>
 
       <div>
         <h3>Design</h3>
         <p>↓</p>
+        <h4>Colors</h4>
+        <div className="colorsContainer">
+          <p className="colors mathOrange">#F09E41</p>
+          <p className="colors mathRed">#E93333</p>
+          <p className="colors mathLGreen">#83BF95</p>
+          <p className="colors mathDGreen">#2C654E</p>
+        </div>
         <h4>Icons</h4>
         <div className="mathshipImgCont">
           <img
@@ -29,6 +42,18 @@ export default function MathShip() {
         </div>
         <h4>Typography</h4>
         <p className="galactica">Galactica Grid</p>
+      </div>
+
+      <div>
+        <h3>Challenges/Lessons Learned</h3>
+        <ul>
+          <li>
+            One team member was not responsive during our online team meetings
+            <li>Did not code, help design, or write documentation (therefore, I did not include them in the credits)</li>
+          </li>
+          <li>Lack of leadership and clear direction</li>
+          <li>Other team members mention that they were lost and confused on what to do</li>
+        </ul>
       </div>
 
       <PageControl to="hackdavis" from="spartanpantry"></PageControl>

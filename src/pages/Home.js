@@ -10,15 +10,14 @@ export default function Home() {
   return (
     <div className="home">
       <div className="intro">
-        <div>
-          <p>Frontend Developer | Software Engineer</p>
-          <p>SJSU Computer Science Graduate</p>
-          <p>Passionate about Beans</p>
-          <p>Currently looking for job 2024</p>
-        </div>
+        <p>Frontend Developer | Software Engineer</p>
+        <p>SJSU Computer Science Graduate</p>
+        <p>Passionate about Beans</p>
+        <p>Currently looking for job 2024</p>
+
         <div className="aboutButtons">
           <Link className="buttonS" to="/about">
-            <p>ABOUT</p>
+            ABOUT
           </Link>
           <a target="_blank" rel="noreferrer" className="buttonS" href="./">
             RESUME
@@ -86,7 +85,7 @@ export default function Home() {
       </div>
 
       <div className="movingText">
-        <h1>Let's Connect!</h1>
+        <h2 className="nostrav">Let's Connect!</h2>
       </div>
       <div className="contact">
         <a className="buttonS" href="mailto:angela.yang146@gmail.com">
@@ -116,15 +115,14 @@ export default function Home() {
 const skillDetails = [
   {
     topic: "Languages",
-    topicItems: ["Java", "HTML", "Python", "CSS", "Javascript"]
+    topicItems: ["Java", "HTML", "Python", "CSS", "Javascript"],
   },
   {
     topic: "Frameworks/Libraries",
-    topicItems: ["React", "Tailwind", "GSAP", "Express", "Node"]
+    topicItems: ["React", "Tailwind", "GSAP", "Express", "Node"],
   },
   {
     topic: "Additional Tool",
-    topicItems: ["Docker", "Figma", "SQL", "Command Line"]
-  }
-
+    topicItems: ["Docker", "Figma", "SQL", "Command Line"],
+  },
 ];

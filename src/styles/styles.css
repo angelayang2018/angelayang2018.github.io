@@ -21,6 +21,14 @@
   font-family: "Galactica";
   src: url(Galacticagrid-8Mr7J.ttf);
 }
+@font-face {
+  font-family: "Nicholia";
+  src: url(Nicholia.ttf);
+}
+@font-face {
+  font-family: "Lemonmilk";
+  src: url(LEMONMILK-Regular.otf);
+}
 .navbar h1 {
   font-size: 35px;
 }
@@ -44,6 +52,15 @@ h3 {
 
 .galactica {
   font-family: "Galactica";
+}
+
+.nicholia {
+  font-family: "Nicholia";
+  font-size: 45px;
+}
+
+.lemonmilk {
+  font-family: "Lemonmilk";
 }
 
 .buttonS {
@@ -349,6 +366,14 @@ h3 {
   padding-top: 90px;
 }
 
+.hackGreen {
+  background-color: #69CF72;
+}
+
+.hackPink {
+  background-color: #E57575;
+}
+
 .portfolio {
   padding-top: 90px;
 }
@@ -434,6 +459,22 @@ h3 {
 
 .mathshipImg {
   border-radius: 15px;
+}
+
+.mathOrange {
+  background-color: #F09E41;
+}
+
+.mathRed {
+  background-color: #E93333;
+}
+
+.mathLGreen {
+  background-color: #83BF95;
+}
+
+.mathDGreen {
+  background-color: #2C654E;
 }
 
 .maui {

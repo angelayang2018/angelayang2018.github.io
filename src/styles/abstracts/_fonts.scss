@@ -25,6 +25,16 @@
     font-family:"Galactica";
     src: url(Galacticagrid-8Mr7J.ttf);
 }
+
+@font-face{
+    font-family:"Nicholia";
+    src: url(Nicholia.ttf);
+}
+
+@font-face{
+    font-family:"Lemonmilk";
+    src: url(LEMONMILK-Regular.otf);
+}
 .navbar{
     h1{
         font-size: 35px;
@@ -48,4 +58,13 @@ h3{font-size: 25px;}
 
 .galactica{
     font-family: "Galactica";
+}
+
+.nicholia{
+    font-family: "Nicholia";
+    font-size: 45px;
+}
+
+.lemonmilk{
+    font-family: "Lemonmilk";
 }
