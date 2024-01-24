@@ -2,6 +2,7 @@ import React from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
+import Skill from "../components/Skill";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -25,55 +26,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="skills">
-        <h2>SKILLS</h2>
-        <div className="skillContainer">
-          <div className="skillInfo">
-           Animation
-          </div>
-          <div className="skillInfo">
-            <h3 className="languages">Languages</h3>
-            <ul>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>Python</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-        </div>
-
-        <hr />
-
-        <div className="skillContainer">
-          <div className="skillInfo">Animation</div>
-          <div className="skillInfo">
-            <h3 className="frameworks">Frameworks/ Libraries</h3>
-            <ul>
-              <li>React</li>
-              <li>Tailwind</li>
-              <li>GSAP</li>
-              <li>Express</li>
-              <li>Node</li>
-            </ul>
-          </div>
-        </div>
-
-        <hr />
-
-        <div className="skillContainer">
-          <div className="skillInfo">Animation</div>
-          <div className="skillInfo">
-            <h3 className="tools">Additional Tools</h3>
-            <ul>
-              <li>Docker</li>
-              <li>Figma</li>
-              <li>MySQL</li>
-              <li>Command Line</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <Skill skillDetails={skillDetails}></Skill>
 
       <h2>PROJECTS</h2>
       <div className="projects">
@@ -111,7 +64,7 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
 
-        <div className="projectDetails">
+        <div className="swiperDetails">
           <div>
             <h3>Spartan Pantry</h3>
             <p>
@@ -159,3 +112,19 @@ export default function Home() {
     </div>
   );
 }
+
+const skillDetails = [
+  {
+    topic: "Languages",
+    topicItems: ["Java", "HTML", "Python", "CSS", "Javascript"]
+  },
+  {
+    topic: "Frameworks/Libraries",
+    topicItems: ["React", "Tailwind", "GSAP", "Express", "Node"]
+  },
+  {
+    topic: "Additional Tool",
+    topicItems: ["Docker", "Figma", "SQL", "Command Line"]
+  }
+
+];

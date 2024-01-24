@@ -8,48 +8,16 @@
     display: flex;
 }
 
-.skills{
-    padding: 20px 0px;
-}
-
-.skillContainer{
-    @include flexEvenly;
-    text-align: left;
-}
-
-.skillInfo{
-    width: 50%;
-
-    ul{
-        column-count: 2;
-        column-gap: 20px;
-    }
-    
-}
-
-.languages{
-    color: $orangeColor;
-}
-
-.frameworks{
-    color: $greenColor;
-}
-
-.tools{
-    color: $blueColor;
-}
-
 .projects{
     @include flexCenter(column);
     padding: 20px 0 70px 0;
     
 }
 
-.projectDetails{
+.swiperDetails{
     width: 50%;
     padding: 20px 0;
 }
-
 
 .projectTools{
     @include flexSBetween;

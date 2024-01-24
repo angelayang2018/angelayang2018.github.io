@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+.skills{
+    padding: 20px 0px;
+}
+
+.skillCard{
+    @include flexEvenly;
+    text-align: left;
+}
+
+.skillAnimation{
+    width: 50%;
+}
+
+.skillInfo{
+    width: 50%;
+
+    ul{
+        column-count: 2;
+        column-gap: 20px;
+    }
+    
+}
