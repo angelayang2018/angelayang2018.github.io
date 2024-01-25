@@ -61,3 +61,9 @@
     }
 }
 
+@mixin custom($pixel){
+    @media(max-width: $pixel){
+        @content;
+    }
+}
+

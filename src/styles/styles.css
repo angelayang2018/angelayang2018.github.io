@@ -182,6 +182,11 @@ h2.nostrav {
 .projectDetails {
   width: 50%;
 }
+@media (max-width: 768px) {
+  .projectDetails {
+    width: 100%;
+  }
+}
 
 .skills {
   padding: 20px 0px;
@@ -364,6 +369,10 @@ h2.nostrav {
   border-radius: 15px;
 }
 
+.projectCard {
+  margin: 10px;
+}
+
 .credit {
   text-decoration: underline;
 }
@@ -392,6 +401,11 @@ h2.nostrav {
 
 .modelInfo {
   width: 40%;
+}
+@media (max-width: 768px) {
+  .modelInfo {
+    width: 100%;
+  }
 }
 
 .modelImgCont {
@@ -518,6 +532,11 @@ h2.nostrav {
 
 .mathshipImg {
   border-radius: 15px;
+}
+@media (max-width: 560px) {
+  .mathshipImg {
+    width: 100%;
+  }
 }
 
 .mathOrange {

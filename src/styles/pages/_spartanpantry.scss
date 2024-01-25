@@ -21,6 +21,9 @@
 
 .modelInfo{
     width: 40%;
+    @include tab{
+        width: 100%;
+    }
 }
 
 .modelImgCont{
