@@ -8,8 +8,8 @@ export default function Skill({ skillDetails }) {
       <hr></hr>
       {skillDetails.map((skill, index) => (
         <div>
-          <SkillCard key={index} skill={skill} />
-          <hr></hr>
+        <SkillCard key={index} skill={skill} />
+        <hr></hr>
         </div>
       ))}
     </div>

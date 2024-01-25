@@ -1,70 +1,80 @@
-@font-face{
-    font-family:"Nostrav";
-    src: url(Nostrav.ttf);
+@font-face {
+  font-family: "Nostrav";
+  src: url(Nostrav.ttf);
 }
 
-@font-face{
-    font-family:"Mori";
-    font-weight: 200;
-    src: url(PPMori-Extralight.otf);
+@font-face {
+  font-family: "Mori";
+  font-weight: 200;
+  src: url(PPMori-Extralight.otf);
 }
 
-@font-face{
-    font-family:"Mori";
-    font-weight: 400;
-    src: url(PPMori-Regular.otf);
+@font-face {
+  font-family: "Mori";
+  font-weight: 400;
+  src: url(PPMori-Regular.otf);
 }
 
-@font-face{
-    font-family:"Mori";
-    font-weight: 600;
-    src: url(PPMori-SemiBold.otf);
+@font-face {
+  font-family: "Mori";
+  font-weight: 600;
+  src: url(PPMori-SemiBold.otf);
 }
 
-@font-face{
-    font-family:"Galactica";
-    src: url(Galacticagrid-8Mr7J.ttf);
+@font-face {
+  font-family: "Galactica";
+  src: url(Galacticagrid-8Mr7J.ttf);
 }
 
-@font-face{
-    font-family:"Nicholia";
-    src: url(Nicholia.ttf);
+@font-face {
+  font-family: "Nicholia";
+  src: url(Nicholia.ttf);
 }
 
-@font-face{
-    font-family:"Lemonmilk";
-    src: url(LEMONMILK-Regular.otf);
+@font-face {
+  font-family: "Lemonmilk";
+  src: url(LEMONMILK-Regular.otf);
 }
-.navbar{
-    h1{
-        font-size: 35px;
-    }
-}
-
-h1{
-    font-size: 25px
+.navbar {
+  h1 {
+    font-size: clamp(2rem, 2.5vw, 2.8rem);
+  }
 }
 
-h2{
-    font-size: 30px;
-    font-weight:600;
+h1 {
+  font-size: 25px;
 }
 
-h3{font-size: 25px;}
-
-.nostrav{
-    font-family: "Nostrav"
+h2 {
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.galactica{
-    font-family: "Galactica";
+h3 {
+  font-size: clamp(2.3rem, 3vw, 4rem);
 }
 
-.nicholia{
-    font-family: "Nicholia";
-    font-size: 45px;
+p {
+  font-size: clamp(1rem, 1.3vw, 2rem);
 }
 
-.lemonmilk{
-    font-family: "Lemonmilk";
+.skills li {
+  font-size: clamp(1.5rem, 1.3vw, 2.5rem)
+}
+
+.nostrav {
+  font-family: "Nostrav";
+}
+
+.galactica {
+  font-family: "Galactica";
+}
+
+.nicholia {
+  font-family: "Nicholia";
+  font-size: 45px;
+}
+
+.lemonmilk {
+  font-family: "Lemonmilk";
 }

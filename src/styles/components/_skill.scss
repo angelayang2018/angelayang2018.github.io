@@ -1,24 +1,48 @@
 @use "../abstracts/" as *;
 
-.skills{
-    padding: 20px 0px;
+.skills {
+  padding: 20px 0px;
+
 }
 
-.skillCard{
-    @include flexEvenly;
-    text-align: left;
+.Languages{
+    color: $orangeColor;
 }
 
-.skillAnimation{
-    width: 50%;
+.Frameworks\/Libraries {
+    color: $greenColor;
 }
 
-.skillInfo{
-    width: 50%;
 
-    ul{
-        column-count: 2;
-        column-gap: 20px;
-    }
-    
+.Additional.Tool{
+    color: $blueColor
+}
+
+.skillCard {
+  @include flexEvenly;
+  text-align: left;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.skillAnimation {
+  width: 300px;
+  background-color: white;
+  height: 300px;
+  @include flexCenter;
+  border-radius: 500px;
+}
+
+.skillInfo {
+width: 40%;
+
+  ul {
+    width: 100%;
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  li{
+    padding: 10px;
+  }
 }

@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <div className="projectTools">
             <Link to="/project" className="buttonM">
-              <p>Explore All Projects</p>
+              Explore All Projects
             </Link>
             <div className="projectControls">
               <button className="buttonC buttonPrev">←</button>

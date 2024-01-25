@@ -28,11 +28,11 @@ export default function ProjectDetails({ projectInfo }) {
       </p>
       <p>Technologies Used: {tech}</p>
       <p>Timeline: {timeline}</p>
-      <p>
-        <a href={github} target="_blank" rel="noreferrer" className="buttonS">
-          Github
-        </a>
-      </p>
+
+      <a href={github} target="_blank" rel="noreferrer" className="buttonS">
+        Github
+      </a>
+      
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function SkillCard({skill}) {
     <div className = "skillCard">
       <div className="skillAnimation">Animation</div>
       <div className="skillInfo">
-        <h3>{topic}</h3>
+        <h3 className = {topic}>{topic}</h3>
         <ul>
         {topicItems.map((listItem, index) => (
           <li key = {index}>{listItem}</li>
