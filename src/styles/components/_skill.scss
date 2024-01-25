@@ -9,20 +9,24 @@
     color: $orangeColor;
 }
 
-.Frameworks\/Libraries {
+.Frameworks\/.Libraries {
     color: $greenColor;
 }
-
 
 .Additional.Tool{
     color: $blueColor
 }
+
 
 .skillCard {
   @include flexEvenly;
   text-align: left;
   flex-wrap: wrap;
   padding: 100px 0;
+
+  @include mbl{
+    padding: 50px 0;
+  }
 }
 
 .skillAnimation {
@@ -31,18 +35,23 @@
   height: 300px;
   @include flexCenter;
   border-radius: 500px;
+
 }
 
 .skillInfo {
-width: 40%;
+width: clamp(300px, 50vw, 45%);
+padding: 0 40px;
+
+@include tab{
+  width: 100%;
+}
 
   ul {
-    width: 100%;
     column-count: 2;
-    column-gap: 20px;
+    column-gap: 10px;
   }
 
   li{
-    padding: 10px;
+    padding: 10px 0px;
   }
 }

@@ -1,10 +1,17 @@
-
+@use "breakpoints";
 
 @mixin flexCenter($flexDirection: row){
     display: flex;
     flex-direction: $flexDirection;
     justify-content: center;
     align-items: center;
+}
+
+@mixin flexStart($flexDirection: row){
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 @mixin flexEvenly{
@@ -34,5 +41,23 @@
         border-color: black; 
     }
     
+}
+
+@mixin md{
+    @media(max-width: breakpoints.$screen-md){
+        @content;
+    }
+}
+
+@mixin mbl{
+    @media(max-width: breakpoints.$mobile-lg){
+        @content;
+    }
+}
+
+@mixin tab{
+    @media(max-width: breakpoints.$tablet){
+        @content;
+    }
 }
 

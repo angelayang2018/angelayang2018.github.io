@@ -118,7 +118,7 @@ const skillDetails = [
     topicItems: ["Java", "HTML", "Python", "CSS", "Javascript"],
   },
   {
-    topic: "Frameworks/Libraries",
+    topic: "Frameworks/ Libraries",
     topicItems: ["React", "Tailwind", "GSAP", "Express", "Node"],
   },
   {

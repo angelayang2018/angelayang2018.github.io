@@ -1,64 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Project() {
   return (
     <div className="projectPage">
       <h2>Take a look around</h2>
       <div className="projectContainer">
-        <div>
-          <Link to="/project/portfolio">
-            <img src="https://i.ibb.co/MBK07NP/portfolio.png" alt="portfolio" />
-          </Link>
-          <div>
-            <h3>Portfolio (this website!)</h3>
-          </div>
-        </div>
-        <div>
-          <Link to="/project/maui">
-            <img src="https://i.ibb.co/MkZPWhf/maui.png" alt="maui" />
-          </Link>
-          <div>
-            <h3>Maui Condos</h3>
-          </div>
-        </div>
-        <div>
-          <Link to="/project/pydoku">
-            <img src="https://i.ibb.co/Q9nw9st/Udemy.png" alt="Pydoku" />
-          </Link>
-          <div>
-            <h3>Pydoku</h3>
-          </div>
-        </div>
-        <div>
-          <Link to="/project/spartanpantry">
-            <img src="https://i.ibb.co/FbwkY1Y/pantry-1.png" alt="pantry-1" />
-          </Link>
-          <div>
-            <h3>Spartan Pantry</h3>
-          </div>
-        </div>
-
-        <div>
-          <Link to="/project/mathship">
-            <img src="https://i.ibb.co/PrkYCPL/MathShip.png" alt="MathShip" />
-          </Link>
-          <div>
-            <h3>Math Ship</h3>
-          </div>
-        </div>
-        <div>
-          <Link to="/project/hackdavis">
-            <img
-              src="https://i.ibb.co/dW1BJty/Hack-Davis.png"
-              alt="Hack-Davis"
-            />
-          </Link>
-          <div>
-            <h3>Hack Davis Submission</h3>
-          </div>
-        </div>
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
       </div>
     </div>
   );
 }
+
+const projects = [
+  {
+    title: "Portfolio (this website!)",
+    link: "/project/portfolio",
+    img: "https://i.ibb.co/MBK07NP/portfolio.png",
+    alt: "portfolio",
+  },
+  {
+    title: "Maui Condos",
+    link: "/project/maui",
+    img: "https://i.ibb.co/MkZPWhf/maui.png",
+    alt: "maui",
+  },
+  {
+    title: "Pydoku",
+    link: "/project/pydoku",
+    img: "https://i.ibb.co/Q9nw9st/Udemy.png",
+    alt: "Pydoku",
+  },
+  {
+    title: "Spartan Pantry",
+    link: "/project/spartanpantry",
+    img: "https://i.ibb.co/FbwkY1Y/pantry-1.png",
+    alt: "Pantry",
+  },
+  {
+    title: "Math Ship",
+    link: "/project/mathship",
+    img: "https://i.ibb.co/PrkYCPL/MathShip.png",
+    alt: "MathShip",
+  },
+  {
+    title: "Hack Davis Submission",
+    link: "/project/hackdavis",
+    img: "https://i.ibb.co/dW1BJty/Hack-Davis.png",
+    alt: "Hack-Davis",
+  },
+];

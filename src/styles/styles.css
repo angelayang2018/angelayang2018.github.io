@@ -30,20 +30,20 @@
   src: url(LEMONMILK-Regular.otf);
 }
 .navbar h1 {
-  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
 }
-
-h1 {
-  font-size: 25px;
+@media (max-width: 425px) {
+  .navbar h1 {
+    margin: 8px 0;
+  }
 }
 
 h2 {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: clamp(2rem, 3vw, 4rem);
 }
 
 h3 {
-  font-size: clamp(2.3rem, 3vw, 4rem);
+  font-size: clamp(1.5rem, 2vw, 3rem);
 }
 
 p {
@@ -51,7 +51,12 @@ p {
 }
 
 .skills li {
-  font-size: clamp(1.5rem, 1.3vw, 2.5rem);
+  font-size: clamp(1rem, 1.3vw, 2.5rem);
+}
+
+h2.nostrav {
+  font-size: clamp(2rem, 3vw, 4rem);
+  font-weight: 600;
 }
 
 .nostrav {
@@ -141,6 +146,14 @@ p {
   left: 0;
   padding: 0 30px;
 }
+@media (max-width: 425px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
 
 .pageControl {
   display: flex;
@@ -178,7 +191,7 @@ p {
   color: #EA8118;
 }
 
-.Frameworks\/Libraries {
+.Frameworks\/.Libraries {
   color: #40A250;
 }
 
@@ -194,6 +207,11 @@ p {
   flex-wrap: wrap;
   padding: 100px 0;
 }
+@media (max-width: 425px) {
+  .skillCard {
+    padding: 50px 0;
+  }
+}
 
 .skillAnimation {
   width: 300px;
@@ -207,17 +225,22 @@ p {
 }
 
 .skillInfo {
-  width: 40%;
+  width: clamp(300px, 50vw, 45%);
+  padding: 0 40px;
+}
+@media (max-width: 768px) {
+  .skillInfo {
+    width: 100%;
+  }
 }
 .skillInfo ul {
-  width: 100%;
   -moz-column-count: 2;
        column-count: 2;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .skillInfo li {
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .intro {
@@ -240,6 +263,11 @@ p {
   width: 50%;
   padding: 20px 0;
 }
+@media (max-width: 800px) {
+  .swiperDetails {
+    width: 100%;
+  }
+}
 
 .projectTools {
   display: flex;
@@ -256,7 +284,7 @@ p {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 450px;
 }
 
 .swiper-slide {
@@ -274,7 +302,6 @@ p {
 
 .swiper-backface-hidden .swiper-slide {
   transform: scale(0.84) translateZ(0);
-  border-radius: 15px;
 }
 
 .swiper-slide.swiper-slide-active {
@@ -334,7 +361,6 @@ p {
   flex-wrap: wrap;
 }
 .projectContainer img {
-  margin: 10px;
   border-radius: 15px;
 }
 
