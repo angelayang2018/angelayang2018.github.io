@@ -7,25 +7,6 @@ export default function SpartanPantry() {
   return (
     <div className="spartanpantry">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
-
-      <div>
-        <a
-          className="report"
-          target="_blank"
-          rel="noreferrer"
-          href="https://docs.google.com/document/d/1wa41YxHJZWbbHBnAJoCgxomVUGHQ4he7Kbm-EgiVw9w/edit?usp=sharing"
-        >
-          Proof of Concept
-        </a>{" "}
-        <a
-          className="report"
-          target="_blank"
-          rel="noreferrer"
-          href="https://docs.google.com/document/d/1206R--RGbNKehLk_M9Qp8iX0ZOf2fxBecjUPAoDnnss/edit?usp=sharing"
-        >
-          Final Report
-        </a>
-      </div>
       <div>
         <div>
           <img
@@ -106,4 +87,6 @@ const projectInfo = {
   tech: "React, Javascript, HTML, CSS, Docker, Redis, Node, Express, Figma",
   timeline: "March - May 2023",
   github: "https://github.com/angelayang2018/CS157C-team5",
+  report: "Report",
+  reportURL: "https://docs.google.com/document/d/1206R--RGbNKehLk_M9Qp8iX0ZOf2fxBecjUPAoDnnss/edit?usp=sharing"
 };

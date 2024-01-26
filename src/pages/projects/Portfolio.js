@@ -7,15 +7,6 @@ export default function Portfolio() {
     <div className="portfolio">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
 
-      <a
-        className="report"
-        target="_blank"
-        rel="noreferrer"
-        href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"
-      >
-        Full Report
-      </a>
-
       <div>
         <div className="tempImage"></div>
       </div>
@@ -61,4 +52,6 @@ const projectInfo = {
   tech: "React, GSAP, HTML, CSS, Javascript, Swiper, Figma",
   timeline: "January 2024",
   github: "https://github.com/angelayang2018/portfolio_website",
+  report: "Report",
+  reportURL: "https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"
 };

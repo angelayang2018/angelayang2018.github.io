@@ -6,16 +6,6 @@ export default function Maui() {
   return (
     <div className="maui">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
-
-      <a
-        className="report"
-        target="_blank"
-        rel="noreferrer"
-        href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"
-      >
-        Full Report
-      </a>
-
       <img
         className="projectImg"
         src="https://i.ibb.co/tDW75yV/mauihome.png"
@@ -52,4 +42,6 @@ const projectInfo = {
   tech: "React, HTML, CSS, Javascript, Figma",
   timeline: "October 2023 - January 2024",
   github: "https://github.com/angelayang2018/portfolio_website",
+  report: "Report",
+  reportURL: "https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"
 };

@@ -6,17 +6,7 @@ export default function PyDoku() {
   return (
     
     <div className="pydoku">
-      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
-      
-        <a
-        className = "report"
-          target="_blank"
-          rel="noreferrer"
-          href="https://docs.google.com/document/d/1PPd_iDbzCjZ074TaUdBlIjcxKCC5xdwT/edit#heading=h.gjdgxs"
-        >
-          Full Report
-        </a>
-      
+      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>  
       <img
         className="pydokuImg"
         src="https://i.ibb.co/syM7P4j/pydoku.png"
@@ -47,4 +37,6 @@ const projectInfo = {
   tech: "Python, PyGames",
   timeline: "April - May 2023",
   github: "https://github.com/angelochristian29/PyDoku",
+  report: "Report",
+  reportURL: "https://docs.google.com/document/d/1PPd_iDbzCjZ074TaUdBlIjcxKCC5xdwT/edit#heading=h.gjdgxs"
 };

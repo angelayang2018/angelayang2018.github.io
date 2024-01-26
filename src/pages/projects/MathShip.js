@@ -7,16 +7,6 @@ export default function MathShip() {
   return (
     <div className="mathship">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
-
-      <a
-        className="report"
-        target="_blank"
-        rel="noreferrer"
-        href="https://devpost.com/software/healthy-food-eoqnch"
-      >
-        Full Report
-      </a>
-
       <div className="mathshipImgCont">
         <img
           className="mathshipHome"
@@ -115,4 +105,6 @@ const projectInfo = {
   tech: "JavaFX, Java, Scenebuilder, CSS, Eclipse, SQL",
   timeline: "September - December 2021",
   github: "https://github.com/angelayang2018/CS_151_Math_Ship_Term_Project",
+  report: "Report",
+  reportURL: "https://devpost.com/software/healthy-food-eoqnch"
 };
