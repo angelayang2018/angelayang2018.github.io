@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+
+.swiper{
+    width: 100%;
+    height: 450px;
+    
+}
+
+.swiperDetails{
+    width: 50%;
+    padding: 20px 0;
+    @include md{
+        width: 100%;
+    }
+}
+
+.swiper-slide {
+    @include flexCenter;
+    position: relative;
+    width: var(--swiper-width);
+    opacity: .5;
+    transform: scale(.84);
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .swiper-backface-hidden .swiper-slide {
+    transform: scale(.84) translateZ(0);
+  }
+          
+  .swiper-slide.swiper-slide-active {  
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+.projectTools{
+    @include flexSBetween;
+}
+
+.projectControls{
+    @include flexCenter;
+}
+
+

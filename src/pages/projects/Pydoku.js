@@ -7,15 +7,16 @@ export default function PyDoku() {
     
     <div className="pydoku">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
-      <p>
+      
         <a
+        className = "report"
           target="_blank"
           rel="noreferrer"
           href="https://docs.google.com/document/d/1PPd_iDbzCjZ074TaUdBlIjcxKCC5xdwT/edit#heading=h.gjdgxs"
         >
           Full Report
         </a>
-      </p>
+      
       <img
         className="pydokuImg"
         src="https://i.ibb.co/syM7P4j/pydoku.png"

@@ -10,15 +10,15 @@ export default function SpartanPantry() {
 
       <div>
         <a
+          className="report"
           target="_blank"
           rel="noreferrer"
           href="https://docs.google.com/document/d/1wa41YxHJZWbbHBnAJoCgxomVUGHQ4he7Kbm-EgiVw9w/edit?usp=sharing"
         >
           Proof of Concept
-        </a>
-      </div>
-      <div>
+        </a>{" "}
         <a
+          className="report"
           target="_blank"
           rel="noreferrer"
           href="https://docs.google.com/document/d/1206R--RGbNKehLk_M9Qp8iX0ZOf2fxBecjUPAoDnnss/edit?usp=sharing"

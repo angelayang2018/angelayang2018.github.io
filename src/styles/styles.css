@@ -86,7 +86,7 @@ h2.nostrav {
   border-radius: 25px;
   height: 50px;
   cursor: pointer;
-  width: 150px;
+  width: clamp(150px, 10vw, 250px);
   margin: 10px 10px 10px 0px;
 }
 .buttonS:hover {
@@ -132,6 +132,30 @@ h2.nostrav {
   border-color: black;
 }
 
+.contactButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: solid gray 0.5px;
+  border-radius: 25px;
+  height: 50px;
+  cursor: pointer;
+  width: 25%;
+}
+.contactButton:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+@media (max-width: 600px) {
+  .contactButton {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -145,14 +169,7 @@ h2.nostrav {
   background-color: #FAF7EF;
   left: 0;
   padding: 0 30px;
-}
-@media (max-width: 425px) {
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
+  flex-wrap: wrap;
 }
 
 .pageControl {
@@ -200,6 +217,10 @@ h2.nostrav {
   .projectDetails {
     width: 100%;
   }
+}
+
+.projectButtons {
+  display: flex;
 }
 
 .skills {
@@ -262,20 +283,9 @@ h2.nostrav {
   padding: 10px 0px;
 }
 
-.intro {
-  padding-top: 90px;
-}
-
-.aboutButtons {
-  display: flex;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0 70px 0;
+.swiper {
+  width: 100%;
+  height: 450px;
 }
 
 .swiperDetails {
@@ -286,24 +296,6 @@ h2.nostrav {
   .swiperDetails {
     width: 100%;
   }
-}
-
-.projectTools {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.projectControls {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper {
-  width: 100%;
-  height: 450px;
 }
 
 .swiper-slide {
@@ -328,6 +320,35 @@ h2.nostrav {
   opacity: 1;
 }
 
+.projectTools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  padding-top: 90px;
+}
+
+.aboutButtons {
+  display: flex;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 70px 0;
+}
+
 .contact {
   display: flex;
   justify-content: space-evenly;
@@ -340,11 +361,6 @@ h2.nostrav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-}
-@media (max-width: 600px) {
-  .contact .buttonS {
-    width: 100%;
   }
 }
 
@@ -409,12 +425,20 @@ h2.nostrav {
   justify-content: center;
   flex-wrap: wrap;
 }
-.projectContainer img {
-  border-radius: 15px;
-}
 
 .projectCard {
-  margin: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.projectCard img {
+  border-radius: 15px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .projectCard {
+    width: 100%;
+  }
 }
 
 .credit {

@@ -1,28 +1,35 @@
 @use "../abstracts/" as *;
 
-
-.projectPage{
-    padding-top: 90px;
+.projectPage {
+  padding-top: 90px;
 }
 
-.projectContainer{
-    
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    img{
-        border-radius: 15px;
-    }
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.projectCard{
-    margin: 10px;
+.projectCard {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+
+  img {
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  @include tab{
+    width: 100%;
+  }
+
 }
 
 .credit{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.credit:hover{
-    color: $redColor;
+.credit:hover {
+  color: $redColor;
 }

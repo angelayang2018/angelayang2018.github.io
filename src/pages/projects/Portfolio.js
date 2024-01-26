@@ -7,15 +7,15 @@ export default function Portfolio() {
     <div className="portfolio">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
 
-      <div>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"
-        >
-          Full Report
-        </a>
-      </div>
+      <a
+        className="report"
+        target="_blank"
+        rel="noreferrer"
+        href="https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"
+      >
+        Full Report
+      </a>
+
       <div>
         <div className="tempImage"></div>
       </div>

@@ -1,19 +1,28 @@
 @use "../abstracts/" as *;
 
-.buttonS{
-    @include buttonStyle;
-    width: 150px;
-    margin:10px 10px 10px 0px;
-    
+.buttonS {
+  @include buttonStyle;
+  width: clamp(150px, 10vw, 250px);
+  margin: 10px 10px 10px 0px;
 }
 
-.buttonM{
-    @include buttonStyle;  
-    width: 220px;
+.buttonM {
+  @include buttonStyle;
+  width: 220px;
 }
 
-.buttonC{
-    @include buttonStyle;  
-    width: 50px;
-    margin: 0px 10px;
+.buttonC {
+  @include buttonStyle;
+  width: 50px;
+  margin: 0px 10px;
+}
+
+.contactButton {
+  @include buttonStyle;
+  width: 25%;
+
+  @include custom(600px) {
+    width: 100%;
+    margin: 10px;
+  }
 }

@@ -46,7 +46,7 @@ const projects = [
     alt: "MathShip",
   },
   {
-    title: "Hack Davis Submission",
+    title: "Hack Davis 2021",
     link: "/project/hackdavis",
     img: "https://i.ibb.co/dW1BJty/Hack-Davis.png",
     alt: "Hack-Davis",

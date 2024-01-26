@@ -14,47 +14,6 @@
     
 }
 
-.swiperDetails{
-    width: 50%;
-    padding: 20px 0;
-    @include md{
-        width: 100%;
-    }
-}
-
-.projectTools{
-    @include flexSBetween;
-}
-
-.projectControls{
-    @include flexCenter;
-}
-
-.swiper{
-    width: 100%;
-    height: 450px; 
-    
-}
-
-.swiper-slide {
-    @include flexCenter;
-    position: relative;
-    width: var(--swiper-width);
-    opacity: .5;
-    transform: scale(.84);
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-  }
-  
-  .swiper-backface-hidden .swiper-slide {
-    transform: scale(.84) translateZ(0);
-  }
-          
-  .swiper-slide.swiper-slide-active {  
-    transform: scale(1.5);
-    opacity: 1;
-  }
-
 .contact{
     @include flexEvenly;
     padding: 50px 0px;
@@ -62,16 +21,6 @@
 
     @include custom(600px){
         @include flexCenter(column);
-        
-
-    }
-
-    .buttonS{
-        @include custom(600px){
-            width: 100%;
-            
-    
-        }
     }
 }
 

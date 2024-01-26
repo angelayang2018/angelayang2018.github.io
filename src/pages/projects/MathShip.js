@@ -7,6 +7,16 @@ export default function MathShip() {
   return (
     <div className="mathship">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
+
+      <a
+        className="report"
+        target="_blank"
+        rel="noreferrer"
+        href="https://devpost.com/software/healthy-food-eoqnch"
+      >
+        Full Report
+      </a>
+
       <div className="mathshipImgCont">
         <img
           className="mathshipHome"

@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ProjectDetails({ projectInfo }) {
-  const { title, overview, team, tech, timeline, github } = projectInfo;
+  const { title, overview, team, tech, timeline, github, report, reportURL } =
+    projectInfo;
   return (
     <div className="projectDetails">
       <Link to="/project">
@@ -29,10 +30,19 @@ export default function ProjectDetails({ projectInfo }) {
       <p>Technologies Used: {tech}</p>
       <p>Timeline: {timeline}</p>
 
-      <a href={github} target="_blank" rel="noreferrer" className="buttonS">
-        Github
-      </a>
-      
+      <div className = "projectButtons">
+        <a href={github} target="_blank" rel="noreferrer" className="buttonS">
+          Github
+        </a>
+        <a
+          href={reportURL}
+          target="_blank"
+          rel="noreferrer"
+          className="buttonS"
+        >
+          {report}
+        </a>
+      </div>
     </div>
   );
 }

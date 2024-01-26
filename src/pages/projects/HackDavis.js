@@ -6,15 +6,6 @@ export default function HackDavis() {
   return (
     <div className="hackdavis">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
-      <div>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://devpost.com/software/healthy-food-eoqnch"
-        >
-          DevPost
-        </a>
-      </div>
       <img
         className="projectImg"
         src="https://i.ibb.co/68LWpC4/healthyfoods.png"
@@ -31,6 +22,7 @@ export default function HackDavis() {
           <li>Submit project before 7:30 PM PT on Sunday, January 17, 2021</li>
         </ul>
       </div>
+
       <div>
         <h3>Design</h3>
         <p>↓</p>
@@ -41,8 +33,8 @@ export default function HackDavis() {
         </div>
         <h4>Typography</h4>
         <p>Montserrat</p>
-        <p className = "lemonmilk">Lemon Milk</p>
-        <p className = "nicholia">Nicholia</p>
+        <p className="lemonmilk">Lemon Milk</p>
+        <p className="nicholia">Nicholia</p>
         <p></p>
       </div>
 
@@ -53,8 +45,9 @@ export default function HackDavis() {
           <li>First time designing, never used any prototyping software</li>
           <li>Underestimated the amount of work needed to build our app</li>
           <li>Had to learn everything from scratch</li>
-          <li>Introduced to Sketch and then found Figma once my trial period ended</li>
-          
+          <li>
+            Introduced to Sketch and then found Figma once my trial period ended
+          </li>
         </ul>
       </div>
 
@@ -76,4 +69,6 @@ const projectInfo = {
   tech: "Python, Flask, HTML, CSS, Javascript",
   timeline: "January 16 - January 17, 2021",
   github: "https://github.com/angelayang2018/Healthy-Foods",
+  report: "DevPost",
+  reportURL: "https://devpost.com/software/healthy-food-eoqnch"
 };

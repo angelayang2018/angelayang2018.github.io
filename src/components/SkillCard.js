@@ -8,8 +8,8 @@ export default function SkillCard({skill}) {
       <div className="skillInfo">
         <h3 className = {topic}>{topic}</h3>
         <ul>
-        {topicItems.map((listItem, index) => (
-          <li key = {index}>{listItem}</li>
+        {topicItems.map((listItem) => (
+          <li key = {listItem}>{listItem}</li>
         ))}
         </ul>
       </div>
