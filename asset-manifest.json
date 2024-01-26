@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7dea2718.css",
-    "main.js": "/static/js/main.587c16dc.js",
+    "main.js": "/static/js/main.288aa867.js",
     "static/js/787.a0b98d02.chunk.js": "/static/js/787.a0b98d02.chunk.js",
     "static/media/PPMori-SemiBold.otf": "/static/media/PPMori-SemiBold.336abfe2da355e4fa8dd.otf",
     "static/media/PPMori-Extralight.otf": "/static/media/PPMori-Extralight.78d084cbf7ae991057eb.otf",
@@ -12,11 +12,11 @@
     "static/media/Galacticagrid-8Mr7J.ttf": "/static/media/Galacticagrid-8Mr7J.25d248638503309f03f5.ttf",
     "index.html": "/index.html",
     "main.7dea2718.css.map": "/static/css/main.7dea2718.css.map",
-    "main.587c16dc.js.map": "/static/js/main.587c16dc.js.map",
+    "main.288aa867.js.map": "/static/js/main.288aa867.js.map",
     "787.a0b98d02.chunk.js.map": "/static/js/787.a0b98d02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7dea2718.css",
-    "static/js/main.587c16dc.js"
+    "static/js/main.288aa867.js"
   ]
 }
