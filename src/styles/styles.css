@@ -344,7 +344,7 @@ h2.nostrav {
     position: absolute;
     top: 110px;
     left: -35px;
-    z-index: 20;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;

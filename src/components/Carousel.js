@@ -18,7 +18,7 @@ export default function Carousel() {
           nextEl: ".buttonNext",
         }}
         breakpoints = {{
-         1100: {slidesPerView: 1.4}
+         800: {slidesPerView: 1.4}
         }}
       >
         <SwiperSlide>

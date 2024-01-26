@@ -48,6 +48,12 @@
     }
 }
 
+@mixin lg{
+    @media(max-width: breakpoints.$screen-lg){
+        @content;
+    }
+}
+
 @mixin mbl{
     @media(max-width: breakpoints.$mobile-lg){
         @content;
