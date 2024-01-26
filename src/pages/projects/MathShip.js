@@ -48,11 +48,17 @@ export default function MathShip() {
         <h3>Challenges/Lessons Learned</h3>
         <ul>
           <li>
-            One team member was not responsive during our online team meetings
-            <li>Did not code, help design, or write documentation (therefore, I did not include them in the credits)</li>
+            One team member was not responsive during our online team meeting.
+          </li>
+          <li>
+            Did not code, help design, or write documentation (therefore, I did
+            not include them in the credits)
           </li>
           <li>Lack of leadership and clear direction</li>
-          <li>Other team members mention that they were lost and confused on what to do</li>
+          <li>
+            Other team members mention that they were lost and confused on what
+            to do
+          </li>
         </ul>
       </div>
 

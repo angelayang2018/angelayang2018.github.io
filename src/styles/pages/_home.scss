@@ -58,6 +58,21 @@
 .contact{
     @include flexEvenly;
     padding: 50px 0px;
+    
+
+    @include custom(600px){
+        @include flexCenter(column);
+        
+
+    }
+
+    .buttonS{
+        @include custom(600px){
+            width: 100%;
+            
+    
+        }
+    }
 }
 
 .movingText{

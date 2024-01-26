@@ -26,12 +26,11 @@
     align-items: center;
 }
 
-@mixin buttonStyle($width){
+@mixin buttonStyle{
     @include flexCenter;
     background-color: transparent;
     border: solid gray 0.5px;
     border-radius: 25px;
-    width: $width;
     height: 50px;
     cursor: pointer;
 

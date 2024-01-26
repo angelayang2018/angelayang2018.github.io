@@ -2,24 +2,42 @@
 
 .about{
     @include flexCenter;
-    padding-top: 90px;
+    height: 100vh;
+
+    @include tab{
+        flex-direction: column;
+        height: 100%;
+        padding-top: 70px;
+    }
 }
 
 .aboutInfo{
     width: 50%;
-    
-    h2, p{
-        padding-right: 60px;
+
+    @include tab{
+       width: 100%;
     }
+    
 }
 
 .aboutImage{
     display: flex;
     justify-content: flex-end;
     width:50%;
+
+   
     
     img{
         border-radius: 15px;
         width:65%;
     }
+
+    @include tab{
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+     }
+     
 }

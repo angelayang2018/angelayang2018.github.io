@@ -47,7 +47,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1rem, 1.3vw, 2rem);
+  font-size: clamp(1rem, 1.3vw, 1.8rem);
 }
 
 .skills li {
@@ -84,9 +84,9 @@ h2.nostrav {
   background-color: transparent;
   border: solid gray 0.5px;
   border-radius: 25px;
-  width: 150px;
   height: 50px;
   cursor: pointer;
+  width: 150px;
   margin: 10px 10px 10px 0px;
 }
 .buttonS:hover {
@@ -103,9 +103,9 @@ h2.nostrav {
   background-color: transparent;
   border: solid gray 0.5px;
   border-radius: 25px;
-  width: 220px;
   height: 50px;
   cursor: pointer;
+  width: 220px;
 }
 .buttonM:hover {
   background-color: black;
@@ -121,9 +121,9 @@ h2.nostrav {
   background-color: transparent;
   border: solid gray 0.5px;
   border-radius: 25px;
-  width: 50px;
   height: 50px;
   cursor: pointer;
+  width: 50px;
   margin: 0px 10px;
 }
 .buttonC:hover {
@@ -165,6 +165,14 @@ h2.nostrav {
 .featuresCont {
   display: flex;
 }
+@media (max-width: 768px) {
+  .featuresCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .featureCard {
   width: 33.33%;
@@ -177,6 +185,12 @@ h2.nostrav {
 .featureCard img {
   width: 100%;
   border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .featureCard {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .projectDetails {
@@ -320,6 +334,19 @@ h2.nostrav {
   align-items: center;
   padding: 50px 0px;
 }
+@media (max-width: 600px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .contact .buttonS {
+    width: 100%;
+  }
+}
 
 .movingText {
   display: flex;
@@ -336,14 +363,23 @@ h2.nostrav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 90px;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    height: 100%;
+    padding-top: 70px;
+  }
 }
 
 .aboutInfo {
   width: 50%;
 }
-.aboutInfo h2, .aboutInfo p {
-  padding-right: 60px;
+@media (max-width: 768px) {
+  .aboutInfo {
+    width: 100%;
+  }
 }
 
 .aboutImage {
@@ -354,6 +390,14 @@ h2.nostrav {
 .aboutImage img {
   border-radius: 15px;
   width: 65%;
+}
+@media (max-width: 768px) {
+  .aboutImage {
+    width: 100%;
+  }
+  .aboutImage img {
+    width: 100%;
+  }
 }
 
 .projectPage {
