@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 
 export default function Carousel() {
   return (
-    <div className="projects">
+    <div className="carousel">
       <Swiper
         modules={[Navigation]}
         loop="true"
@@ -16,6 +16,9 @@ export default function Carousel() {
         navigation={{
           prevEl: ".buttonPrev",
           nextEl: ".buttonNext",
+        }}
+        breakpoints = {{
+         800: {slidesPerView: 1.9}
         }}
       >
         <SwiperSlide>
