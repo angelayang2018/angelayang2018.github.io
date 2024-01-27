@@ -13,7 +13,6 @@ export default function SkillCard({ skill }) {
         trigger: ".skillAnimation",
         start: "top center",
         scrub: 1,
-        markers: true,
         toggleActions: "restart pause reverse pause",
       },
       rotate: 360,
