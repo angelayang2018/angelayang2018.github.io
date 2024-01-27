@@ -4,6 +4,7 @@ import "./styles/styles.css";
 import About from "./pages/About";
 import Project from "./pages/Project";
 import Navbar from "./components/Navbar";
+import ScrollTop from "./components/ScrollTop";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Portfolio from "./pages/projects/Portfolio";
 import SpartanPantry from "./pages/projects/SpartanPantry";
@@ -17,6 +18,7 @@ export default function App() {
   return (
     <div className="app">
       <BrowserRouter>
+      <ScrollTop>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,6 +32,7 @@ export default function App() {
           <Route path="/project/hackdavis" element={<HackDavis />} />
           <Route path="*" element={<Home />} />
         </Routes>
+        </ScrollTop>
       </BrowserRouter>
     </div>
   );

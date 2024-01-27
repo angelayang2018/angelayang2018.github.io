@@ -1,22 +1,34 @@
 import React from "react";
-import {gsap} from "gsap";
-import {useGSAP} from '@gsap/react';
+import { gsap, ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
-export default function SkillCard({skill}) {
-    const {topic, topicItems} = skill;
+gsap.registerPlugin(ScrollTrigger);
 
-    useGSAP(() => {
-      gsap.to( ".skillAnimation", { rotate: 360 })
+export default function SkillCard({ skill }) {
+  const { topic, topicItems } = skill;
+
+  useGSAP(() => {
+    gsap.to(".skillAnimation", {
+      scrollTrigger: {
+        trigger: ".skillAnimation",
+        start: "top center",
+        scrub: 1,
+        markers: true,
+        toggleActions: "restart pause reverse pause",
+      },
+      rotate: 360,
+
     });
+  });
   return (
-    <div className = "skillCard">
+    <div className="skillCard">
       <div className="skillAnimation">Animation</div>
       <div className="skillInfo">
-        <h3 className = {topic}>{topic}</h3>
+        <h3 className={topic}>{topic}</h3>
         <ul>
-        {topicItems.map((listItem) => (
-          <li key = {listItem}>{listItem}</li>
-        ))}
+          {topicItems.map((listItem) => (
+            <li key={listItem}>{listItem}</li>
+          ))}
         </ul>
       </div>
     </div>
