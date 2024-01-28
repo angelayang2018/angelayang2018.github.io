@@ -10,16 +10,23 @@ export default function Project() {
     gsap.from(".projectCard", {
       scrollTrigger: {
         start: "top-=800 center+=150",
-        end: "bottom+=700 bottom",
-        scrub: true,
+        end: "bottom+=600 bottom",
+        scrub: 1,
         trigger: ".projectCard",
       },
       y: 500,
       stagger: 0.2,
-      opacity: 0
+      opacity: 0,
 
 
     });
+
+    gsap.from(".projectHeader", {
+
+      yPercent:20,
+      skewY: 10
+    });
+    
   });
 
   return (

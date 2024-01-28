@@ -1,12 +1,9 @@
 @use "../abstracts/" as *;
 
-.projectPage {
-  padding-top: 90px;
-}
-
 .projectHeader{
   height: 100vh;
   @include flexCenter;
+  overflow: hidden
 }
 
 .projectContainer {

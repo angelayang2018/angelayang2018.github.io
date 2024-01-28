@@ -2,8 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Skill from "../components/Skill";
 import Carousel from "../components/Carousel";
+import { gsap, ScrollTrigger, TextPlugin } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 export default function Home() {
+  useGSAP(() => {
+    gsap.to(".nostrav", {
+      scrollTrigger:{
+        start: "bottom bottom",
+        end: "bottom bottom"
+
+      },
+      text: "LET'S TALK",
+      ease:" none",
+      type: "diff",
+      delay: 1,
+      duration: 2.5
+
+
+    });
+  });
+
   return (
     <div className="home">
       <div className="intro">

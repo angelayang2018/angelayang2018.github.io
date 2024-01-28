@@ -168,7 +168,7 @@ h2.nostrav {
   background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
   background-color: #FAF7EF;
   left: 0;
-  padding: 0 30px;
+  padding: 0px 5%;
   flex-wrap: wrap;
 }
 
@@ -256,15 +256,44 @@ h2.nostrav {
   }
 }
 
-.skillAnimation {
-  width: 300px;
-  background-color: white;
-  height: 300px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 500px;
+.skillAnimation1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.circle {
+  width: 80px;
+  background-color: #34B0FB;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.rSquare:first-of-type {
+  background-color: #EF4726;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px 0 0 40px;
+}
+
+.rSquare:nth-of-type(2) {
+  background-color: #FE685B;
+  width: 80px;
+  height: 80px;
+  border-radius: 0px 50px 50px 0;
+}
+
+.rSquare:nth-of-type(3) {
+  background-color: #A343FC;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px 0 0 40px;
+}
+
+.rSquare:nth-of-type(5) {
+  background-color: #00CA79;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px 0 40px 40px;
 }
 
 .skillInfo {
@@ -428,16 +457,13 @@ h2.nostrav {
   }
 }
 
-.projectPage {
-  padding-top: 90px;
-}
-
 .projectHeader {
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .projectContainer {
@@ -677,7 +703,7 @@ body {
   font-family: "Mori";
   background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
   background-color: #FAF7EF;
-  padding: 0px 30px;
+  padding: 0px 5%;
   margin: 0;
 }
 
