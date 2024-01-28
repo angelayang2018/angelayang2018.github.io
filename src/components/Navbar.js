@@ -7,19 +7,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Navbar() {
   useGSAP(() => {
-    const navAnim = gsap.from(".navbar", {
-      scrollTrigger: {
-        start: "top top",
-        end: "max",
-        onUpdate: (self) => {
-          self.direction === -1 ? navAnim.play() : navAnim.reverse();
+    const navAnim = gsap
+      .from(".navbar", {
+        scrollTrigger: {
+          start: "top top",
+          end: "max",
+          onUpdate: (self) => {
+            self.direction === -1 ? navAnim.play() : navAnim.reverse();
+          },
         },
-      },
-      yPercent: -100,
-      paused: true,
-      duration: 0.5,
-      ease: "power1.inOut",
-    }).progress(1);
+        yPercent: -100,
+        paused: true,
+        duration: 0.5,
+        ease: "power1.inOut",
+      })
+      .progress(1);
   });
 
   return (

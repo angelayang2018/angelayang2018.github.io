@@ -6,7 +6,7 @@ export default function About() {
       <div className="aboutInfo">
         <h2>🙆🏻‍♀️ is for Angela</h2>
         <p>
-          Hi! I'm Angela Yang, a results-driven frontend software developer and
+          Hi! I'm Angela Yang, frontend software developer and
           recent graduate of San Jose State University with a degree in Computer
           Science. My journey into the world of coding began at SJSU, where I
           cultivated a passion for creating seamless and visually appealing user

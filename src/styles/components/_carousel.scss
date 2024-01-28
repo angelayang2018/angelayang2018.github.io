@@ -12,8 +12,8 @@
   padding: 10px 0;
 
   img{
-    width: 100%;
-    padding: 0 20px;
+    width: 85%;
+    
   }
 }
 
@@ -26,7 +26,7 @@
 }
 
 .swiper-slide {
-  @include flexCenter;
+  @include flexCenter(column);
 }
 
 .projectTools {

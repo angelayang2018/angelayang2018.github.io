@@ -300,8 +300,7 @@ h2.nostrav {
   padding: 10px 0;
 }
 .swiper img {
-  width: 100%;
-  padding: 0 20px;
+  width: 85%;
 }
 
 .swiperDetails {
@@ -316,7 +315,7 @@ h2.nostrav {
 
 .swiper-slide {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -431,6 +430,14 @@ h2.nostrav {
 
 .projectPage {
   padding-top: 90px;
+}
+
+.projectHeader {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectContainer {

@@ -6,24 +6,27 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Project() {
-
   useGSAP(() => {
-    gsap.to(".skillAnimation", {
+    gsap.from(".projectCard", {
       scrollTrigger: {
-        trigger: ".skillAnimation",
-        start: "top center",
-        scrub: 1,
-        markers: true,
-        toggleActions: "restart pause reverse pause",
+        start: "top-=800 center+=150",
+        end: "bottom+=700 bottom",
+        scrub: true,
+        trigger: ".projectCard",
       },
-      rotate: 360,
+      y: 500,
+      stagger: 0.2,
+      opacity: 0
+
 
     });
   });
-  
+
   return (
     <div className="projectPage">
-      <h2>Take a look around</h2>
+     <div className = "projectHeader">
+        <h2>Take a look around</h2>
+        </div>
       <div className="projectContainer">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
