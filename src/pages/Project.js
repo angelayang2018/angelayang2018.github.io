@@ -10,7 +10,7 @@ export default function Project() {
     gsap.from(".projectCard", {
       scrollTrigger: {
         start: "top-=800 center+=150",
-        end: "bottom+=600 bottom",
+        end: "bottom+=200 bottom",
         scrub: 1,
         trigger: ".projectCard",
       },

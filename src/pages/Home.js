@@ -5,6 +5,7 @@ import Carousel from "../components/Carousel";
 import { gsap, ScrollTrigger, TextPlugin } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 
+
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
           <Link className="buttonS" to="/about">
             ABOUT
           </Link>
-          <a target="_blank" rel="noreferrer" className="buttonS" href="./">
+          <a target="_blank" rel="noreferrer" className="buttonS" href="/angela_yang_resume.pdf">
             RESUME
           </a>
         </div>
