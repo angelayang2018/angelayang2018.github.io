@@ -1,7 +1,10 @@
 @use "../abstracts/" as *;
 
 .portfolio{
-    padding-top: 90px;
+    
+    background: url('https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png') repeat;
+    background-color: $sandColor;
+    padding:90px 5% 1px 5%;
 }
 
 .colorsContainer{

@@ -1,5 +1,13 @@
 @use "../abstracts/" as *;
 
+
+.projectPage{
+  background: url('https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png') repeat;
+    background-color: $sandColor;
+    padding: 0px 5%;
+    
+}
+
 .projectHeader{
   height: 100vh;
   @include flexCenter;

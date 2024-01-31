@@ -3,6 +3,9 @@
 .about{
     @include flexCenter;
     height: 100vh;
+    background: url('https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png') repeat;
+    background-color: $sandColor;
+    padding: 0px 5%;
 
     @include tab{
         flex-direction: column;

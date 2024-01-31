@@ -39,11 +39,11 @@
 }
 
 h2 {
-  font-size: clamp(2rem, 3vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 
 h3 {
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(2rem, 3.5vw, 3rem);
 }
 
 h4 {
@@ -367,6 +367,7 @@ h2.nostrav {
   align-items: center;
   padding: 20px 0 70px 0;
   position: relative;
+  height: 100vh;
 }
 
 .swiper {
@@ -375,6 +376,11 @@ h2.nostrav {
 }
 .swiper img {
   width: 85%;
+}
+@media (max-width: 800px) {
+  .swiper img {
+    width: 100%;
+  }
 }
 
 .swiperDetails {
@@ -442,7 +448,10 @@ h2.nostrav {
   background-color: #E5A1EA;
 }
 
-.intro {
+.home {
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 0px 5%;
   padding-top: 90px;
 }
 
@@ -487,6 +496,9 @@ h2.nostrav {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 0px 5%;
 }
 @media (max-width: 768px) {
   .about {
@@ -521,6 +533,12 @@ h2.nostrav {
   .aboutImage img {
     width: 100%;
   }
+}
+
+.projectPage {
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 0px 5%;
 }
 
 .projectHeader {
@@ -562,7 +580,9 @@ h2.nostrav {
 }
 
 .spartanpantry {
-  padding-top: 90px;
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 90px 5% 1px 5%;
 }
 
 .pantryhome {
@@ -616,7 +636,9 @@ h2.nostrav {
 }
 
 .hackdavis {
-  padding-top: 90px;
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 90px 5% 1px 5%;
 }
 
 .hackGreen {
@@ -628,7 +650,9 @@ h2.nostrav {
 }
 
 .portfolio {
-  padding-top: 90px;
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 90px 5% 1px 5%;
 }
 
 .colorsContainer {
@@ -687,6 +711,9 @@ h2.nostrav {
 
 .pydoku {
   padding-top: 90px;
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 90px 5% 1px 5%;
 }
 
 .pydokuImg {
@@ -695,7 +722,9 @@ h2.nostrav {
 }
 
 .mathship {
-  padding-top: 90px;
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 90px 5% 1px 5%;
 }
 
 .mathshipImgCont {
@@ -732,7 +761,9 @@ h2.nostrav {
 }
 
 .maui {
-  padding-top: 90px;
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 90px 5% 1px 5%;
 }
 
 .projectImg {
@@ -763,9 +794,7 @@ h2.nostrav {
 
 body {
   font-family: "Mori";
-  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
-  background-color: #FAF7EF;
-  padding: 0px 5%;
+  background-color: #2E75BC;
   margin: 0;
   overflow-x: hidden;
 }
