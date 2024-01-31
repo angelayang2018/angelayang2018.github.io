@@ -46,6 +46,10 @@ h3 {
   font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
+h4 {
+  font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+}
+
 p {
   font-size: clamp(1rem, 1.3vw, 1.8rem);
 }
@@ -265,8 +269,11 @@ h2.nostrav {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.languageImg {
-  width: 250px;
+.drag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
@@ -302,6 +309,36 @@ h2.nostrav {
   width: 80px;
   height: 80px;
   border-radius: 40px 0 40px 40px;
+}
+
+.skillAnimation2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.skillAnimation2 .frameworkIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+}
+.skillAnimation2 .frameworkIcon img {
+  width: 50%;
+}
+.skillAnimation2 .frameworkIcon:first-of-type {
+  background-color: #40A250;
+}
+.skillAnimation2 .frameworkIcon:nth-of-type(2) {
+  background-color: #E6D041;
+}
+.skillAnimation2 .frameworkIcon:nth-of-type(3) {
+  background-color: #2E75BC;
+}
+.skillAnimation2 .frameworkIcon:nth-of-type(4) {
+  background-color: #E5A1EA;
 }
 
 .skillInfo {

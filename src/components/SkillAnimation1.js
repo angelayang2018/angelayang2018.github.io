@@ -13,11 +13,11 @@ export default function SkillAnimation1() {
   });
   return (
     <div className="skillAnimation1">
+      <div className="drag rSquare"><img src="https://i.ibb.co/mGH4vYr/mysql-2.png" alt="mysql" /></div>
       <div className="drag rSquare"></div>
-      <div className="drag rSquare"></div>
-      <div className="drag rSquare"></div>
-      <div className="drag circle"></div>
-      <div className="drag rSquare"></div>
+      <div className="drag rSquare"><img src="https://i.ibb.co/WgkGc44/github.png" alt="github" /></div>
+      <div className="drag circle"><img src = "https://i.ibb.co/hHqTh4K/docker.png" alt = "docker" /></div>
+      <div className="drag rSquare"><img src="https://i.ibb.co/tHGHkVP/terminal.png" alt="terminal" /></div>
     </div>
   );
 }

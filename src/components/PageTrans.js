@@ -13,22 +13,30 @@ const PageTrans = ({ children }) => {
         onEnter={() => {
           gsap
             .timeline({ paused: true })
-          
+            .set(".rect", {
+              y: "1000px",
+            })
+            .to(".rect", {
+              y: "-1000px",
+              stagger: {
+                ease: "power1.out",
+                each: 0.05,
+              },
+              duration: 0.25,
+            })
             .play();
         }}
         onExit={() => {
           gsap
             .timeline({ paused: true })
-            
             .to(".rect", {
               y: 1000,
-             
+
               stagger: {
                 ease: "power1.out",
                 each: 0.05,
               },
-              duration: 0.25
-              
+              duration: 0.25,
             })
             .play();
         }}

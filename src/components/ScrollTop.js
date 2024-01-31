@@ -1,16 +1,20 @@
-import React from 'react';
-import {useEffect} from 'react';
-import {useLocation} from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ScrollTop = (props) => {
-    const location = useLocation();
-    useEffect(() => {
-      window.scrollTo({top: 0, left: 0});
-    }, [location]);
+  const location = useLocation();
 
-    return <>
-        {props.children}
-    </>
-  };
+  useEffect(() => {
+    const scrollDelay = 300; // 0.25 seconds in milliseconds
+
+    const timeoutId = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0 });
+    }, scrollDelay);
+
+    return () => clearTimeout(timeoutId);
+  }, [location]);
+
+  return <>{props.children}</>;
+};
 
 export default ScrollTop;

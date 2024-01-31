@@ -2,6 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
+    
     <div className="about">
       <div className="aboutInfo">
         <h2>🙆🏻‍♀️ is for Angela</h2>

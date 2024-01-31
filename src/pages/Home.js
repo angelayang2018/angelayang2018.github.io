@@ -7,6 +7,7 @@ import SkillAnimation1 from "../components/SkillAnimation1";
 import SkillAnimation2 from "../components/SkillAnimation2";
 import SkillAnimation3 from "../components/SkillAnimation3";
 
+
 gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin);
 
 export default function Home() {
@@ -143,5 +144,5 @@ export default function Home() {
 }
 
 const languages = ["Java", "HTML", "Python", "CSS", "Javascript"];
-const frameworks = ["React", "Tailwind", "GSAP", "Express", "Node", "SASS"];
+const frameworks = ["React", "Tailwind", "GSAP", "SASS"];
 const tools = ["Docker", "Figma", "SQL", "Command Line", "Git"];

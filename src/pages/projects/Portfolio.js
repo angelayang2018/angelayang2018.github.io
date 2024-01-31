@@ -6,11 +6,6 @@ export default function Portfolio() {
   return (
     <div className="portfolio">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
-
-      <div>
-        <div className="tempImage"></div>
-      </div>
-
       <div>
         <h3>Design</h3>
         <p>↓</p>
@@ -50,7 +45,7 @@ const projectInfo = {
     "My portfolio website showcases my journey as a software developer. It features a collection of projects, skills, and experiences that define my passion for creating.",
   team: [],
   tech: "React, GSAP, HTML, CSS, Javascript, Swiper, Figma",
-  timeline: "January 2024",
+  timeline: "January 2024 (ongoing)",
   github: "https://github.com/angelayang2018/portfolio_website",
   report: "Report",
   reportURL: "https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing"

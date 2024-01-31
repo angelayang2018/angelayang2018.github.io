@@ -12,6 +12,6 @@ export default function SkillAnimation3(){
     
       });
     return ( <div className="skillAnimation3">
-    <img className = "languageImg" src="https://i.ibb.co/SQrnBmd/languages.png" alt="languages" />
+    <img className = "languageImg" src="https://i.ibb.co/vPsq8q8/Component-26-1.png" alt="Component-26" />
   </div>);
 }
