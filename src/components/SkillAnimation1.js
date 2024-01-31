@@ -6,18 +6,9 @@ gsap.registerPlugin(Draggable);
 
 export default function SkillAnimation1() {
   useGSAP(() => {
-    var startX, startY;
     Draggable.create(".drag", {
       type: "x, y",
-      onPress: function () {
-        startX = this.x;
-        startY = this.y;
-      },
-      onRelease: function () {
-        if (false) {
-         this.to(this.target, 1, { x: startX, y: startY });
-        }
-      },
+      bounds: ".skillAnimation1"
     });
   });
   return (

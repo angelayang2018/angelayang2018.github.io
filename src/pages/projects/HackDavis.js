@@ -41,13 +41,20 @@ export default function HackDavis() {
       <div>
         <h3>Challenges/Lessons Learned</h3>
         <ul>
-          <li>First time Hackathon, we were unorganized and stressed</li>
-          <li>First time designing, never used any prototyping software</li>
-          <li>Underestimated the amount of work needed to build our app</li>
-          <li>Had to learn everything from scratch</li>
           <li>
-            Introduced to Sketch and then found Figma once my trial period ended
+            Encountered challenges stemming from organizational issues and high
+            stress levels
           </li>
+
+          <li>
+            Underestimated the scope of work required for the development of our
+            application
+          </li>
+          <li>
+            Had to acquire proficiency in various areas, effectively learning
+            everything from scratch
+          </li>
+          <li>Introduced to Sketch and Figma</li>
         </ul>
       </div>
 
@@ -70,5 +77,5 @@ const projectInfo = {
   timeline: "January 16 - January 17, 2021",
   github: "https://github.com/angelayang2018/Healthy-Foods",
   report: "DevPost",
-  reportURL: "https://devpost.com/software/healthy-food-eoqnch"
+  reportURL: "https://devpost.com/software/healthy-food-eoqnch",
 };

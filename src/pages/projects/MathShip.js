@@ -36,7 +36,7 @@ export default function MathShip() {
         <div className="mathshipImgCont">
           <img
             className="mathshipImg"
-            src="https://i.ibb.co/HB5ZH2q/mathship-1.png"
+            src="https://i.ibb.co/9wc8gn7/mathship.png"
             alt="mathshipicon"
           />
         </div>
@@ -48,16 +48,22 @@ export default function MathShip() {
         <h3>Challenges/Lessons Learned</h3>
         <ul>
           <li>
-            One team member was not responsive during our online team meeting.
+            One team member exhibited unresponsiveness during our online team
+            meetings, contributing to a breakdown in effective communication
           </li>
           <li>
-            Did not code, help design, or write documentation (therefore, I did
-            not include them in the credits)
+            The absence of clear leadership and direction became apparent,
+            posing a challenge to the overall team dynamic
           </li>
-          <li>Lack of leadership and clear direction</li>
           <li>
-            Other team members mention that they were lost and confused on what
-            to do
+            The lack of active participation and contribution from one member
+            underscored the importance of clear expectations and shared
+            responsibilities in collaborative projects
+          </li>
+          <li>
+            The experience emphasized the significance of fostering a supportive
+            and communicative team environment to enhance overall productivity
+            and project outcomes
           </li>
         </ul>
       </div>
@@ -106,5 +112,5 @@ const projectInfo = {
   timeline: "September - December 2021",
   github: "https://github.com/angelayang2018/CS_151_Math_Ship_Term_Project",
   report: "Report",
-  reportURL: "https://devpost.com/software/healthy-food-eoqnch"
+  reportURL: "https://devpost.com/software/healthy-food-eoqnch",
 };

@@ -8,8 +8,6 @@ import "swiper/css/navigation";
 
 export default function Carousel() {
 
-  
-
   return (
     <div className="carousel">
       <Swiper
@@ -36,7 +34,6 @@ export default function Carousel() {
         <Swiper
           modules={[EffectFade, Navigation]}
           loop="true"
-          onSlideChange={() =>{console.log("hi")}}
           slidesPerView={1}
           effect="fade"
           fadeEffect={{ crossFade: true }}

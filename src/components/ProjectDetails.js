@@ -12,7 +12,7 @@ export default function ProjectDetails({ projectInfo }) {
       <h2>{title}</h2>
       <p>{overview}</p>
       <p>
-        Team: Angela Yang
+        <span className = "bold">Team:</span> Angela Yang
         {team.map((member, index) => (
           <span>
             ,{" "}
@@ -27,8 +27,8 @@ export default function ProjectDetails({ projectInfo }) {
           </span>
         ))}
       </p>
-      <p>Technologies Used: {tech}</p>
-      <p>Timeline: {timeline}</p>
+      <p><span className = "bold">Technologies Used:</span> {tech}</p>
+      <p><span className = "bold">Timeline:</span> {timeline}</p>
 
       <div className = "projectButtons">
         <a href={github} target="_blank" rel="noreferrer" className="buttonS">

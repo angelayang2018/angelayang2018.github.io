@@ -76,6 +76,10 @@ h2.nostrav {
   font-family: "Lemonmilk";
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .buttonS {
   display: flex;
   flex-direction: row;
@@ -230,15 +234,15 @@ h2.nostrav {
   padding: 20px 0px;
 }
 
-.Languages {
+.languages {
   color: #EA8118;
 }
 
-.Frameworks\/.Libraries {
+.frameworks {
   color: #40A250;
 }
 
-.Additional.Tool {
+.tools {
   color: #2E75BC;
 }
 
@@ -259,6 +263,10 @@ h2.nostrav {
 .skillAnimation1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.languageImg {
+  width: 250px;
 }
 
 .circle {
@@ -382,6 +390,21 @@ h2.nostrav {
   }
 }
 
+.transitionCont {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+  left: 0;
+  top: -1000px;
+}
+
+.rect {
+  width: 20%;
+  height: 100vh;
+  background-color: #E5A1EA;
+}
+
 .intro {
   padding-top: 90px;
 }
@@ -410,9 +433,15 @@ h2.nostrav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .movingText h1 {
   font-family: "Nostrav";
+}
+.movingText .airplane {
+  position: absolute;
+  top: 0;
+  left: 0px;
 }
 
 .about {
@@ -646,11 +675,7 @@ h2.nostrav {
 
 .mathshipImg {
   border-radius: 15px;
-}
-@media (max-width: 560px) {
-  .mathshipImg {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .mathOrange {
@@ -705,6 +730,7 @@ body {
   background-color: #FAF7EF;
   padding: 0px 5%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {

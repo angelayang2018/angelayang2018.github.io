@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+
+.transitionCont{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 30;
+    left: 0;
+    top: -1000px;
+}
+
+.rect{
+    width: 20%;
+    height: 100vh;
+    background-color: $pinkColor;
+}

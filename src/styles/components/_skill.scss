@@ -5,15 +5,15 @@
 
 }
 
-.Languages{
+.languages{
     color: $orangeColor;
 }
 
-.Frameworks\/.Libraries {
+.frameworks {
     color: $greenColor;
 }
 
-.Additional.Tool{
+.tools{
     color: $blueColor
 }
 
@@ -32,6 +32,10 @@
 .skillAnimation1{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.languageImg{
+  width: 250px;
 }
 
 .circle{

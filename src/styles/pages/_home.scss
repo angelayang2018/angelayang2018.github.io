@@ -22,10 +22,20 @@
 
 .movingText{
     @include flexCenter;
+    position: relative;
+    
     
     h1{
        
         font-family:"Nostrav";
     }
+
+    .airplane{
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
 }
+
+
 
