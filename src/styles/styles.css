@@ -62,12 +62,6 @@ p {
 
 .skills li {
   font-size: clamp(1rem, 1.3vw, 2.5rem);
-  content: "✦";
-}
-
-li::before {
-  content: "✦";
-  margin-right: 5px;
 }
 
 h2.nostrav {
