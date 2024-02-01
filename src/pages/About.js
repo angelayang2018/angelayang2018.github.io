@@ -1,29 +1,64 @@
 import React from "react";
+import { gsap } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
 export default function About() {
+  useGSAP(() => {
+    const tl = gsap
+      .timeline()
+      .to(".emoji", {
+        y: -60,
+        duration: 0.1,
+        ease: "power2.out",
+        delay: 2,
+      })
+      .to(".emoji", {
+        y: 0,
+        duration: 0.5,
+        ease: "bounce.out",
+      })
+      .to(".angela", {
+        y: -60,
+        duration: 0.1,
+        ease: "power2.out",
+      })
+      .to(".angela", {
+        y: 0,
+        duration: 0.5,
+        ease: "bounce.out",
+      })
+      .play();
+  });
+
   return (
-    
     <div className="about">
       <div className="aboutInfo">
-        <h2>🙆🏻‍♀️ is for Angela</h2>
+        <h2>
+          <span className="emoji">🙆🏻‍♀️</span> is for{" "}
+          <span className="angela">Angela</span>
+        </h2>
         <p>
-          Hi! I'm Angela Yang, frontend software developer and
-          recent graduate of San Jose State University with a degree in Computer
-          Science. My journey into the world of coding began at SJSU, where I
-          cultivated a passion for creating seamless and visually appealing user
-          experiences. Proficient in HTML, CSS, and JavaScript, I specialize in
-          translating designs into captivating user interfaces. 
+          Hi! I'm Angela Yang, frontend software developer and recent graduate
+          of San Jose State University with a degree in Computer Science. My
+          education at SJSU equipped me with a robust technical foundation, and
+          I am committed to staying ahead in the ever-evolving frontend
+          landscape.
         </p>
         <br></br>
-        <p>My education at
-          SJSU equipped me with a robust technical foundation, and I am
-          committed to staying ahead in the ever-evolving frontend landscape. I
-          thrive on collaborating with diverse teams, leveraging my skills to
-          contribute innovative solutions. Whether it's exploring new JavaScript
-          frameworks or adopting modern design patterns, I am dedicated to
-          continuous learning and improvement.</p>
+        <p>
+          I specialize in translating designs into captivating user interfaces.
+          Whether it's exploring new JavaScript frameworks or adopting modern
+          design patterns, I am dedicated to continuous learning and
+          improvement.
+        </p>
       </div>
-      <div className="aboutImage"><img src="https://i.ibb.co/vLCcKPj/IMG-0659.jpg" alt="angie:)" border="0" /></div>
+      <div className="aboutImage">
+        <img
+          src="https://i.ibb.co/vLCcKPj/IMG-0659.jpg"
+          alt="angie:)"
+          border="0"
+        />
+      </div>
     </div>
   );
 }

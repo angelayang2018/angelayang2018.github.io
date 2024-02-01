@@ -76,8 +76,8 @@ const projectInfo = {
   team: [],
   tech: "React, HTML, CSS, Javascript, Figma",
   timeline: "October 2023 - January 2024 (ongoing)",
-  github: "https://github.com/angelayang2018/portfolio_website",
+  github: "https://github.com/angelayang2018/maui-website",
   report: "Report",
   reportURL:
-    "https://docs.google.com/document/d/1ZpMYjZGotLS6SmQDj8c2H4OD47N5AtC1Nz1r54OtNi0/edit?usp=sharing",
+    "https://docs.google.com/document/d/1ExtbPBxvM4qlmZ-lGmwaEZtpfqBLqeuRLldMXaKei4o/edit",
 };

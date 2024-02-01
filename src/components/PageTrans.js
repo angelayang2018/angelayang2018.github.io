@@ -9,8 +9,9 @@ const PageTrans = ({ children }) => {
     <SwitchTransition>
       <Transition
         key={location.pathname}
-        timeout={500}
+        timeout={1500}
         onEnter={() => {
+          window.scrollTo({ top: 0, left: 0 });
           gsap
             .timeline({ paused: true })
             .set(".rect", {
@@ -20,9 +21,10 @@ const PageTrans = ({ children }) => {
               y: "-1000px",
               stagger: {
                 ease: "power1.out",
-                each: 0.05,
+                each: 0.1,
               },
-              duration: 0.25,
+              delay: 0.5,
+              duration: 0.5,
             })
             .play();
         }}
@@ -34,12 +36,16 @@ const PageTrans = ({ children }) => {
 
               stagger: {
                 ease: "power1.out",
-                each: 0.05,
+                each: 0.1,
               },
-              duration: 0.25,
+              duration: 0.5,
             })
             .play();
+            
+            
+            
         }}
+        
       >
         <div>
           <div className="transitionCont">

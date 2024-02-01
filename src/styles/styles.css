@@ -18,6 +18,11 @@
   src: url(PPMori-SemiBold.otf);
 }
 @font-face {
+  font-family: "Mori";
+  font-style: italic;
+  src: url(PPMori-SemiBoldItalic.otf);
+}
+@font-face {
   font-family: "Galactica";
   src: url(Galacticagrid-8Mr7J.ttf);
 }
@@ -98,9 +103,9 @@ h2.nostrav {
   margin: 10px 10px 10px 0px;
 }
 .buttonS:hover {
-  background-color: black;
+  background-color: rgb(47, 47, 47);
   color: white;
-  border-color: black;
+  border-color: rgb(47, 47, 47);
 }
 
 .buttonM {
@@ -116,9 +121,9 @@ h2.nostrav {
   width: 220px;
 }
 .buttonM:hover {
-  background-color: black;
+  background-color: rgb(47, 47, 47);
   color: white;
-  border-color: black;
+  border-color: rgb(47, 47, 47);
 }
 
 .buttonC {
@@ -135,9 +140,9 @@ h2.nostrav {
   margin: 0px 10px;
 }
 .buttonC:hover {
-  background-color: black;
+  background-color: rgb(47, 47, 47);
   color: white;
-  border-color: black;
+  border-color: rgb(47, 47, 47);
 }
 
 .contactButton {
@@ -153,9 +158,9 @@ h2.nostrav {
   width: 25%;
 }
 .contactButton:hover {
-  background-color: black;
+  background-color: rgb(47, 47, 47);
   color: white;
-  border-color: black;
+  border-color: rgb(47, 47, 47);
 }
 @media (max-width: 600px) {
   .contactButton {
@@ -342,7 +347,7 @@ h2.nostrav {
 }
 
 .skillInfo {
-  width: clamp(300px, 50vw, 45%);
+  width: clamp(300px, 50vw, 50%);
   padding: 0 40px;
 }
 @media (max-width: 768px) {
@@ -419,10 +424,10 @@ h2.nostrav {
 }
 @media (max-width: 425px) {
   .projectControls {
-    width: 120%;
+    width: 100%;
     position: absolute;
     top: 110px;
-    left: -35px;
+    left: -15px;
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -435,7 +440,7 @@ h2.nostrav {
 
 .transitionCont {
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 30;
   left: 0;
@@ -453,6 +458,19 @@ h2.nostrav {
   background-color: #FAF7EF;
   padding: 0px 5%;
   padding-top: 90px;
+  overflow-x: hidden;
+}
+.home h1 {
+  font-size: clamp(3rem, 8vw, 12rem);
+  text-align: center;
+}
+
+.intro {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutButtons {
@@ -482,7 +500,7 @@ h2.nostrav {
   position: relative;
 }
 .movingText h1 {
-  font-family: "Nostrav";
+  font-family: "Mori";
 }
 .movingText .airplane {
   position: absolute;
@@ -498,18 +516,23 @@ h2.nostrav {
   height: 100vh;
   background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
   background-color: #FAF7EF;
-  padding: 0px 5%;
+  padding: 70px 5% 1px 5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
     height: 100%;
-    padding-top: 70px;
+    padding-top: 90px;
   }
+}
+.about p {
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
 }
 
 .aboutInfo {
-  width: 50%;
+  width: 45%;
 }
 @media (max-width: 768px) {
   .aboutInfo {
@@ -517,10 +540,15 @@ h2.nostrav {
   }
 }
 
+.emoji,
+.angela {
+  display: inline-block;
+}
+
 .aboutImage {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 55%;
 }
 .aboutImage img {
   border-radius: 15px;

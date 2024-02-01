@@ -6,6 +6,17 @@
     background-color: $sandColor;
     padding: 0px 5%;
     padding-top: 90px;
+    overflow-x: hidden; 
+
+    h1{
+        font-size: clamp(3rem, 8vw, 12rem);
+        text-align: center;
+    }
+}
+
+.intro{
+    padding: 100px 0;
+    @include flexCenter(column);
 }
 
 .aboutButtons{
@@ -31,7 +42,7 @@
     
     h1{
        
-        font-family:"Nostrav";
+        font-family:"Mori";
     }
 
     .airplane{

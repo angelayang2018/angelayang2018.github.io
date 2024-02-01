@@ -64,7 +64,7 @@ export default function HackDavis() {
 }
 
 const projectInfo = {
-  title: "Heatlhy Foods Website (HackDavis 2021)",
+  title: "Healthy Foods Website (HackDavis 2021)",
   overview:
     "Hackathon project for a healthy food recipe app. Users can take in an ingredient or a food they really enjoy as well as their location Zip code, and we display healthier alternatives and choices and encourage users to visit nearby farmers markets to shop for their produce.",
   team: [

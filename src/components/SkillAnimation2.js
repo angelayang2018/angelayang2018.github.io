@@ -6,6 +6,14 @@ gsap.registerPlugin(Flip);
 
 export default function SkillAnimation2() {
   useGSAP(() => {
+    const items = gsap.utils.toArray(".frameworkIcon");
+    const state = Flip.getState(items);
+
+
+    
+    Flip.from(state, {
+      absolute: true,
+    })
     
   });
   return (

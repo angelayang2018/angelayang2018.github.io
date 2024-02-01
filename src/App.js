@@ -4,7 +4,6 @@ import "./styles/styles.css";
 import About from "./pages/About";
 import Project from "./pages/Project";
 import Navbar from "./components/Navbar";
-import ScrollTop from "./components/ScrollTop";
 import { Route, Routes } from "react-router-dom";
 import Portfolio from "./pages/projects/Portfolio";
 import SpartanPantry from "./pages/projects/SpartanPantry";
@@ -17,7 +16,6 @@ import PageTrans from "./components/PageTrans";
 export default function App() {
   return (
     <div className="app">
-      <ScrollTop>
         <Navbar />
         <Routes>
           <Route
@@ -101,7 +99,6 @@ export default function App() {
             }
           />
         </Routes>
-      </ScrollTop>
     </div>
   );
 }

@@ -23,7 +23,7 @@ export default function Home() {
       duration: 2.5,
     });
 
-    gsap.to(".airplane", {
+    /*gsap.to(".airplane", {
       motionPath: {
         path: "M2 43.1618C78 60.1209 589.362 186.324 565.073 43.1618C554.327 -20.1743 452.174 -7.21863 452.174 60.1209C452.174 227.008 1030.58 144.674 1117.21 144.674",
         autoRotate: true,
@@ -40,15 +40,13 @@ export default function Home() {
       delay: 4.3,
       ease: "power1.out",
       duration: 1,
-    });
+    });*/
   });
 
   return (
     <div className="home">
       <div className="intro">
-        <p>Frontend Developer | Software Engineer</p>
-        <p>SJSU Computer Science Graduate</p>
-        <p>Currently looking for a software developer job 2024</p>
+        <h1>Frontend Developer & Software Engineer</h1>
 
         <div className="aboutButtons">
           <Link className="buttonS" to="/about">
@@ -82,7 +80,7 @@ export default function Home() {
         <div className="skillCard">
           <SkillAnimation2></SkillAnimation2>
           <div className="skillInfo">
-            <h3 className="frameworks">Frameworks/Libraries</h3>
+            <h3 className="frameworks">Frameworks/ Libraries</h3>
             <ul>
               {frameworks.map((framework, index) => (
                 <li key={index}>{framework}</li>
@@ -110,11 +108,11 @@ export default function Home() {
 
       <div className="movingText">
         <h2 className="nostrav">WANT TO CONNECT?</h2>
-        <img
+        {/* <img
         className="airplane"
         src="https://i.ibb.co/LQ33KtK/airplane.png"
         alt="airplane"
-      />
+      /> */}
       </div>
       
 

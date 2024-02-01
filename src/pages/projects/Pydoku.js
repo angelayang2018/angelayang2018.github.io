@@ -2,16 +2,16 @@ import React from "react";
 import PageControl from "../../components/PageControl";
 import ProjectDetails from "../../components/ProjectDetails";
 export default function PyDoku() {
-  
   return (
-    
     <div className="pydoku">
-      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>  
+      <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
+
       <img
         className="pydokuImg"
         src="https://i.ibb.co/syM7P4j/pydoku.png"
         alt="pydoku"
       />
+
       <PageControl to="spartanpantry" from="maui"></PageControl>
     </div>
   );
@@ -38,5 +38,6 @@ const projectInfo = {
   timeline: "April - May 2023",
   github: "https://github.com/angelochristian29/PyDoku",
   report: "Report",
-  reportURL: "https://docs.google.com/document/d/1PPd_iDbzCjZ074TaUdBlIjcxKCC5xdwT/edit#heading=h.gjdgxs"
+  reportURL:
+    "https://docs.google.com/document/d/1PPd_iDbzCjZ074TaUdBlIjcxKCC5xdwT/edit#heading=h.gjdgxs",
 };

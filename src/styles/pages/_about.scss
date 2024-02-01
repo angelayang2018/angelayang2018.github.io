@@ -1,46 +1,53 @@
 @use "../abstracts/" as *;
 
-.about{
-    @include flexCenter;
-    height: 100vh;
-    background: url('https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png') repeat;
-    background-color: $sandColor;
-    padding: 0px 5%;
+.about {
+  @include flexCenter;
+  height: 100vh;
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: $sandColor;
+  padding: 70px 5% 1px 5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
-    @include tab{
-        flex-direction: column;
-        height: 100%;
-        padding-top: 70px;
-    }
+  @include tab {
+    flex-direction: column;
+    height: 100%;
+    padding-top: 90px;
+  }
+
+  p {
+    font-size: clamp(1.5rem, 1.5vw, 3rem);
+  }
 }
 
-.aboutInfo{
-    width: 50%;
+.aboutInfo {
+  width: 45%;
 
-    @include tab{
-       width: 100%;
-    }
-    
+  @include tab {
+    width: 100%;
+  }
 }
 
-.aboutImage{
-    display: flex;
-    justify-content: flex-end;
-    width:50%;
+.emoji,
+.angela {
+  display: inline-block;
+}
 
-   
-    
-    img{
-        border-radius: 15px;
-        width:65%;
+.aboutImage {
+  display: flex;
+  justify-content: flex-end;
+  width: 55%;
+
+  img {
+    border-radius: 15px;
+    width: 65%;
+  }
+
+  @include tab {
+    width: 100%;
+
+    img {
+      width: 100%;
     }
-
-    @include tab{
-        width: 100%;
-
-        img{
-            width: 100%;
-        }
-     }
-     
+  }
 }
