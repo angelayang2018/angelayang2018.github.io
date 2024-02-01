@@ -22,9 +22,20 @@
         font-size: clamp(1.3rem, 2vw, 3rem);
         padding: 0 10px;
     }
+
+
+    .line{
+        display: inline-block;
+        overflow: hidden;
+        span{
+            display: inline-block;
+            transform: translateY(-150px);
+        }
+    }
 }
 
 .gradText{
+    transform: translateY(-150px);
     background: linear-gradient(90deg, rgba(220,71,71,1) 0%, rgba(234,129,24,1) 50%, rgba(230,208,65,1) 100%);
     padding: 5px;
     background-clip: text;
@@ -55,16 +66,8 @@
     @include flexCenter;
     position: relative;
     
-    
     h1{
-       
-        font-family:"Mori";
-    }
-
-    .airplane{
-        position: absolute;
-        top: 0;
-        left: 0px;
+        font-family:"Nostrav";
     }
 }
 

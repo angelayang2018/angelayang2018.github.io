@@ -21,18 +21,20 @@ export default function Project() {
 
     });
 
-    gsap.from(".projectHeader", {
-
-      yPercent:20,
-      skewY: 10
+    gsap.to(".projectHeader h2", {
+      y: 0,
+      delay: 1,
+      opacity: 1,
     });
     
   });
 
   return (
     <div className="projectPage">
-     <div className = "projectHeader">
+     <div className = "projectIntro">
+      <div className = "projectHeader">
         <h2>Take a look around</h2>
+        </div>
         </div>
       <div className="projectContainer">
         {projects.map((project, index) => (

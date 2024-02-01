@@ -22,39 +22,62 @@ export default function Home() {
       duration: 2.5,
     });
 
-    /*gsap.to(".airplane", {
-      motionPath: {
-        path: "M2 43.1618C78 60.1209 589.362 186.324 565.073 43.1618C554.327 -20.1743 452.174 -7.21863 452.174 60.1209C452.174 227.008 1030.58 144.674 1117.21 144.674",
-        autoRotate: true,
-      },
-      delay: 1,
-      duration: 4,
-      ease: "power1.inOut",
-    });
-    gsap.to(".airplane", {
-      motionPath: {
-        path: [{x: window.innerWidth, y: 100}],
-        autoRotate: true,
-      },
-      delay: 4.3,
-      ease: "power1.out",
-      duration: 1,
-    });*/
+    gsap.to(".rotation",{
+      scrollTrigger: {
+        scrub: 1
+      }, 
+      rotate: 360
+      
+    })
+
+    gsap
+      .timeline()
+      .to(".introText .char", {
+        y: 0,
+        stagger: 0.05,
+        delay: 1.5,
+        duration: 0.1,
+      })
+      .to(".gradText", {
+        y: 0,
+        duration: 1,
+        ease: "power1.out",
+      })
+      .play();
   });
 
   return (
     <div className="home">
       <div className="intro">
-        <h1>
-          Frontend Developer &{" "}
-          <span className="gradText">Software Engineer</span>
+        <h1 className="introText">
+          <span className="line">
+            <span className="char">F</span>
+            <span className="char">r</span>
+            <span className="char">o</span>
+            <span className="char">n</span>
+            <span className="char">t</span>
+            <span className="char">e</span>
+            <span className="char">n</span>
+            <span className="char">d</span> <span className="char">D</span>
+            <span className="char">e</span>
+            <span className="char">v</span>
+            <span className="char">e</span>
+            <span className="char">l</span>
+            <span className="char">o</span>
+            <span className="char">p</span>
+            <span className="char">e</span>
+            <span className="char">r</span> <span className="char">&</span>{" "}
+          </span>
+          <span className="line">
+            <span className="gradText">Software Engineer</span>
+          </span>
         </h1>
 
         <div className="aboutButtons">
           <Link to="/about">
             <p>ABOUT</p>
           </Link>
-          <p> ✦ </p>
+          <p className = "rotation">✦</p>
           <a target="_blank" rel="noreferrer" href="/angela_yang_resume.pdf">
             <p>RESUME</p>
           </a>
@@ -106,11 +129,6 @@ export default function Home() {
 
       <div className="movingText">
         <h2 className="nostrav">WANT TO CONNECT?</h2>
-        {/* <img
-        className="airplane"
-        src="https://i.ibb.co/LQ33KtK/airplane.png"
-        alt="airplane"
-      /> */}
       </div>
 
       <div className="contact">

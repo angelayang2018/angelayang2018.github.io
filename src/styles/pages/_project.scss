@@ -5,14 +5,21 @@
   background: url('https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png') repeat;
     background-color: $sandColor;
     padding: 0px 5%;
-  
     
 }
 
-.projectHeader{
+.projectIntro{
   height: 100vh;
   @include flexCenter;
-  overflow: hidden
+  overflow: hidden;
+}
+
+.projectHeader{
+  overflow: hidden;
+  h2{
+    transform: translateY(100px);
+    opacity: 0;
+  }
 }
 
 .projectContainer {

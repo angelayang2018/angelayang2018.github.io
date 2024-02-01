@@ -10,10 +10,6 @@ export default function SkillAnimation3(){
           type: "rotation",
         });
         gsap.to(".languageImg", {
-          trigger: {
-            start: "top top",
-            markers: true,
-          },
           rotate: 5,
         })  
       });
