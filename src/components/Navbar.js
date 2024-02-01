@@ -10,8 +10,9 @@ export default function Navbar() {
     const navAnim = gsap
       .from(".navbar", {
         scrollTrigger: {
+         
           start: "top top",
-          end: "max",
+         
           onUpdate: (self) => {
             self.direction === -1 ? navAnim.play() : navAnim.reverse();
           },
