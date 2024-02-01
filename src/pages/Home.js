@@ -7,7 +7,6 @@ import SkillAnimation1 from "../components/SkillAnimation1";
 import SkillAnimation2 from "../components/SkillAnimation2";
 import SkillAnimation3 from "../components/SkillAnimation3";
 
-
 gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin);
 
 export default function Home() {
@@ -46,19 +45,18 @@ export default function Home() {
   return (
     <div className="home">
       <div className="intro">
-        <h1>Frontend Developer & Software Engineer</h1>
+        <h1>
+          Frontend Developer &{" "}
+          <span className="gradText">Software Engineer</span>
+        </h1>
 
         <div className="aboutButtons">
-          <Link className="buttonS" to="/about">
-            ABOUT
+          <Link to="/about">
+            <p>ABOUT</p>
           </Link>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="buttonS"
-            href="/angela_yang_resume.pdf"
-          >
-            RESUME
+          <p> ✦ </p>
+          <a target="_blank" rel="noreferrer" href="/angela_yang_resume.pdf">
+            <p>RESUME</p>
           </a>
         </div>
       </div>
@@ -114,10 +112,9 @@ export default function Home() {
         alt="airplane"
       /> */}
       </div>
-      
 
       <div className="contact">
-        <a className="contactButton"  href="mailto:angela.yang146@gmail.com">
+        <a className="contactButton" href="mailto:angela.yang146@gmail.com">
           EMAIL
         </a>
         <a

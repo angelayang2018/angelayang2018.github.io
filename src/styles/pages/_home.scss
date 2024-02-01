@@ -17,10 +17,26 @@
 .intro{
     padding: 100px 0;
     @include flexCenter(column);
+
+    p{
+        font-size: clamp(1.3rem, 2vw, 3rem);
+        padding: 0 10px;
+    }
+}
+
+.gradText{
+    background: linear-gradient(90deg, rgba(220,71,71,1) 0%, rgba(234,129,24,1) 50%, rgba(230,208,65,1) 100%);
+    padding: 5px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .aboutButtons{
     display: flex;
+    
+    :hover{
+        color: $blueColor;
+    }
 }
 
 
