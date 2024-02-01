@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 
 export default function About() {
   useGSAP(() => {
-    const tl = gsap
+    gsap
       .timeline()
       .to(".emoji", {
         y: -60,
