@@ -13,6 +13,7 @@
     flex-direction: column;
     height: 100%;
     padding-top: 90px;
+    padding-bottom: 50px;
   }
 
   p {
@@ -45,9 +46,10 @@
 
   @include tab {
     width: 100%;
+    height: fit-content;
 
     img {
-      width: 100%;
+      width: 100%;      
     }
   }
 }

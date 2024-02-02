@@ -367,17 +367,20 @@ h2.nostrav {
 }
 @media (max-width: 425px) {
   .projectControls {
-    width: 100%;
+    width: 120%;
     position: absolute;
-    top: 110px;
-    left: -15px;
+    top: 90px;
+    left: -29px;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .projectControls .buttonC {
-    background: #FAF7EF;
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
   }
 }
 
@@ -434,10 +437,6 @@ h2.nostrav {
   padding-top: 90px;
   overflow-x: hidden;
 }
-.home h1 {
-  font-size: clamp(3rem, 8vw, 12rem);
-  text-align: center;
-}
 
 .intro {
   padding: 100px 0;
@@ -449,6 +448,10 @@ h2.nostrav {
 .intro p {
   font-size: clamp(1.3rem, 2vw, 3rem);
   padding: 0 10px;
+}
+.intro h1 {
+  font-size: clamp(3rem, 8vw, 12rem);
+  text-align: center;
 }
 .intro .line {
   display: inline-block;
@@ -526,6 +529,7 @@ h2.nostrav {
     flex-direction: column;
     height: 100%;
     padding-top: 90px;
+    padding-bottom: 50px;
   }
 }
 .about p {
@@ -558,6 +562,8 @@ h2.nostrav {
 @media (max-width: 768px) {
   .aboutImage {
     width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .aboutImage img {
     width: 100%;

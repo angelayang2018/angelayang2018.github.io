@@ -40,14 +40,17 @@
 .projectControls {
   @include flexCenter;
   @include mbl{
-    width: 100%;
+    width: 120%;
     position: absolute;
-    top: 110px;
-    left: -15px;
+    top: 90px;
+    left: -29px;
     z-index: 10;
     @include flexSBetween;
     .buttonC{
-      background: $sandColor;
+      background: transparent;
+      border: none;
+      color: black;
+      font-size: 20px;
     }
   }
 
