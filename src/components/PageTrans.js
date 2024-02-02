@@ -15,10 +15,10 @@ const PageTrans = ({ children }) => {
           gsap
             .timeline({ paused: true })
             .set(".rect", {
-              y: "1000px",
+              yPercent: 100,
             })
             .to(".rect", {
-              y: "-1000px",
+              yPercent: -100,
               stagger: {
                 ease: "power1.out",
                 each: 0.1,
@@ -32,7 +32,7 @@ const PageTrans = ({ children }) => {
           gsap
             .timeline({ paused: true })
             .to(".rect", {
-              y: 1000,
+              yPercent: 100,
 
               stagger: {
                 ease: "power1.out",

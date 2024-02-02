@@ -390,7 +390,7 @@ h2.nostrav {
   width: 100%;
   z-index: 30;
   left: 0;
-  top: -1000px;
+  top: -100%;
 }
 
 .rect {
