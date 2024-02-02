@@ -7,20 +7,6 @@
     padding:90px 5% 1px 5%;
 }
 
-.colorsContainer{
-    position: relative;
-    background-color: black;
-    padding: 50px;
-    border-radius: 15px;
-}
-
-.colors{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .sandColor{
     background-color: $sandColor;
 }

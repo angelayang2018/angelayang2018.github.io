@@ -26,14 +26,6 @@ export default function Portfolio() {
         <p className="nostrav">Nostrav</p>
       </div>
 
-      <div>
-        <h3>JS Animation</h3>
-      </div>
-
-      <div>
-        <div className="tempImage"></div>
-      </div>
-
       <PageControl to="maui" from="hackdavis"></PageControl>
     </div>
   );

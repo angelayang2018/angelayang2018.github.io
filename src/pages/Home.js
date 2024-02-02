@@ -61,7 +61,7 @@ export default function Home() {
       .to(".introText .char", {
         y: 0,
         stagger: 0.05,
-        delay: 1.5,
+        delay: 1,
         duration: 0.1,
       })
       .to(".gradText", {
