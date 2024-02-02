@@ -4,8 +4,6 @@
   @include flexCenter(column);
   padding: 20px 0 70px 0;
   position: relative;
-  height: 100vh;
-  
 }
 
 .swiper {
@@ -13,11 +11,7 @@
   padding: 10px 0;
 
   img{
-    width: 85%;
-    @include md{
-      width: 100%;
-    }
-    
+    width: 100%;
   }
 }
 

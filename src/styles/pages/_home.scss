@@ -1,75 +1,84 @@
 @use "../abstracts/" as *;
 
+.home {
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: $sandColor;
+  padding: 0px 5%;
+  padding-top: 90px;
+  overflow-x: hidden;
 
-.home{
-    background: url('https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png') repeat;
-    background-color: $sandColor;
-    padding: 0px 5%;
-    padding-top: 90px;
-    overflow-x: hidden; 
-
-    h1{
-        font-size: clamp(3rem, 8vw, 12rem);
-        text-align: center;
-    }
+  h1 {
+    font-size: clamp(3rem, 8vw, 12rem);
+    text-align: center;
+  }
 }
 
-.intro{
-    padding: 100px 0;
+.intro {
+  padding: 100px 0;
+  @include flexCenter(column);
+
+  p {
+    font-size: clamp(1.3rem, 2vw, 3rem);
+    padding: 0 10px;
+  }
+
+  .line {
+    display: inline-block;
+    overflow: hidden;
+    span {
+      display: inline-block;
+      transform: translateY(-150px);
+    }
+  }
+}
+
+.gradText {
+  transform: translateY(-150px);
+  background: linear-gradient(
+    90deg,
+    rgba(220, 71, 71, 1) 0%,
+    rgba(234, 129, 24, 1) 50%,
+    rgba(230, 208, 65, 1) 100%
+  );
+  padding: 5px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutButtons {
+  display: flex;
+
+  :hover {
+    color: $blueColor;
+  }
+}
+
+.contact {
+  @include flexCenter(column);
+  height: 80vh;
+  text-align: center;
+
+  .rotating {
+    margin: 0;
+  }
+
+  .contactText, .changingText {
+    font-size: 12px;
+  }
+
+  .contactText{
+    margin-top: 60px;
+    color: $redColor;
+  }
+
+  @include custom(600px) {
     @include flexCenter(column);
+  }
 
-    p{
-        font-size: clamp(1.3rem, 2vw, 3rem);
-        padding: 0 10px;
-    }
-
-
-    .line{
-        display: inline-block;
-        overflow: hidden;
-        span{
-            display: inline-block;
-            transform: translateY(-150px);
-        }
-    }
-}
-
-.gradText{
-    transform: translateY(-150px);
-    background: linear-gradient(90deg, rgba(220,71,71,1) 0%, rgba(234,129,24,1) 50%, rgba(230,208,65,1) 100%);
-    padding: 5px;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.aboutButtons{
-    display: flex;
-    
-    :hover{
-        color: $blueColor;
-    }
-}
-
-
-
-.contact{
+  .contactButtons {
     @include flexEvenly;
-    padding: 50px 0px;
-    
-
-    @include custom(600px){
-        @include flexCenter(column);
-    }
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
-
-.movingText{
-    @include flexCenter;
-    position: relative;
-    
-    h1{
-        font-family:"Nostrav";
-    }
-}
-
-
 

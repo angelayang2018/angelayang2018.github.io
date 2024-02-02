@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import { gsap, ScrollTrigger, TextPlugin, MotionPathPlugin } from "gsap/all";
 import { useGSAP } from "@gsap/react";
+import Marquee from "../components/Marquee";
 import SkillAnimation1 from "../components/SkillAnimation1";
 import SkillAnimation2 from "../components/SkillAnimation2";
 import SkillAnimation3 from "../components/SkillAnimation3";
@@ -11,24 +12,31 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin);
 
 export default function Home() {
   useGSAP(() => {
-    gsap.to(".nostrav", {
+    gsap.to(".changingText", {
       scrollTrigger: {
         start: "bottom bottom",
         end: "bottom bottom",
       },
-      text: "LET'S TALK",
+      text: "LET'S TALK! ☟",
       ease: " none",
+      color: "#DC4747",
       delay: 2,
-      duration: 2.5,
+      duration: 3,
     });
 
-    gsap.to(".rotation",{
+    gsap.to(".rotation", {
       scrollTrigger: {
-        scrub: 1
-      }, 
-      rotate: 360
-      
-    })
+        scrub: 1,
+      },
+      rotate: 360,
+    });
+
+    gsap.to(".rotating", {
+      duration: 5,
+      rotate: 360,
+      ease: "none",
+      repeat: -1,
+    });
 
     gsap
       .timeline()
@@ -77,7 +85,7 @@ export default function Home() {
           <Link to="/about">
             <p>ABOUT</p>
           </Link>
-          <p className = "rotation">✦</p>
+          <p className="rotation">✦</p>
           <a target="_blank" rel="noreferrer" href="/angela_yang_resume.pdf">
             <p>RESUME</p>
           </a>
@@ -85,11 +93,15 @@ export default function Home() {
       </div>
 
       <div className="skills">
-        <h2>SKILLS</h2>
+        
+      <hr></hr>
+      <Marquee className = "skillMarq">SKILLS ☞</Marquee>
+      <hr></hr>
+        
         <div className="skillCard">
           <SkillAnimation3></SkillAnimation3>
           <div className="skillInfo">
-            <h3 className="languages">Languages</h3>
+            <h3 className="languages">LANGUAGES</h3>
             <ul>
               {languages.map((language, index) => (
                 <li key={index}>{language}</li>
@@ -101,7 +113,7 @@ export default function Home() {
         <div className="skillCard">
           <SkillAnimation2></SkillAnimation2>
           <div className="skillInfo">
-            <h3 className="frameworks">Frameworks/ Libraries</h3>
+            <h3 className="frameworks">FRAMEWORKS/ LIBRARIES</h3>
             <ul>
               {frameworks.map((framework, index) => (
                 <li key={index}>{framework}</li>
@@ -113,7 +125,7 @@ export default function Home() {
         <div className="skillCard">
           <SkillAnimation1></SkillAnimation1>
           <div className="skillInfo">
-            <h3 className="tools">Additional Tools</h3>
+            <h3 className="tools">ADDITIONAL TOOLS</h3>
             <ul>
               {tools.map((tool, index) => (
                 <li key={index}>{tool}</li>
@@ -123,34 +135,41 @@ export default function Home() {
         </div>
       </div>
 
-      <h2>PROJECTS</h2>
-
+      <hr></hr>
+      <Marquee className = "projectMarq">PROJECTS ☜</Marquee>
+      <hr></hr>
       <Carousel></Carousel>
 
-      <div className="movingText">
-        <h2 className="nostrav">WANT TO CONNECT?</h2>
-      </div>
+      
 
+      <hr></hr>
+      <Marquee className = "contactMarq">CONTACT ☟</Marquee>
+      <hr></hr>
+      
       <div className="contact">
-        <a className="contactButton" href="mailto:angela.yang146@gmail.com">
-          EMAIL
-        </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          className="contactButton"
-          href="https://www.linkedin.com/in/angela-yangg/"
-        >
-          LINKEDIN
-        </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          className="contactButton"
-          href="https://github.com/angelayang2018"
-        >
-          GITHUB
-        </a>
+        <h3 className="rotating">✦</h3>
+        <p className="changingText">WANT TO CONNECT?</p>
+
+        <h2>angela.yang146<br></br>@gmail.com</h2>
+        <div className="contactButtons">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="contactButton"
+            href="https://www.linkedin.com/in/angela-yangg/"
+          >
+            LINKEDIN
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="contactButton"
+            href="https://github.com/angelayang2018"
+          >
+            GITHUB
+          </a>
+        </div>
+        <p className="contactText">MADE WITH 💪 BY ANGELA</p>
       </div>
     </div>
   );

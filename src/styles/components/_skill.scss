@@ -2,21 +2,19 @@
 
 .skills {
   padding: 20px 0px;
-
 }
 
-.languages{
-    color: $orangeColor;
+.languages {
+  color: $orangeColor;
 }
 
 .frameworks {
-    color: $greenColor;
+  color: $greenColor;
 }
 
-.tools{
-    color: $blueColor
+.tools {
+  color: $blueColor;
 }
-
 
 .skillCard {
   @include flexEvenly;
@@ -24,104 +22,101 @@
   flex-wrap: wrap;
   padding: 100px 0;
 
-  @include mbl{
+  @include mbl {
     padding: 50px 0;
   }
 }
 
-.skillAnimation1{
+.skillAnimation1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-
-.drag{
+.drag {
   @include flexCenter;
 }
 
-.circle{
+.circle {
   width: 80px;
-  background-color: #34B0FB;
+  background-color: #34b0fb;
   height: 80px;
   border-radius: 50px;
 }
 
-.rSquare:first-of-type{
-  background-color: #EF4726;
+.rSquare:first-of-type {
+  background-color: #ef4726;
   width: 80px;
   height: 80px;
   border-radius: 40px 0 0 40px;
 }
 
-.rSquare:nth-of-type(2){
-  background-color: #FE685B;
+.rSquare:nth-of-type(2) {
+  background-color: #fe685b;
   width: 80px;
   height: 80px;
   border-radius: 0px 50px 50px 0;
 }
 
-.rSquare:nth-of-type(3){
-  background-color: #A343FC;
+.rSquare:nth-of-type(3) {
+  background-color: #a343fc;
   width: 80px;
   height: 80px;
   border-radius: 40px 0 0 40px;
 }
 
-.rSquare:nth-of-type(5){
-  background-color: #00CA79;
+.rSquare:nth-of-type(5) {
+  background-color: #00ca79;
   width: 80px;
   height: 80px;
   border-radius: 40px 0 40px 40px;
 }
 
-.skillAnimation2{
-  display : grid;
+.skillAnimation2 {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px; 
-  .frameworkIcon{
+  gap: 10px;
+  .frameworkIcon {
     @include flexCenter;
     border-radius: 10px;
     height: 100px;
     width: 100px;
-    
-    img{
+
+    img {
       width: 50%;
     }
   }
 
-  .frameworkIcon:first-of-type{
+  .frameworkIcon:first-of-type {
     background-color: $greenColor;
   }
 
-  .frameworkIcon:nth-of-type(2){
+  .frameworkIcon:nth-of-type(2) {
     background-color: $yellowColor;
   }
-  .frameworkIcon:nth-of-type(3){
+  .frameworkIcon:nth-of-type(3) {
     background-color: $blueColor;
   }
-  .frameworkIcon:nth-of-type(4){
+  .frameworkIcon:nth-of-type(4) {
     background-color: $pinkColor;
   }
 }
 
-
-
 .skillInfo {
-width: clamp(300px, 50vw, 50%);
-padding: 0 40px;
+  width: clamp(300px, 50vw, 50%);
+  padding: 0 40px;
 
-@include tab{
-  width: 100%;
-}
+  @include tab {
+    width: 100%;
+  }
 
   ul {
     column-count: 2;
     column-gap: 10px;
     list-style: none;
+    padding: 0;
   }
 
-  li{
+  li {
     padding: 10px 0px;
-    
   }
 }

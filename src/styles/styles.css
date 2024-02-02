@@ -60,7 +60,7 @@ p {
 }
 
 .skills li {
-  font-size: clamp(1rem, 1.3vw, 2.5rem);
+  font-size: clamp(1rem, 1.6vw, 2.5rem);
 }
 
 h2.nostrav {
@@ -284,34 +284,34 @@ h2.nostrav {
 
 .circle {
   width: 80px;
-  background-color: #34B0FB;
+  background-color: #34b0fb;
   height: 80px;
   border-radius: 50px;
 }
 
 .rSquare:first-of-type {
-  background-color: #EF4726;
+  background-color: #ef4726;
   width: 80px;
   height: 80px;
   border-radius: 40px 0 0 40px;
 }
 
 .rSquare:nth-of-type(2) {
-  background-color: #FE685B;
+  background-color: #fe685b;
   width: 80px;
   height: 80px;
   border-radius: 0px 50px 50px 0;
 }
 
 .rSquare:nth-of-type(3) {
-  background-color: #A343FC;
+  background-color: #a343fc;
   width: 80px;
   height: 80px;
   border-radius: 40px 0 0 40px;
 }
 
 .rSquare:nth-of-type(5) {
-  background-color: #00CA79;
+  background-color: #00ca79;
   width: 80px;
   height: 80px;
   border-radius: 40px 0 40px 40px;
@@ -362,6 +362,7 @@ h2.nostrav {
   -moz-column-gap: 10px;
        column-gap: 10px;
   list-style: none;
+  padding: 0;
 }
 .skillInfo li {
   padding: 10px 0px;
@@ -374,7 +375,6 @@ h2.nostrav {
   align-items: center;
   padding: 20px 0 70px 0;
   position: relative;
-  height: 100vh;
 }
 
 .swiper {
@@ -382,12 +382,7 @@ h2.nostrav {
   padding: 10px 0;
 }
 .swiper img {
-  width: 85%;
-}
-@media (max-width: 800px) {
-  .swiper img {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .swiperDetails {
@@ -455,6 +450,36 @@ h2.nostrav {
   background-color: #E5A1EA;
 }
 
+.marquee {
+  position: relative;
+  font-family: "Nostrav";
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.marquee h2 {
+  margin: 5px 0;
+}
+
+.marqText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.marqText h2 {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .home {
   background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
   background-color: #FAF7EF;
@@ -505,9 +530,21 @@ h2.nostrav {
 
 .contact {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 50px 0px;
+  height: 80vh;
+  text-align: center;
+}
+.contact .rotating {
+  margin: 0;
+}
+.contact .contactText, .contact .changingText {
+  font-size: 12px;
+}
+.contact .contactText {
+  margin-top: 60px;
+  color: #DC4747;
 }
 @media (max-width: 600px) {
   .contact {
@@ -517,16 +554,12 @@ h2.nostrav {
     align-items: center;
   }
 }
-
-.movingText {
+.contact .contactButtons {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  position: relative;
-}
-.movingText h1 {
-  font-family: "Nostrav";
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .about {
