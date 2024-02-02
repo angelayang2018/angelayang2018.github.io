@@ -15,12 +15,13 @@ export default function Carousel() {
         loop="true"
         centeredSlides={true}
         slidesPerView={1}
+        spaceBetween={20}
         navigation={{
           prevEl: ".buttonPrev",
           nextEl: ".buttonNext",
         }}
         breakpoints={{
-          800: { slidesPerView: 1.4 },
+          800: { slidesPerView: 1.6 },
         }}
       >
         {swiperImages.map((swiperImage, index) => (

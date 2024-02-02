@@ -10,7 +10,7 @@ export default function Marquee({ children, className }) {
     horizontalLoop(boxes, {
       paused: false,
       repeat: -1,
-      speed: 0.5,
+      speed: 0.2,
     });
 
     /*Couldn't figure out wrapping for marquee: copied code from greensock website: https://codepen.io/GreenSock/pen/zYLQyzQ*/

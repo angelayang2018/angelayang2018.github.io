@@ -29,15 +29,17 @@
 @mixin buttonStyle{
     @include flexCenter;
     background-color: transparent;
+    transition: background-color 0.3s ease;
     border: solid gray 0.5px;
     border-radius: 25px;
     height: 50px;
     cursor: pointer;
 
     &:hover{
-        background-color: rgb(47, 47, 47);
+        
+        background-color: black;
         color: white;
-        border-color: rgb(47, 47, 47); 
+        border-color: black; 
     }
     
 }

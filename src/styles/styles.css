@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Nostrav";
   src: url(Nostrav.ttf);
@@ -95,6 +96,7 @@ h2.nostrav {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  transition: background-color 0.3s ease;
   border: solid gray 0.5px;
   border-radius: 25px;
   height: 50px;
@@ -103,9 +105,9 @@ h2.nostrav {
   margin: 10px 10px 10px 0px;
 }
 .buttonS:hover {
-  background-color: rgb(47, 47, 47);
+  background-color: black;
   color: white;
-  border-color: rgb(47, 47, 47);
+  border-color: black;
 }
 
 .buttonM {
@@ -114,6 +116,7 @@ h2.nostrav {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  transition: background-color 0.3s ease;
   border: solid gray 0.5px;
   border-radius: 25px;
   height: 50px;
@@ -121,9 +124,9 @@ h2.nostrav {
   width: 220px;
 }
 .buttonM:hover {
-  background-color: rgb(47, 47, 47);
+  background-color: black;
   color: white;
-  border-color: rgb(47, 47, 47);
+  border-color: black;
 }
 
 .buttonC {
@@ -132,6 +135,7 @@ h2.nostrav {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  transition: background-color 0.3s ease;
   border: solid gray 0.5px;
   border-radius: 25px;
   height: 50px;
@@ -140,9 +144,9 @@ h2.nostrav {
   margin: 0px 10px;
 }
 .buttonC:hover {
-  background-color: rgb(47, 47, 47);
+  background-color: black;
   color: white;
-  border-color: rgb(47, 47, 47);
+  border-color: black;
 }
 
 .contactButton {
@@ -151,6 +155,7 @@ h2.nostrav {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  transition: background-color 0.3s ease;
   border: solid gray 0.5px;
   border-radius: 25px;
   height: 50px;
@@ -158,9 +163,9 @@ h2.nostrav {
   width: 25%;
 }
 .contactButton:hover {
-  background-color: rgb(47, 47, 47);
+  background-color: black;
   color: white;
-  border-color: rgb(47, 47, 47);
+  border-color: black;
 }
 @media (max-width: 600px) {
   .contactButton {
@@ -258,114 +263,55 @@ h2.nostrav {
 
 .skillCard {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
   text-align: left;
-  flex-wrap: wrap;
-  padding: 100px 0;
+  padding: 60px 0;
 }
-@media (max-width: 425px) {
-  .skillCard {
-    padding: 50px 0;
-  }
-}
-
-.skillAnimation1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.drag {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.circle {
-  width: 80px;
-  background-color: #34b0fb;
-  height: 80px;
-  border-radius: 50px;
-}
-
-.rSquare:first-of-type {
-  background-color: #ef4726;
-  width: 80px;
-  height: 80px;
-  border-radius: 40px 0 0 40px;
-}
-
-.rSquare:nth-of-type(2) {
-  background-color: #fe685b;
-  width: 80px;
-  height: 80px;
-  border-radius: 0px 50px 50px 0;
-}
-
-.rSquare:nth-of-type(3) {
-  background-color: #a343fc;
-  width: 80px;
-  height: 80px;
-  border-radius: 40px 0 0 40px;
-}
-
-.rSquare:nth-of-type(5) {
-  background-color: #00ca79;
-  width: 80px;
-  height: 80px;
-  border-radius: 40px 0 40px 40px;
-}
-
-.skillAnimation2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.skillAnimation2 .frameworkIcon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  height: 100px;
-  width: 100px;
-}
-.skillAnimation2 .frameworkIcon img {
-  width: 50%;
-}
-.skillAnimation2 .frameworkIcon:first-of-type {
-  background-color: #40A250;
-}
-.skillAnimation2 .frameworkIcon:nth-of-type(2) {
-  background-color: #E6D041;
-}
-.skillAnimation2 .frameworkIcon:nth-of-type(3) {
-  background-color: #2E75BC;
-}
-.skillAnimation2 .frameworkIcon:nth-of-type(4) {
-  background-color: #E5A1EA;
-}
-
-.skillInfo {
-  width: clamp(300px, 50vw, 50%);
-  padding: 0 40px;
-}
-@media (max-width: 768px) {
-  .skillInfo {
-    width: 100%;
-  }
-}
-.skillInfo ul {
-  -moz-column-count: 2;
-       column-count: 2;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  list-style: none;
+.skillCard h3 {
+  width: 55%;
+  margin: 0;
   padding: 0;
 }
-.skillInfo li {
-  padding: 10px 0px;
+.skillCard ul {
+  box-sizing: border-box;
+  width: 45%;
+  margin: 0;
+  padding-left: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skillCard ul li {
+  box-sizing: border-box;
+  border-bottom: 0.5px solid black;
+  padding: 15px 40px;
+  width: 100%;
+}
+.skillCard ul li::before {
+  content: "✦";
+  margin-right: 0.5em;
+}
+.skillCard ul li:last-of-type {
+  border-bottom: 0;
+}
+@media (max-width: 800px) {
+  .skillCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .skillCard h3 {
+    width: 100%;
+  }
+  .skillCard ul {
+    width: 100%;
+    padding: 50px 0;
+  }
 }
 
 .carousel {
@@ -478,6 +424,7 @@ h2.nostrav {
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-right: 10px;
 }
 
 .home {

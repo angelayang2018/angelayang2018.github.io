@@ -4,9 +4,6 @@ import Carousel from "../components/Carousel";
 import { gsap, ScrollTrigger, TextPlugin, MotionPathPlugin } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import Marquee from "../components/Marquee";
-import SkillAnimation1 from "../components/SkillAnimation1";
-import SkillAnimation2 from "../components/SkillAnimation2";
-import SkillAnimation3 from "../components/SkillAnimation3";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin);
 
@@ -37,6 +34,27 @@ export default function Home() {
       ease: "none",
       repeat: -1,
     });
+
+    gsap.from(".skillCard", {
+      scrollTrigger: {
+        trigger: ".skillCard",
+        start: "center center",
+      },
+      stagger: 0.5,
+      opacity: 0,
+      duration: 1.5,
+      ease: "power1.out"
+    })
+
+    gsap.from(".contact", {
+      scrollTrigger: {
+        trigger: ".contact",
+        start: "top center",
+      },
+      opacity: 0,
+      duration: 1,
+      ease: "power1.out"
+    })
 
     gsap
       .timeline()
@@ -92,65 +110,54 @@ export default function Home() {
         </div>
       </div>
 
+      <hr></hr>
+        <Marquee className="skillMarq">SKILLS ☞</Marquee>
+        <hr></hr>
       <div className="skills">
-        
-      <hr></hr>
-      <Marquee className = "skillMarq">SKILLS ☞</Marquee>
-      <hr></hr>
-        
         <div className="skillCard">
-          <SkillAnimation3></SkillAnimation3>
-          <div className="skillInfo">
-            <h3 className="languages">LANGUAGES</h3>
-            <ul>
-              {languages.map((language, index) => (
-                <li key={index}>{language}</li>
-              ))}
-            </ul>
-          </div>
+          <h3 className="languages">LANGUAGES</h3>
+          <ul>
+            {languages.map((language, index) => (
+              <li key={index}>{language}</li>
+            ))}
+          </ul>
         </div>
-        <hr></hr>
+
         <div className="skillCard">
-          <SkillAnimation2></SkillAnimation2>
-          <div className="skillInfo">
-            <h3 className="frameworks">FRAMEWORKS/ LIBRARIES</h3>
-            <ul>
-              {frameworks.map((framework, index) => (
-                <li key={index}>{framework}</li>
-              ))}
-            </ul>
-          </div>
+          <h3 className="frameworks">FRAMEWORKS/ LIBRARIES</h3>
+          <ul>
+            {frameworks.map((framework, index) => (
+              <li key={index}>{framework}</li>
+            ))}
+          </ul>
         </div>
-        <hr></hr>
+
         <div className="skillCard">
-          <SkillAnimation1></SkillAnimation1>
-          <div className="skillInfo">
-            <h3 className="tools">ADDITIONAL TOOLS</h3>
-            <ul>
-              {tools.map((tool, index) => (
-                <li key={index}>{tool}</li>
-              ))}
-            </ul>
-          </div>
+          <h3 className="tools">ADDITIONAL TOOLS</h3>
+          <ul>
+            {tools.map((tool, index) => (
+              <li key={index}>{tool}</li>
+            ))}
+          </ul>
         </div>
       </div>
 
       <hr></hr>
-      <Marquee className = "projectMarq">PROJECTS ☜</Marquee>
+      <Marquee className="projectMarq">PROJECTS ☜</Marquee>
       <hr></hr>
       <Carousel></Carousel>
 
-      
+      <hr></hr>
+      <Marquee className="contactMarq">CONTACT ☟</Marquee>
+      <hr></hr>
 
-      <hr></hr>
-      <Marquee className = "contactMarq">CONTACT ☟</Marquee>
-      <hr></hr>
-      
       <div className="contact">
         <h3 className="rotating">✦</h3>
         <p className="changingText">WANT TO CONNECT?</p>
 
-        <h2>angela.yang146<br></br>@gmail.com</h2>
+        <h2>
+          angela.yang146<br></br>@gmail.com
+        </h2>
         <div className="contactButtons">
           <a
             target="_blank"
@@ -175,6 +182,6 @@ export default function Home() {
   );
 }
 
-const languages = ["Java", "HTML", "Python", "CSS", "Javascript"];
+const languages = ["Java", "HTML", "CSS", "Javascript"];
 const frameworks = ["React", "Tailwind", "GSAP", "SASS"];
 const tools = ["Docker", "Figma", "SQL", "Command Line", "Git"];
