@@ -48,6 +48,20 @@ export default function SpartanPantry() {
         <h4>Typography</h4>
         <p className="arial">Arial</p>
       </div>
+
+      <div>
+        <h3>Challenges/Lessons Learned</h3>
+        <ul>
+          <li>
+            One team member left halfway through the semester without notifying
+            the rest of the team
+          </li>
+          <li>New to Redis databases and Node/Express</li>
+          <li>Feature changes due to limited resources and time</li>
+          <li>Poor communication and time management within the team</li>
+        </ul>
+      </div>
+
       <PageControl to="mathship" from="pydoku"></PageControl>
     </div>
   );
@@ -88,5 +102,6 @@ const projectInfo = {
   timeline: "March - May 2023",
   github: "https://github.com/angelayang2018/CS157C-team5",
   report: "Report",
-  reportURL: "https://docs.google.com/document/d/1206R--RGbNKehLk_M9Qp8iX0ZOf2fxBecjUPAoDnnss/edit?usp=sharing"
+  reportURL:
+    "https://docs.google.com/document/d/1206R--RGbNKehLk_M9Qp8iX0ZOf2fxBecjUPAoDnnss/edit?usp=sharing",
 };

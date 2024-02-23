@@ -38,7 +38,7 @@ export default function About() {
           <span className="angela">Angela</span>
         </h2>
         <p>
-          Hi! I'm Angela Yang, frontend software developer and recent graduate
+          Hi! I'm Angela Yang, frontend software developer based in San Jose, CA. I am a recent graduate
           of San Jose State University with a degree in Computer Science. My
           education at SJSU equipped me with a robust technical foundation, and
           I am committed to staying ahead in the ever-evolving frontend

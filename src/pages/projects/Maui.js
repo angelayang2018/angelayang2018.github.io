@@ -72,7 +72,7 @@ export default function Maui() {
 const projectInfo = {
   title: "Maui Condos",
   overview:
-    "This website aims to trascend the conventional Airbnb advertising apporach and offers users valuable insights into the Maui condos.",
+    "This website aims to transcend the conventional Airbnb advertising apporach and offers users valuable insights into the Maui condos.",
   team: [],
   tech: "React, HTML, CSS, Javascript, Figma",
   timeline: "October 2023 - January 2024 (ongoing)",

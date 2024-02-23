@@ -2,7 +2,10 @@ import React from "react";
 import PageControl from "../../components/PageControl";
 import ProjectDetails from "../../components/ProjectDetails";
 
+
 export default function Portfolio() {
+  
+
   return (
     <div className="portfolio">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>

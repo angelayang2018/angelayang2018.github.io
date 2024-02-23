@@ -827,6 +827,40 @@ h2.nostrav {
   background-color: #5B668B;
 }
 
+.instagram {
+  background: url("https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png") repeat;
+  background-color: #FAF7EF;
+  padding: 90px 5% 1px 5%;
+}
+
+.instaBlue {
+  background-color: #515BD4;
+  color: white;
+}
+
+.instaPurple {
+  background-color: #8134AF;
+  color: white;
+}
+
+.instaMagenta {
+  background-color: #DD2A7B;
+  color: white;
+}
+
+.instaYellow {
+  background-color: #FEDA77;
+}
+
+.instaOrange {
+  background-color: #F58529;
+}
+
+.fbBlue {
+  background-color: #316FF6;
+  color: white;
+}
+
 body {
   font-family: "Mori";
   background-color: #2E75BC;

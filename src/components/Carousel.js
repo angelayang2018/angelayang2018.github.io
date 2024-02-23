@@ -94,7 +94,7 @@ const swiperText = [
   },
   {
     title: "Maui Condos",
-    text: "My portfolio website showcases my journey as a software developer. It features a collection of projects, skills, and experiences that define my passion for creating.",
+    text: "Showcases two stunning Maui Condos.",
   },
   {
     title: "Portfolio Website",

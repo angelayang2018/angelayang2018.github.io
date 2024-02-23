@@ -47,6 +47,12 @@ export default function Project() {
 
 const projects = [
   {
+    title: "Instagram Clone",
+    link: "/project/instagram",
+    img: "https://i.ibb.co/MBK07NP/portfolio.png",
+    alt: "Instagram Clone",
+  },
+  {
     title: "Portfolio (this website!)",
     link: "/project/portfolio",
     img: "https://i.ibb.co/MBK07NP/portfolio.png",

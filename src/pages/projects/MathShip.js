@@ -52,10 +52,6 @@ export default function MathShip() {
             meetings, contributing to a breakdown in effective communication
           </li>
           <li>
-            The absence of clear leadership and direction became apparent,
-            posing a challenge to the overall team dynamic
-          </li>
-          <li>
             The lack of active participation and contribution from one member
             underscored the importance of clear expectations and shared
             responsibilities in collaborative projects

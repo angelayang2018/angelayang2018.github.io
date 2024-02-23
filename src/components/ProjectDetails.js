@@ -1,7 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { gsap} from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
 export default function ProjectDetails({ projectInfo }) {
+  useGSAP(() => {
+    gsap.from(".projectDetails", {
+      duration: 2,
+      opacity: 0,
+      delay: 1
+    });})
+
   const { title, overview, team, tech, timeline, github, report, reportURL } =
     projectInfo;
   return (

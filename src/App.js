@@ -12,6 +12,7 @@ import MathShip from "./pages/projects/MathShip";
 import PyDoku from "./pages/projects/Pydoku";
 import Maui from "./pages/projects/Maui";
 import PageTrans from "./components/PageTrans";
+import Instagram from "./pages/projects/Instagram";
 
 export default function App() {
   return (
@@ -87,6 +88,14 @@ export default function App() {
             element={
               <PageTrans>
                 <HackDavis />
+              </PageTrans>
+            }
+          />
+          <Route
+            path="/project/instagram"
+            element={
+              <PageTrans>
+                <Instagram />
               </PageTrans>
             }
           />
