@@ -10,6 +10,13 @@ export default function Instagram() {
     <div className="instagram">
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
       <div>
+      
+        <img
+          className="projectImg"
+          src="https://i.ibb.co/vmKwb7Y/Screen-Shot-2024-04-22-at-10-23-01-PM.png"
+          alt="mathshiphome"
+        />
+      
         <h3>Design</h3>
         <p>↓</p>
         <h4>Theme</h4>

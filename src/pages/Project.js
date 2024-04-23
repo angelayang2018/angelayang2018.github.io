@@ -49,7 +49,7 @@ const projects = [
   {
     title: "Instagram Clone",
     link: "/project/instagram",
-    img: "https://i.ibb.co/MBK07NP/portfolio.png",
+    img: "https://i.ibb.co/G3j5N5V/instagram.png",
     alt: "Instagram Clone",
   },
   {
