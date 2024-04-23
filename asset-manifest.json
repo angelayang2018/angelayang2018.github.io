@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0806a531.css",
-    "main.js": "/static/js/main.c7c4f25f.js",
+    "main.css": "/static/css/main.58ad1de0.css",
+    "main.js": "/static/js/main.7bea8466.js",
     "static/js/787.a0b98d02.chunk.js": "/static/js/787.a0b98d02.chunk.js",
     "static/media/PPMori-SemiBoldItalic.otf": "/static/media/PPMori-SemiBoldItalic.e01f0721fd62284717b8.otf",
     "static/media/PPMori-SemiBold.otf": "/static/media/PPMori-SemiBold.336abfe2da355e4fa8dd.otf",
@@ -12,12 +12,12 @@
     "static/media/LEMONMILK-Regular.otf": "/static/media/LEMONMILK-Regular.55fc24317b9c2b507dd8.otf",
     "static/media/Galacticagrid-8Mr7J.ttf": "/static/media/Galacticagrid-8Mr7J.25d248638503309f03f5.ttf",
     "index.html": "/index.html",
-    "main.0806a531.css.map": "/static/css/main.0806a531.css.map",
-    "main.c7c4f25f.js.map": "/static/js/main.c7c4f25f.js.map",
+    "main.58ad1de0.css.map": "/static/css/main.58ad1de0.css.map",
+    "main.7bea8466.js.map": "/static/js/main.7bea8466.js.map",
     "787.a0b98d02.chunk.js.map": "/static/js/787.a0b98d02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0806a531.css",
-    "static/js/main.c7c4f25f.js"
+    "static/css/main.58ad1de0.css",
+    "static/js/main.7bea8466.js"
   ]
 }
