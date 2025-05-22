@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import { SwitchTransition, Transition } from "react-transition-group";
 import { useLocation } from "react-router-dom";
 import { gsap } from "gsap/all";
 
 const PageTrans = ({ children }) => {
   const location = useLocation();
+  const nodeRef = useRef(null); 
+
   return (
     <SwitchTransition>
       <Transition
         key={location.pathname}
         timeout={1500}
+        nodeRef={nodeRef} 
         onEnter={() => {
           window.scrollTo({ top: 0, left: 0 });
           gsap
@@ -33,7 +36,6 @@ const PageTrans = ({ children }) => {
             .timeline({ paused: true })
             .to(".rect", {
               yPercent: 100,
-
               stagger: {
                 ease: "power1.out",
                 each: 0.1,
@@ -41,13 +43,9 @@ const PageTrans = ({ children }) => {
               duration: 0.5,
             })
             .play();
-            
-            
-            
         }}
-        
       >
-        <div>
+        <div ref={nodeRef}>
           <div className="transitionCont">
             <div className="rect"></div>
             <div className="rect"></div>
@@ -61,4 +59,5 @@ const PageTrans = ({ children }) => {
     </SwitchTransition>
   );
 };
+
 export default PageTrans;

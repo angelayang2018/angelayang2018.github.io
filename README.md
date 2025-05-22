@@ -15,15 +15,16 @@ View my website here: https://angelayang2018.github.io/
 ## Technologies Used
 
 1. GSAP (GreenSock Animation Platform):
-I used GSAP to create animations throughout the website.
+Create animations throughout the website.
 
 2. React
 
-3. HTML (HyperText Markup Language)
+3. HTML 
 
-4. CSS (Cascading Style Sheets)
+4. CSS and SASS
 
-5. SASS (Syntactically Awesome Style Sheets)
+5. Three.js
+
 
 ## Process and Challenges of Creating the Website
 Here I go through the conceptualization, design, development, and testing of my website. 

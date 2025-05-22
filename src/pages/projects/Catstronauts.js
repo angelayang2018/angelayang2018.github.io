@@ -88,7 +88,7 @@ export default function Catstronauts() {
             <li>Start with the entire mesh enclosed in a single bounding box containing all vertices.</li>
             <li>Create a root node</li>
             <li>Subdivide the current box into 8 equally size children boxes</li>
-            <li>Continue untli each node contains only one vertex or none</li>
+            <li>Continue until each node contains only one vertex or none</li>
           </ul>
           <h4>Octree Intersection & Collision Detection</h4>
       </div>
