@@ -47,6 +47,12 @@ export default function Project() {
 
 const projects = [
   {
+    title: "Catstronauts: Crash Landing", 
+    link: "/project/catstronauts",
+    img: "",
+    alt: "Catstronauts: Crash Landin Game"
+    },
+  {
     title: "Instagram Clone",
     link: "/project/instagram",
     img: "https://i.ibb.co/G3j5N5V/instagram.png",

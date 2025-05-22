@@ -52,6 +52,11 @@
   }
 }
 
+@font-face{
+  font-family: "Arcadeclassic";
+  src: url(ArcadeClassic.ttf);
+}
+
 h2 {
   font-size: clamp(2rem, 4vw, 4rem)
 }
@@ -68,8 +73,6 @@ p {
 .skills li {
   font-size: clamp(1rem, 1.6vw, 2.5rem);
 }
-
-
 
 h2.nostrav{
   font-size: clamp(2rem, 3vw, 4rem);
@@ -95,4 +98,8 @@ h2.nostrav{
 
 .bold{
   font-weight: bold;
+}
+
+.arcadeClassic{
+  font-family: "Arcadeclassic"
 }

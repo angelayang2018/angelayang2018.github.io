@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+
+.catstronauts{ 
+    background: url('https://i.ibb.co/Xzdy8Z4/Mac-Book-Air-1.png') repeat;
+    background-color: $sandColor;
+    padding:90px 5% 1px 5%;  
+}
+
+.catOrange{
+    background-color: #FFA600;
+}
+
+.catBlue{
+    background-color: #72CCF2;
+}
+
+.videoPlayer{
+    width: 100%;
+    height: 80vh;
+}
+
+.videoPlayer iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.modeling{
+    height: 50vh;
+}
+
+.modelCanvas{
+    height: 100%;
+    display: flex;
+}
+
+primitive{
+    height: 100%;
+}
