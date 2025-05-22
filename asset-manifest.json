@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.58ad1de0.css",
-    "main.js": "/static/js/main.7bea8466.js",
+    "main.css": "/static/css/main.6e42e1fa.css",
+    "main.js": "/static/js/main.cff9b503.js",
     "static/js/787.a0b98d02.chunk.js": "/static/js/787.a0b98d02.chunk.js",
     "static/media/PPMori-SemiBoldItalic.otf": "/static/media/PPMori-SemiBoldItalic.e01f0721fd62284717b8.otf",
     "static/media/PPMori-SemiBold.otf": "/static/media/PPMori-SemiBold.336abfe2da355e4fa8dd.otf",
@@ -11,13 +11,14 @@
     "static/media/Nostrav.ttf": "/static/media/Nostrav.11577be227f158ff7f06.ttf",
     "static/media/LEMONMILK-Regular.otf": "/static/media/LEMONMILK-Regular.55fc24317b9c2b507dd8.otf",
     "static/media/Galacticagrid-8Mr7J.ttf": "/static/media/Galacticagrid-8Mr7J.25d248638503309f03f5.ttf",
+    "static/media/ArcadeClassic.ttf": "/static/media/ArcadeClassic.8f36b955d042951fd3af.ttf",
     "index.html": "/index.html",
-    "main.58ad1de0.css.map": "/static/css/main.58ad1de0.css.map",
-    "main.7bea8466.js.map": "/static/js/main.7bea8466.js.map",
+    "main.6e42e1fa.css.map": "/static/css/main.6e42e1fa.css.map",
+    "main.cff9b503.js.map": "/static/js/main.cff9b503.js.map",
     "787.a0b98d02.chunk.js.map": "/static/js/787.a0b98d02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58ad1de0.css",
-    "static/js/main.7bea8466.js"
+    "static/css/main.6e42e1fa.css",
+    "static/js/main.cff9b503.js"
   ]
 }
