@@ -58,7 +58,7 @@ export default function HackDavis() {
         </ul>
       </div>
 
-      <PageControl to="portfolio" from="mathship"></PageControl>
+      <PageControl to="catstronauts" from="mathship"></PageControl>
     </div>
   );
 }

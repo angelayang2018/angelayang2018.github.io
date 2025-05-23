@@ -8,10 +8,26 @@ import { MTLLoader } from "three/addons/loaders/MTLLoader.js";
 import { useLoader } from "@react-three/fiber";
 
 export default function Catstronauts() {
-  const materials = useLoader(MTLLoader, "/models/rocket.mtl");
-  const obj = useLoader(OBJLoader, "/models/rocket.obj", (loader) => {
-    materials.preload();
-    loader.setMaterials(materials);
+  const rocketMat = useLoader(MTLLoader, "/models/rocket.mtl");
+  const rocket = useLoader(OBJLoader, "/models/rocket.obj", (loader) => {
+    rocketMat.preload();
+    loader.setMaterials(rocketMat);
+  });
+
+  const buildingMat = useLoader(MTLLoader, "/models/spacebuilding1.mtl");
+  const building = useLoader(
+    OBJLoader,
+    "/models/spacebuilding1.obj",
+    (loader) => {
+      buildingMat.preload();
+      loader.setMaterials(buildingMat);
+    }
+  );
+
+  const coinMat = useLoader(MTLLoader, "/models/coin.mtl");
+  const coin = useLoader(OBJLoader, "/models/coin.obj", (loader) => {
+    coinMat.preload();
+    loader.setMaterials(coinMat);
   });
   return (
     <div className="catstronauts">
@@ -31,71 +47,149 @@ export default function Catstronauts() {
       </div> */}
       <div>
         <h3>Objective</h3>
+
+        <p>Build a 3D Lander-style game from scratch in C++</p>
+        <b>Features</b>
         <ul>
-          <li>Build a 3D Lander-style game from scratch in C++</li>
-          <li>
-            <b>Features</b>
-          </li>
+          <li>3-Point Lighting</li>
+          <li>Physics</li>
           <ul>
-            <li>3-Point Lighting</li>
-            <li>Physics</li>
-            <ul>
-              <li>
-                LEM moves using thrust force using a full physics
-                simulation(thrust, gravity, and turbulence forces)
-              </li>
-            </ul>
-            <li>Octree Subdivision</li>
-            <ul>
-              <li>Full collision detection with terrain</li>
-              <li>Terrain is spatially partitioned using an octree</li>
-            </ul>
-            <li>Particle Simulation</li>
-            <ul>
-              <li>Particle Emitter for the LEM exhaust and explosion effect</li>
-            </ul>
-            <li>3 cameras</li>
-            <ul>
-              <li>
-                "Tracking" camera that stays aimed at the spacecraft from a
-                fixed location
-              </li>
-              <li>Camera onboard the LEM</li>
-              <li>
-                EasyCam camera that the player can move anyways over the surface
-              </li>
-            </ul>
+            <li>
+              LEM moves using thrust force using a full physics
+              simulation(thrust, gravity, and turbulence forces)
+            </li>
+          </ul>
+          <li>Octree Subdivision</li>
+          <ul>
+            <li>Full collision detection with terrain</li>
+            <li>Terrain is spatially partitioned using an octree</li>
+          </ul>
+          <li>Particle Simulation</li>
+          <ul>
+            <li>Particle Emitter for the LEM exhaust and explosion effect</li>
+          </ul>
+          <li>3 cameras</li>
+          <ul>
+            <li>
+              "Tracking" camera that stays aimed at the spacecraft from a fixed
+              location
+            </li>
+            <li>Camera onboard the LEM</li>
+            <li>
+              EasyCam camera that the player can move anyways over the surface
+            </li>
           </ul>
         </ul>
       </div>
 
-      <div className = "modeling">
-        <h3>Modeling</h3>
-        <div className = "modelCanvas">
+      <div className="modeling">
+        <h3>Models</h3>
+        <div className="modelCanvas">
+          {/*Add fallback to be an image of the models. */}
           <Canvas fallback={<div>Sorry, no WebGL supported!</div>}>
-            <ambientLight intensity = {2} />
-            <directionalLight intensity = {4} position = {[5, 5, 5]} />
-            <OrbitControls enableZoom = {false} />
-            <primitive object={obj} scale = {0.4}/>
+            <ambientLight intensity={4} />
+            <directionalLight intensity={7} position={[5, 5, 5]} />
+            <OrbitControls
+              enableZoom={false}
+              enablePan={false}
+              autoRotate={true}
+              autoRotateSpeed={1}
+            />
+            <primitive object={rocket} scale={0.4} />
+          </Canvas>
+          <Canvas fallback={<div>Sorry, no WebGL supported!</div>}>
+            <ambientLight intensity={2} />
+            <directionalLight intensity={4} position={[5, 5, 5]} />
+            <OrbitControls
+              enableZoom={false}
+              enablePan={false}
+              autoRotate={true}
+              autoRotateSpeed={1}
+            />
+            <primitive object={building} scale={0.03} />
+          </Canvas>
+          <Canvas fallback={<div>Sorry, no WebGL supported!</div>}>
+            <ambientLight intensity={2} />
+            <directionalLight intensity={4} position={[5, 5, 5]} />
+            <OrbitControls
+              enableZoom={false}
+              enablePan={false}
+              autoRotate={true}
+              autoRotateSpeed={1}
+            />
+            <primitive object={coin} scale={0.3} />
           </Canvas>
         </div>
       </div>
 
-      <div className = "octree">
-        <h3>Octree Subdivision and Collision Detection</h3>
+      <div className="octree">
+        <div className="octreeCreation">
+          <h3>Octree Subdivision and Collision Detection</h3>
           <h4>Building an Octree</h4>
           <ul>
-            <li>Start with the entire mesh enclosed in a single bounding box containing all vertices.</li>
-            <li>Create a root node</li>
-            <li>Subdivide the current box into 8 equally size children boxes</li>
+            <li>
+              Start with the entire mesh enclosed in a single bounding box
+              containing all vertices.
+            </li>
+            <li>Create a root node and a list of vertices</li>
+            <li>
+              Subdivide the current box into 8 equally size children boxes
+            </li>
+            <ul>
+              <li>Create new node </li>
+              <li>
+                Add any vertices from parent nodes that fall within the child
+                node
+              </li>
+              <li>
+                If the child contains at least one vertex, add to the parent's
+                list of children
+              </li>
+            </ul>
             <li>Continue until each node contains only one vertex or none</li>
           </ul>
-          <h4>Octree Intersection & Collision Detection</h4>
+        </div>
+        <div className="ocBuild">
+        <video autoPlay loop muted>
+            <source
+              src="/videos/octreeBuild.mp4"
+              type="video/mp4"
+            ></source>
+          </video>
+          <img  src = "/images/octreeBuildPic.png" alt = "Fully built octree" />
+        </div>
+
+        <div className="octreeIntersection">
+          <div className="octreeInfo">
+            <h4>Octree Intersection & Collision Detection</h4>
+            <ul>
+              <li>
+                Recursively look through the octree and find any nodes that
+                intersect with input box
+              </li>
+              <li>Skips nodes that do not overlap with box</li>
+              <li>
+                Recurses into children if current node is not a leaf and
+                collects intersected nodes into a list and returns the list{" "}
+              </li>
+            </ul>
+          </div>
+
+          <video className = "oiVideo" autoPlay loop muted>
+            <source
+              src="/videos/octreeCollision.mp4"
+              type="video/mp4"
+            ></source>
+          </video>
+        </div>
       </div>
 
       <div>
         <h3>Design</h3>
         <p>↓</p>
+        <h4>Style</h4>
+        <p>Space Retro</p>
+        <p>Inspired by 1970s and 80s arcade games</p>
         <h4>Colors</h4>
         <div className="colorsContainer">
           <p className="colors catOrange">#FFA600</p>
@@ -113,7 +207,7 @@ export default function Catstronauts() {
         </ul>
       </div>
 
-      <PageControl to="portfolio" from="mathship"></PageControl>
+      <PageControl to="instagram" from="hackdavis"></PageControl>
     </div>
   );
 }
@@ -128,7 +222,7 @@ const projectInfo = {
       linkedin: "https://github.com/GSTran",
     },
   ],
-  tech: "C++, OpenFrameworks, Autodesk Maya, Houdini",
+  tech: "C++, OpenFrameworks, Autodesk Maya, SideFX Houdini",
   timeline: "May 2025",
   github: "https://github.com/angelayang2018/LandingGame",
   report: "Report",

@@ -36,7 +36,7 @@ export default function Instagram() {
         
       </div>
 
-      <PageControl to="portfolio" from="hackdavis"></PageControl>
+      <PageControl to="portfolio" from="catstronauts"></PageControl>
     </div>
   );
 }

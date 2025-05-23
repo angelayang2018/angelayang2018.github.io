@@ -17,6 +17,7 @@
 .videoPlayer{
     width: 100%;
     height: 80vh;
+    border-radius: 10px;
 }
 
 .videoPlayer iframe{
@@ -25,14 +26,42 @@
 }
 
 .modeling{
-    height: 50vh;
+   height: 75vh;
+   display: flex;
+   flex-direction: column;
+
 }
 
 .modelCanvas{
     height: 100%;
     display: flex;
+    
 }
 
-primitive{
-    height: 100%;
+canvas{
+    width: 33%;
 }
+
+.ocBuild{
+    display: flex;
+    justify-content: space-between;
+    video, img{
+        width: 49%;
+        border-radius: 50px;  
+    }
+}
+
+
+.octreeIntersection{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px; 
+}
+
+
+
+.oiVideo{
+    
+    border-radius: 50px;
+}
+
