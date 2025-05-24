@@ -14,16 +14,20 @@
     background-color: #72CCF2;
 }
 
-.videoPlayer{
-    width: 100%;
-    height: 80vh;
-    border-radius: 10px;
+.trailer{
+    width: 100%; 
+    
+
+    iframe{
+        border-radius: 10px;
+        border:none;
+        width: 100%;
+        height: 80vh;
+        object-fit: fill;
+    }
 }
 
-.videoPlayer iframe{
-    width: 100%;
-    height: 100%;
-}
+
 
 .modeling{
    height: 75vh;
@@ -35,12 +39,14 @@
 .modelCanvas{
     height: 100%;
     display: flex;
-    
+    canvas{
+        width: 33%;
+        height: 100%;
+    }  
 }
 
-canvas{
-    width: 33%;
-}
+
+
 
 .ocBuild{
     display: flex;
@@ -65,3 +71,26 @@ canvas{
     border-radius: 50px;
 }
 
+
+
+@media (max-width: 1024px){
+    .modeling{
+        height: 200vh;
+    }
+    .modelCanvas{
+        flex-direction: column;
+        canvas{
+            width: 100%;
+        }
+    }
+
+    .ocBuild{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        video, img{
+            width: 100%;
+        }
+
+    }
+}

@@ -14,15 +14,11 @@ export default function Catstronauts() {
     loader.setMaterials(rocketMat);
   });
 
-  const buildingMat = useLoader(MTLLoader, "/models/spacebuilding1.mtl");
-  const building = useLoader(
-    OBJLoader,
-    "/models/spacebuilding1.obj",
-    (loader) => {
-      buildingMat.preload();
-      loader.setMaterials(buildingMat);
-    }
-  );
+  const buildingMat = useLoader(MTLLoader, "/models/satellite.mtl");
+  const building = useLoader(OBJLoader, "/models/satellite.obj", (loader) => {
+    buildingMat.preload();
+    loader.setMaterials(buildingMat);
+  });
 
   const coinMat = useLoader(MTLLoader, "/models/coin.mtl");
   const coin = useLoader(OBJLoader, "/models/coin.obj", (loader) => {
@@ -37,14 +33,6 @@ export default function Catstronauts() {
         src="/images/catmodel.png"
         alt="Catstronauts"
       />
-      {/* <div className="videoPlayer">
-        <iframe
-          src="https://www.youtube.com/embed/gk0ZLwdkPrg"
-          title="Catstronauts Gameplay"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div> */}
       <div>
         <h3>Objective</h3>
 
@@ -82,6 +70,15 @@ export default function Catstronauts() {
         </ul>
       </div>
 
+      <div className="trailer">
+      <h3>Trailer</h3>
+        <iframe
+          src="https://www.youtube.com/embed/gk0ZLwdkPrg"
+          title="Catstronauts Gameplay"
+          allowFullScreen
+        ></iframe>
+      </div>
+
       <div className="modeling">
         <h3>Models</h3>
         <div className="modelCanvas">
@@ -99,14 +96,14 @@ export default function Catstronauts() {
           </Canvas>
           <Canvas fallback={<div>Sorry, no WebGL supported!</div>}>
             <ambientLight intensity={2} />
-            <directionalLight intensity={4} position={[5, 5, 5]} />
+            <directionalLight intensity={7} position={[5, 5, 5]} />
             <OrbitControls
               enableZoom={false}
               enablePan={false}
               autoRotate={true}
               autoRotateSpeed={1}
             />
-            <primitive object={building} scale={0.03} />
+            <primitive object={building} scale={0.6} />
           </Canvas>
           <Canvas fallback={<div>Sorry, no WebGL supported!</div>}>
             <ambientLight intensity={2} />
@@ -117,7 +114,7 @@ export default function Catstronauts() {
               autoRotate={true}
               autoRotateSpeed={1}
             />
-            <primitive object={coin} scale={0.3} />
+            <primitive object={coin} scale={0.25} />
           </Canvas>
         </div>
       </div>
@@ -126,60 +123,31 @@ export default function Catstronauts() {
         <div className="octreeCreation">
           <h3>Octree Subdivision and Collision Detection</h3>
           <h4>Building an Octree</h4>
-          <ul>
-            <li>
-              Start with the entire mesh enclosed in a single bounding box
-              containing all vertices.
-            </li>
-            <li>Create a root node and a list of vertices</li>
-            <li>
-              Subdivide the current box into 8 equally size children boxes
-            </li>
-            <ul>
-              <li>Create new node </li>
-              <li>
-                Add any vertices from parent nodes that fall within the child
-                node
-              </li>
-              <li>
-                If the child contains at least one vertex, add to the parent's
-                list of children
-              </li>
-            </ul>
-            <li>Continue until each node contains only one vertex or none</li>
-          </ul>
+          <p>
+            Recursively subdivde terrain mesh bounding box into eight equal
+            parts, creating child nodes that inherit vertices from their parent
+            if they fall within the child’s bounds
+          </p>
+          <p>Continue until each node contains at most one vertex.</p>
         </div>
         <div className="ocBuild">
-        <video autoPlay loop muted>
-            <source
-              src="/videos/octreeBuild.mp4"
-              type="video/mp4"
-            ></source>
+          <video autoPlay loop muted>
+            <source src="/videos/octreeBuild.mp4" type="video/mp4"></source>
           </video>
-          <img  src = "/images/octreeBuildPic.png" alt = "Fully built octree" />
+          <img src="/images/octreeBuildPic.png" alt="Fully built octree" />
         </div>
 
         <div className="octreeIntersection">
           <div className="octreeInfo">
             <h4>Octree Intersection & Collision Detection</h4>
-            <ul>
-              <li>
-                Recursively look through the octree and find any nodes that
-                intersect with input box
-              </li>
-              <li>Skips nodes that do not overlap with box</li>
-              <li>
-                Recurses into children if current node is not a leaf and
-                collects intersected nodes into a list and returns the list{" "}
-              </li>
-            </ul>
+            <p>
+              Recursively look through the octree and find any nodes that
+              intersect with input box. Return these nodes as a list.
+            </p>
           </div>
 
-          <video className = "oiVideo" autoPlay loop muted>
-            <source
-              src="/videos/octreeCollision.mp4"
-              type="video/mp4"
-            ></source>
+          <video className="oiVideo" autoPlay loop muted>
+            <source src="/videos/octreeCollision.mp4" type="video/mp4"></source>
           </video>
         </div>
       </div>

@@ -49,7 +49,7 @@ const projects = [
   {
     title: "Catstronauts: Crash Landing", 
     link: "/project/catstronauts",
-    img: "",
+    img: "/images/Catstronauts.png",
     alt: "Catstronauts: Crash Landin Game"
     },
   {
