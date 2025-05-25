@@ -929,6 +929,11 @@ h2.nostrav {
   border-radius: 50px;
 }
 
+.catDesign img {
+  border-radius: 10px;
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   .modeling {
     height: 200vh;

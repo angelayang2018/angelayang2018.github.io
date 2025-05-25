@@ -152,12 +152,12 @@ export default function Catstronauts() {
         </div>
       </div>
 
-      <div>
+      <div className = "catDesign">
         <h3>Design</h3>
         <p>↓</p>
         <h4>Style</h4>
         <p>Space Retro</p>
-        <p>Inspired by 1970s and 80s arcade games</p>
+        <img src = "/images/catboard1.png" alt ="Catstronauts Reference board" />
         <h4>Colors</h4>
         <div className="colorsContainer">
           <p className="colors catOrange">#FFA600</p>
