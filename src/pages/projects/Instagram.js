@@ -13,7 +13,7 @@ export default function Instagram() {
       
         <img
           className="projectImg"
-          src="https://i.ibb.co/vmKwb7Y/Screen-Shot-2024-04-22-at-10-23-01-PM.png"
+          src="/images/instagramlogin.png"
           alt="mathshiphome"
         />
       

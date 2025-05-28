@@ -11,7 +11,7 @@ export default function SpartanPantry() {
         <div>
           <img
             className="pantryhome"
-            src="https://i.ibb.co/Mg3rPw7/pantryhome.png"
+            src="/images/pantryhome.png"
             alt="pantryhome"
           />
         </div>
@@ -31,7 +31,7 @@ export default function SpartanPantry() {
         <div className="modelImgCont">
           <img
             className="modelImg"
-            src="https://i.ibb.co/zbpfGft/pantry-Model-3.png"
+            src="/images/pantry-Model-3.png"
             alt="pantry-Model"
           />
         </div>
@@ -71,19 +71,19 @@ const featuresData = [
   {
     title: "Browse Inventory",
     description: "Browse through pantry product inventory in real time",
-    source: "https://i.ibb.co/GJwDFyZ/pantrylogin.png",
+    source: "/images/pantrylogin.png",
     alt: "Pantry Inventory Page",
   },
   {
     title: "Profile",
     description: "Show last visted date, and recent purchases",
-    source: "https://i.ibb.co/m4gNp6W/pantryprofile.png",
+    source: "/images/pantryprofile.png",
     alt: "Pantry Profile Pge",
   },
   {
     title: "Shopping Cart",
     description: "Add, delete items and place orders",
-    source: "https://i.ibb.co/tLPrLm4/pantrycart.png",
+    source: "/images/pantrycart.png",
     alt: "Pantry Shopping Cart",
   },
 ];

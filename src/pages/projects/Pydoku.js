@@ -8,7 +8,7 @@ export default function PyDoku() {
 
       <img
         className="pydokuImg"
-        src="https://i.ibb.co/syM7P4j/pydoku.png"
+        src="/images/pydokubt.png"
         alt="pydoku"
       />
 

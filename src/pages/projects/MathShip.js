@@ -10,7 +10,7 @@ export default function MathShip() {
       <div className="mathshipImgCont">
         <img
           className="mathshipHome"
-          src="https://i.ibb.co/Z2CfjDR/mathshiphome-2.png"
+          src="/images/mathshiphome-2.png"
           alt="mathshiphome"
         />
       </div>
@@ -36,7 +36,7 @@ export default function MathShip() {
         <div className="mathshipImgCont">
           <img
             className="mathshipImg"
-            src="https://i.ibb.co/9wc8gn7/mathship.png"
+            src="/images/mathshipmodel.png"
             alt="mathshipicon"
           />
         </div>
@@ -73,7 +73,7 @@ const featuresData = [
   {
     title: "Login/Signup",
     description: "Create accounts and login",
-    source: "https://i.ibb.co/mCkB2Xt/mathshiplogin.png",
+    source: "/images/mathshiplogin.png",
     alt: "Math Ship Login Page",
   },
   {
@@ -85,7 +85,7 @@ const featuresData = [
   {
     title: "High Score",
     description: "Display the top 10 highest scores",
-    source: "https://i.ibb.co/WgSHFFZ/mathshipscore.png",
+    source: "/images/mathshipscore.png",
     alt: "Math Ship High Score Table",
   },
 ];

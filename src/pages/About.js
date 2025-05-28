@@ -54,7 +54,7 @@ export default function About() {
       </div>
       <div className="aboutImage">
         <img
-          src="https://i.ibb.co/vLCcKPj/IMG-0659.jpg"
+          src="/images/profilepic.jpg"
           alt="angie:)"
           border="0"
         />

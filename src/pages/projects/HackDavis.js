@@ -8,7 +8,7 @@ export default function HackDavis() {
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
       <img
         className="projectImg"
-        src="https://i.ibb.co/68LWpC4/healthyfoods.png"
+        src="/images/healthyfoods.png"
         alt="healthyfoods"
       />
       <div>

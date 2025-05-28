@@ -67,12 +67,12 @@ export default function Carousel() {
 }
 
 const swiperImages = [
-  { img: "https://i.ibb.co/FbwkY1Y/pantry-1.png", alt: "Pantry" },
-  { img: "https://i.ibb.co/dW1BJty/Hack-Davis.png", alt: "Hack Davis" },
-  { img: "https://i.ibb.co/PrkYCPL/MathShip.png", alt: "Math Ship" },
-  { img: "https://i.ibb.co/Q9nw9st/Udemy.png", alt: "Pydoku" },
-  { img: "https://i.ibb.co/MkZPWhf/maui.png", alt: "Maui Condos" },
-  { img: "https://i.ibb.co/MBK07NP/portfolio.png", alt: "Portfolio" },
+  { img: "/images/pantry-1.png", alt: "Pantry" },
+  { img: "/images/Hack-Davis.png", alt: "Hack Davis" },
+  { img: "/images/MathShip.png", alt: "Math Ship" },
+  { img: "/images/Udemy.png", alt: "Pydoku" },
+  { img: "/images/maui.png", alt: "Maui Condos" },
+  { img: "/images/portfolio.png", alt: "Portfolio" },
 ];
 
 const swiperText = [

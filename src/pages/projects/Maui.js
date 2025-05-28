@@ -8,7 +8,7 @@ export default function Maui() {
       <ProjectDetails projectInfo={projectInfo}></ProjectDetails>
       <img
         className="projectImg"
-        src="https://i.ibb.co/tDW75yV/mauihome.png"
+        src="/images/mauihome.png"
         alt="Maui Home Page"
       />
       <div>
